@@ -1,7 +1,7 @@
 # Developer Portfolio
 
 <p align="center">
-<img src="https://i.ibb.co/M1YWh1m/4380747.jpg" alt="" width="450px"/>
+![](https://res.cloudinary.com/doer1ffjl/image/upload/v1663575246/Portfolio/experience_cz6jxn.gif)
 </p>
 
 ## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.

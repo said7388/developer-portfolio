@@ -373,11 +373,6 @@ export const educationData = [
 
 # Fonts and Images :performing_arts:
 
-## Illustrations
-
-- [Icons8](https://icons8.com/illustrations/styles)
-- [SVG Porn](https://svgporn.com/)
-
 ## Icons
 
 - [Material Icons](https://material-ui.com/components/material-icons/)

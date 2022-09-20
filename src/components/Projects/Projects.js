@@ -26,7 +26,7 @@ function Projects() {
         },
         viewArr : {
             color: theme.tertiary, 
-            backgroundColor: theme.secondary70,
+            backgroundColor: theme.secondary,
             width: '40px',
             height: '40px',
             padding: '0.5rem',

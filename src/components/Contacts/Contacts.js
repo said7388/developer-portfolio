@@ -36,25 +36,25 @@ function Contacts() {
 
     const useStyles = makeStyles((t) => ({
         input: {
-            border: `4px solid ${theme.greyLight}`,
+            border: `2px solid ${theme.greyLight}`,
             backgroundColor: `${theme.secondary}`,
             color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 500,
             transition: 'border 0.2s ease-in-out',
             '&:focus': {
-                border: `4px solid ${theme.primary600}`,
+                border: `2px solid ${theme.primary}`,
             },
         },
         message: {
-            border: `4px solid ${theme.greyLight}`,
+            border: `2px solid ${theme.greyLight}`,
             backgroundColor: `${theme.secondary}`,
             color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 500,
             transition: 'border 0.2s ease-in-out',
             '&:focus': {
-                border: `4px solid ${theme.primary600}`,
+                border: `2px solid ${theme.primary}`,
             },
         },
         label: {

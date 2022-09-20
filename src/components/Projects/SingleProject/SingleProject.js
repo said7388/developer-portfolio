@@ -103,7 +103,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                     className='project--lang'
                     style={{
                         background: theme.secondary,
-                        color: theme.tertiary80,
+                        color: theme.tertiary,
                     }}
                 >
                     {tags.map((tag, id) => (

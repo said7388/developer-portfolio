@@ -37,7 +37,7 @@ function BlogPage() {
             backgroundColor: theme.secondary, 
             boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
             "&::placeholder": {
-                color: theme.tertiary80, 
+                color: theme.tertiary, 
             },
             [t.breakpoints.down('sm')]: {
                 width:'350px',

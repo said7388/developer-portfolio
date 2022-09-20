@@ -20,7 +20,7 @@ export const blogData = [
         title: 'BEING ANONYMOUS: A BEGINNERS GUIDE',
         description: 'Here are some basic ways to lay off the Radar',
         date: 'Aug 14, 2020',
-        image: 'https://1.bp.blogspot.com/-GR19yCNbKCE/XuRcKEfKvhI/AAAAAAAAAwY/srFWw5pOpzMibeJb__SmgZpx9dIpNNWqgCK4BGAsYHg/w640-h426/anonymous1.jpg',
+        image: 'https://1.bp.blogspot.com/-XTVMsZP3HaM/Xxpl394txlI/AAAAAAAABws/zovXWiuNGg4TzBwYYVFfJ1ixDb3JfVokgCNcBGAsYHQ/w400-h195/speedtest.png',
         url: 'https://hackzism.blogspot.com/2020/06/being-anonymous-beginners-guide.html'
     },
     {

@@ -16,7 +16,7 @@ export const projectsData = [
         tags: ['React', 'SAAS', 'React Bootstrap'],
         code: '',
         demo: 'https://www.aylanetworks.com/',
-        image: one
+        image: six
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const projectsData = [
         tags: ['React', 'Express', 'Material Ui'],
         code: 'https://github.com/said7388/jewelry-niche',
         demo: 'https://pandora-web.netlify.app/',
-        image: two
+        image: seven
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material Ui'],
         code: 'https://github.com/said7388/Travel-Agency-client',
         demo: 'https://travel-agency-fc58b.web.app/',
-        image: three
+        image: eight
     },
     {
         id: 4,
@@ -61,7 +61,7 @@ export const projectsData = [
         tags: ['Flutter'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: six
+        image: one
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ export const projectsData = [
         tags: ['React', 'Redux', 'Bootstrap'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: seven
+        image: two
     },
     {
         id: 8,
@@ -79,7 +79,7 @@ export const projectsData = [
         tags: ['Flutter', 'React'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: eight
+        image: three
     },
 ]
 

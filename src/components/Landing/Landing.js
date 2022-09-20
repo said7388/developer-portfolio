@@ -2,6 +2,7 @@ import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import React, { useContext } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import Typed from 'react-typed';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
@@ -141,8 +142,18 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6 style={{ color: theme.primary }}>{headerData.title}</h6>
+                        {/* <h6 style={{ color: theme.primary }}>{headerData.title}</h6> */}
                         <h1>{headerData.name}</h1>
+                        <Typed
+                            strings={[
+                                'Backend Developer',
+                                'Frontend Developer',
+                                'Fullstack Developer']}
+                            typeSpeed={40}
+                            backSpeed={50}
+                            style={{ color: theme.primary, fontSize: '20px' }}
+                            loop
+                        />
                         <p>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>

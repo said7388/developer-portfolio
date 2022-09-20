@@ -31,10 +31,10 @@ function BackToTop() {
     const useStyles = makeStyles(() => ({
         icon: {
             fontSize: '3rem',
-            color: theme.tertiary,
+            color: theme.primary,
             '&:hover': {
                 transform: 'scale(1.08)',
-                color: theme.primary,
+                color: theme.tertiary,
             },
         },
     }));

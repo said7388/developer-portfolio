@@ -15,8 +15,8 @@ function Blog() {
 
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
-            backgroundColor: theme.greyLight,
+            color: theme.secondary, 
+            backgroundColor: theme.tertiary,
             "&:hover": {
                 color: theme.secondary, 
                 backgroundColor: theme.primary,

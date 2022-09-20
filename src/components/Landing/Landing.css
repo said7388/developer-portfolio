@@ -200,7 +200,8 @@
     margin-right: initial;
     width: 100%;
   }
-  .lcr--content h6 {
+  .lcr--content .typed-header {
+    display: block;
     font-size: 1rem;
     text-align: center;
   }

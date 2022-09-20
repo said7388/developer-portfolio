@@ -151,6 +151,7 @@ function Landing() {
                                 'Fullstack Developer']}
                             typeSpeed={40}
                             backSpeed={50}
+                            className="typed-header"
                             style={{ color: theme.primary, fontSize: '20px' }}
                             loop
                         />

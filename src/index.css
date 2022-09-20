@@ -47,10 +47,6 @@ img {
   user-select: none;
 }
 
-body {
-  background: #15202b;
-}
-
 @media screen and (max-width: 400px) {
   body {
     overflow-x: hidden;

@@ -36,7 +36,7 @@ function Contacts() {
 
     const useStyles = makeStyles((t) => ({
         input: {
-            border: `2px solid ${theme.greyLight}`,
+            border: `2px solid ${theme.buttonColor}`,
             backgroundColor: `${theme.secondary}`,
             color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
@@ -47,7 +47,7 @@ function Contacts() {
             },
         },
         message: {
-            border: `2px solid ${theme.greyLight}`,
+            border: `2px solid ${theme.buttonColor}`,
             backgroundColor: `${theme.secondary}`,
             color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
@@ -75,7 +75,7 @@ function Contacts() {
             alignItems: 'center',
             justifyContent: 'center',
             fontSize: '21px',
-            backgroundColor: theme.greyLight,
+            backgroundColor: theme.buttonColor,
             color: theme.secondary,
             transition: '250ms ease-in-out',
             '&:hover': {
@@ -85,7 +85,7 @@ function Contacts() {
             },
         },
         detailsIcon: {
-            backgroundColor: theme.greyLight,
+            backgroundColor: theme.buttonColor,
             color: theme.secondary,
             borderRadius: '50%',
             width: '45px',
@@ -109,7 +109,7 @@ function Contacts() {
             '&:hover': {
                 transform: 'scale(1.08)',
                 color: theme.secondary,
-                backgroundColor: theme.greyLight,
+                backgroundColor: theme.buttonColor,
             },
         },
     }));

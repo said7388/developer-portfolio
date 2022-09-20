@@ -1,7 +1,7 @@
 /* eslint-disable */
-import { greenThemeDark } from '../theme/theme'
+import { theDarkTheme } from '../theme/theme'
 
 
 export const themeData = {
-    theme: greenThemeDark
+    theme: theDarkTheme
 }

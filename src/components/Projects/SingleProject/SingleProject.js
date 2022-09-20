@@ -39,7 +39,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             <div
                 key={id}
                 className='singleProject'
-                style={{ backgroundColor: theme.grey }}
+                style={{ backgroundColor: theme.quaternary }}
             >
                 <div className='projectContent'>
                     <h2

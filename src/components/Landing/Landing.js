@@ -29,9 +29,9 @@ function Landing() {
             border: `3px solid ${theme.primary}`,
             transition: '100ms ease-out',
             '&:hover': {
-                backgroundColor: theme.tertiary,
+                backgroundColor: theme.buttonColor,
                 color: theme.secondary,
-                border: `3px solid ${theme.tertiary}`,
+                border: `3px solid ${theme.buttonColor}`,
             },
             [t.breakpoints.down('sm')]: {
                 width: '180px',
@@ -51,9 +51,9 @@ function Landing() {
             border: `3px solid ${theme.primary}`,
             transition: '100ms ease-out',
             '&:hover': {
-                backgroundColor: theme.grey,
+                backgroundColor: theme.buttonColor,
                 color: theme.tertiary,
-                border: `3px solid ${theme.tertiary}`,
+                border: `3px solid ${theme.buttonColor}`,
             },
             [t.breakpoints.down('sm')]: {
                 display: 'none',
@@ -64,11 +64,11 @@ function Landing() {
     const classes = useStyles();
 
     return (
-        <d className='landing'>
+        <div className='landing' style={{ backgroundColor: theme.quaternary }}>
             <div className='landing--container'>
                 <div
                     className='landing--container-left'
-                    style={{ backgroundColor: theme.grey }}
+                    style={{ backgroundColor: theme.quaternary }}
                 >
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
@@ -184,7 +184,7 @@ function Landing() {
                     </div>
                 </div>
             </div>
-        </d>
+        </div>
     );
 }
 

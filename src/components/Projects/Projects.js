@@ -13,19 +13,19 @@ function Projects() {
 
     const { theme } = useContext(ThemeContext);
 
-    
+
     const useStyles = makeStyles(() => ({
-        viewAllBtn : {
-            color: theme.secondary, 
-            backgroundColor: theme.tertiary,
+        viewAllBtn: {
+            color: theme.secondary,
+            backgroundColor: theme.buttonColor,
             transition: 'color 0.5s',
             "&:hover": {
-                color: theme.secondary, 
+                color: theme.secondary,
                 backgroundColor: theme.primary,
             }
         },
-        viewArr : {
-            color: theme.tertiary, 
+        viewArr: {
+            color: theme.buttonColor,
             backgroundColor: theme.secondary,
             width: '40px',
             height: '40px',
@@ -35,7 +35,7 @@ function Projects() {
             cursor: 'pointer',
             transition: 'background-color 0.5s',
             "&:hover": {
-                color: theme.tertiary, 
+                color: theme.buttonColor,
                 backgroundColor: theme.secondary,
             }
         },
@@ -46,9 +46,9 @@ function Projects() {
     return (
         <>
             {projectsData.length > 0 && (
-                <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
+                <div className="projects" id="projects" style={{ backgroundColor: theme.secondary }}>
                     <div className="projects--header">
-                        <h1 style={{color: theme.primary}}>Projects</h1>
+                        <h1 style={{ color: theme.primary }}>Projects</h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
@@ -65,7 +65,7 @@ function Projects() {
                                     image={project.image}
                                 />
                             ))}
-                        </div> 
+                        </div>
 
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">

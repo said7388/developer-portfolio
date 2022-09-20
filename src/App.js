@@ -6,6 +6,7 @@ import { BlogPage, HomePage, ProjectPage } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
 
 import './App.css';
+import ChangeTheme from './components/ChangeTheme/ChangeTheme';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
-      {/* <ChangeTheme /> */}
+      <ChangeTheme />
     </div>
   );
 }

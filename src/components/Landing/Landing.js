@@ -52,7 +52,7 @@ function Landing() {
             transition: '100ms ease-out',
             '&:hover': {
                 backgroundColor: theme.buttonColor,
-                color: theme.tertiary,
+                color: theme.secondary,
                 border: `3px solid ${theme.buttonColor}`,
             },
             [t.breakpoints.down('sm')]: {

@@ -8,7 +8,7 @@ export const theLightTheme = {
     quaternaryLight: '#F7F9F9',
     secondary: '#ffffff',
     tertiary: '#0f1419',
-    buttonColor: '#EFF3F4',
+    buttonColor: '#0F1419',
     contactsimg: contactsGreen
 }
 

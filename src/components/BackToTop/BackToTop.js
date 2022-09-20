@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import React, { useContext, useState } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
-
 import { ThemeContext } from '../../contexts/ThemeContext';
 import './BackToTop.css';
 
@@ -30,7 +29,7 @@ function BackToTop() {
 
     const useStyles = makeStyles(() => ({
         icon: {
-            fontSize: '3rem',
+            fontSize: '2rem',
             color: theme.primary,
             '&:hover': {
                 transform: 'scale(1.08)',

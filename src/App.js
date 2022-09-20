@@ -22,6 +22,7 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
+      {/* <ChangeTheme /> */}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Drawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
 import CloseIcon from '@material-ui/icons/Close';
 import React, { useContext, useState } from 'react';
-import { BsFillGearFill } from 'react-icons/bs';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { FaFolderOpen, FaUser } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
 import { IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
@@ -15,7 +15,7 @@ import { headerData } from '../../data/headerData';
 import './Navbar.css';
 
 function Navbar() {
-    const { theme, setHandleDrawer } = useContext(ThemeContext);
+    const { theme, setHandleDrawer, changeTheme, isDark } = useContext(ThemeContext);
 
     const [open, setOpen] = useState(false);
 
@@ -230,21 +230,18 @@ function Navbar() {
                         </Fade>
 
                         <Fade left>
-                            <NavLink
-                                to='/#services'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <BsFillGearFill
-                                        className={classes.drawerIcon}
-                                    />
-                                    <span className={classes.drawerLinks}>
-                                        Services
-                                    </span>
-                                </div>
-                            </NavLink>
+                            <div className={classes.drawerItem} onClick={changeTheme}>
+                                {isDark ?
+                                    <BsFillSunFill className={classes.drawerIcon} />
+                                    :
+                                    <BsFillMoonFill className={classes.drawerIcon} />
+                                }
+                                <span className={classes.drawerLinks}>
+                                    {
+                                        isDark ? "Light" : "Dark"
+                                    }
+                                </span>
+                            </div>
                         </Fade>
 
                         <Fade left>

@@ -387,6 +387,7 @@ export const educationData = [
 
 ---
 
+<!--
 # Contributors :man_technologist::woman_technologist:
 
 <div>
@@ -396,7 +397,7 @@ export const educationData = [
             <td align="center"><a href="https://github.com/hhhrrrttt222111"><img src="https://hhhrrrttt222111.web.app/static/media/dp.5f7c380f.jpeg" width="135px;" height="135px;" alt=""/><br /><b>Hemanth R</b></a></td>
         </tr>
     </table>
-</div>
+</div> -->
 
 <!--
 ## Setting Up Contacts form :envelope_with_arrow:

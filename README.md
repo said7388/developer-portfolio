@@ -1,10 +1,16 @@
 # Developer Portfolio
 
-![](https://res.cloudinary.com/doer1ffjl/image/upload/v1663575246/Portfolio/experience_cz6jxn.gif)
-
 ## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
 
-<br />
+---
+
+# Demo :movie_camera:
+
+![](https://res.cloudinary.com/doer1ffjl/image/upload/v1663654797/Portfolio/portfolio_ywlcqv.gif)
+
+## View live demo [here](https://abusaid.netlify.app/).
+
+---
 
 ## Table of Contents :scroll:
 
@@ -35,14 +41,6 @@
   - PROJECTS
 - BLOG
 - CONTACTS
-
----
-
-# Demo :movie_camera:
-
-![](https://res.cloudinary.com/doer1ffjl/image/upload/v1663654797/Portfolio/portfolio_ywlcqv.gif)
-
-## View live demo [here](https://abusaid.netlify.app/).
 
 ---
 

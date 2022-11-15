@@ -6,7 +6,7 @@ export const ThemeContext = createContext()
 
 function ThemeContextProvider(props) {
     // eslint-disable-next-line
-    const [theme, setTheme] = useState(theLightTheme);
+    const [theme, setTheme] = useState(theDarkTheme);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [isDark, setDark] = useState(false);
 

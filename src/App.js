@@ -18,7 +18,6 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
-
           <Redirect to="/" />
         </Switch>
       </Router>

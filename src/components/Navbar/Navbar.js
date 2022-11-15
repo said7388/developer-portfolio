@@ -16,9 +16,7 @@ import './Navbar.css';
 
 function Navbar() {
     const { theme, setHandleDrawer, changeTheme, isDark } = useContext(ThemeContext);
-
     const [open, setOpen] = useState(false);
-
     const handleDrawerOpen = () => {
         setOpen(true);
         setHandleDrawer();

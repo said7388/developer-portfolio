@@ -1,10 +1,17 @@
-FROM node:lts-alpine
-ENV NODE_ENV=production
-WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install
-COPY . .
+FROM node:16-alpine
+
+RUN mkdir -p /usr/app/
+
+WORKDIR /usr/app/
+
+COPY package*.json .
+
+RUN yarn install
+
+COPY ./ ./
+
+RUN yarn build
+
 EXPOSE 3000
-RUN chown -R node /usr/src/app
-USER node
-CMD ["npm", "start"]
+
+CMD ["yarn", "start"]

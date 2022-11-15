@@ -10,7 +10,6 @@
   transform: translateX(-50%);
   height: 50px;
   width: 85%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +20,7 @@
   height: 10px;
   border-radius: 50%;
 }
+
 .about .line-styling .style-line {
   width: 95%;
   height: 5px;

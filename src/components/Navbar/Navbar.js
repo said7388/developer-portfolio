@@ -1,11 +1,10 @@
 import Drawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
-import CloseIcon from '@material-ui/icons/Close';
 import React, { useContext, useState } from 'react';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { FaFolderOpen, FaUser } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
-import { IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
+import { IoClose, IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
 import { MdPhone } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
@@ -157,7 +156,7 @@ function Navbar() {
                 disableScrollLock={true}
             >
                 <div className='div-closebtn'>
-                    <CloseIcon
+                    <IoClose
                         onClick={handleDrawerClose}
                         onKeyDown={(e) => {
                             if (e.key === ' ' || e.key === 'Enter') {

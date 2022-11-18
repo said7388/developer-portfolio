@@ -1,14 +1,13 @@
 import emailjs from '@emailjs/browser';
 import { IconButton, Snackbar, SnackbarContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import CloseIcon from '@material-ui/icons/Close';
 import React, { useContext, useRef, useState } from 'react';
 import { AiOutlineCheckCircle, AiOutlineSend } from 'react-icons/ai';
 import { FaFacebook, FaGithub, FaLinkedinIn, FaMediumM, FaStackOverflow, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FiAtSign, FiPhone } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
 import isEmail from 'validator/lib/isEmail';
-
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 import { contactsData } from '../../data/contactsData';
@@ -249,7 +248,7 @@ function Contacts() {
                                             color='inherit'
                                             onClick={handleClose}
                                         >
-                                            <CloseIcon fontSize='small' />
+                                            <IoClose fontSize='small' />
                                         </IconButton>
                                     </React.Fragment>
                                 }

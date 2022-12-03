@@ -26,7 +26,7 @@
   margin-top: 2rem;
 }
 
-.contacts--container > h1 {
+.contacts--container>h1 {
   font-family: var(--primaryFont);
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
@@ -107,6 +107,7 @@
   justify-content: center;
   padding: 5px;
 }
+
 .send-icon {
   font-size: 25px;
   transform-origin: center;
@@ -165,6 +166,7 @@
     bottom: 0;
     width: 240px;
   }
+
   .contacts--container {
     padding: 2rem 4rem;
     width: 90%;
@@ -176,17 +178,21 @@
   .contacts--img {
     display: none;
   }
+
   .contacts--container {
     width: 100%;
     margin-top: 1rem;
   }
-  .contacts--container > h1 {
+
+  .contacts--container>h1 {
     font-size: 3rem;
     margin: 0 0 1.2rem 0;
   }
+
   .contacts-details {
     padding-left: 4rem;
   }
+
   .personal-details p {
     margin-left: 1rem;
     font-size: 1rem;
@@ -198,16 +204,19 @@
     font-size: 3rem;
     margin-bottom: 30px;
   }
+
   .contacts--container {
     padding: 2rem;
     margin-top: 0rem;
     align-items: center;
   }
+
   .contacts-body {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .contacts-form {
     display: flex;
     flex: 1;
@@ -217,23 +226,28 @@
   .form-input {
     margin-bottom: 0.45rem;
   }
+
   .contacts-form form {
     align-items: flex-end;
   }
+
   .contacts-details {
     padding-left: 0rem;
     padding: 1rem;
     align-items: center;
     margin-top: 2rem;
   }
+
   .socialmedia-icons {
     width: 100%;
     gap: 1.5rem;
     margin-top: 2rem;
   }
+
   .personal-details {
     margin-bottom: 1.8rem;
   }
+
   .personal-details p {
     margin-left: 1.2rem;
     width: 95%;
@@ -246,6 +260,7 @@
     flex: 1;
     width: 100%;
   }
+
   .contacts--container h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -259,6 +274,7 @@
     align-items: center;
     margin-top: 2rem;
   }
+
   .submit-btn {
     align-self: center;
   }
@@ -276,6 +292,7 @@
     opacity: 1;
     transform: translate(5px, -3px) rotate(0deg);
   }
+
   /* 60%{
       opacity: 0;
     }
@@ -288,6 +305,7 @@
 }
 
 @keyframes fly {
+
   /* 0%,100%{
         transform: translate(5px,-3px) rotate(-30deg);
         opacity: 1;
@@ -310,12 +328,15 @@
   10% {
     transform: rotate(0deg);
   }
+
   20% {
     transform: translateX(-10px);
   }
+
   70% {
     transform: translateX(60px);
   }
+
   100% {
     transform: translateX(80px);
   }

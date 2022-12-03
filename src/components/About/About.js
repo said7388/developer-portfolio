@@ -6,8 +6,6 @@ import { aboutData } from '../../data/aboutData';
 import AnimationLottie from '../Animation';
 import './About.css';
 
-
-
 function About() {
 
     const { theme } = useContext(ThemeContext);
@@ -33,4 +31,4 @@ function About() {
     )
 }
 
-export default About
+export default About;

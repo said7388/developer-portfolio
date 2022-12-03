@@ -1,12 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-
+import './App.css';
 import { BackToTop } from './components';
+import ChangeTheme from './components/ChangeTheme/ChangeTheme';
 import { BlogPage, HomePage, ProjectPage } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
-
-import './App.css';
-import ChangeTheme from './components/ChangeTheme/ChangeTheme';
 
 function App() {
 

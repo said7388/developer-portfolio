@@ -1,6 +1,6 @@
 import { makeStyles } from '@mui/styles';
 import React from 'react';
-import SingleProjectUI from '../ui/single-project/single-project-ui';
+import SingleProjectUI from '../core-ui/single-project/single-project-ui';
 
 const SingleProject = ({ id, name, desc, tags, code, demo, image, theme }) => {
   const useStyles = makeStyles((t) => ({

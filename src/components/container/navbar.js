@@ -1,7 +1,7 @@
 import { makeStyles } from '@mui/styles';
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../../contexts/theme-context';
-import NavbarUI from '../ui/navbar/navbar-ui';
+import NavbarUI from '../core-ui/navbar/navbar-ui';
 
 const Navbar = () => {
   const { theme, setHandleDrawer, changeTheme, isDark } = useContext(ThemeContext);

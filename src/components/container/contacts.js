@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 import React, { useContext, useRef, useState } from 'react';
 import isEmail from 'validator/lib/isEmail';
 import { ThemeContext } from '../../contexts/theme-context';
-import ContactUI from '../ui/contacts/contacts-ui';
+import ContactUI from '../core-ui/contacts/contacts-ui';
 
 
 const Contacts = () => {

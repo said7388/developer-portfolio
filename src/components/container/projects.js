@@ -1,7 +1,7 @@
 import { makeStyles } from '@mui/styles';
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../contexts/theme-context';
-import ProjectsUI from '../ui/projects/projects-UI';
+import ProjectsUI from '../core-ui/projects/projects-UI';
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);

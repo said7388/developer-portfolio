@@ -9,8 +9,7 @@
 @font-face {
   font-family: "BestermindRegular";
   src: url("./assets/fonts/Bestermind/BestermindRegular.ttf");
-  src: url("./assets/fonts/Bestermind/BestermindRegular.ttf")
-      format("embedded-opentype"),
+  src: url("./assets/fonts/Bestermind/BestermindRegular.ttf") format("embedded-opentype"),
     url("./assets/fonts/Bestermind/BestermindRegular.ttf") format("truetype");
 }
 
@@ -29,9 +28,11 @@ a {
   width: 10px;
   height: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #555;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #555;
   border-radius: 10px;
@@ -57,4 +58,9 @@ img {
   body {
     overflow-x: hidden;
   }
+}
+
+.slick-track {
+  display: flex;
+  column-gap: 10px;
 }

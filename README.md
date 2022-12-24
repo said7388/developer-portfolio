@@ -1,10 +1,6 @@
 # Developer Portfolio
 
-Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
-
----
-
-### Next.JS Version [here](https://github.com/said7388/developer-portfolio/tree/next/beta)
+### Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
 
 ---
 
@@ -42,6 +38,7 @@ Want to create a professional portfolio but cannot figure out how to? Use Develo
   - EDUCATION
   - SKILLS
   - EXPERIENCE
+  - CERTIFICATES
   - PROJECTS
 - BLOG
 - CONTACTS
@@ -74,6 +71,15 @@ git --version
 
 ```
 git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+```
+
+## Clone with TypeScript
+
+```
+git clone -b typescript-version https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+```
+
+```
 cd developer-portfolio
 ```
 

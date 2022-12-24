@@ -71,15 +71,15 @@ git --version
 
 ```
 git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+
+cd developer-portfolio
 ```
 
-## Clone with TypeScript
+### Clone with TypeScript
 
 ```
 git clone -b typescript-version https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
-```
 
-```
 cd developer-portfolio
 ```
 

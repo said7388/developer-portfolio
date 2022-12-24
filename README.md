@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
+Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
 
 ---
 
@@ -73,7 +73,7 @@ git --version
 #### To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
 ```
-git clone hhttps://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
 cd developer-portfolio
 ```
 
@@ -106,11 +106,7 @@ yarn start
 # Folder Structure :open_file_folder:
 
 ```bash
-├── LICENSE
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
+╭ public
 │   ├── _redirects
 │   ├── favicon.ico
 │   ├── favicon.png
@@ -208,9 +204,15 @@ yarn start
 │   │   ├── images.js
 │   │   └── theme.js
 │   └── utils
-│       ├── ScrollToTop.js
 │       └── skillsImage.js
-└── package.json
+├── .dockerignore
+├── .env.example
+├── docker-compose.yml
+├── Dpckerfile
+├── LICENSE
+├── README.md
+├── package.json
+└── yarn.lock
 ```
 
 ---

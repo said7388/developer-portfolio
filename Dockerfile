@@ -4,13 +4,13 @@ RUN mkdir -p /usr/app/
 
 WORKDIR /usr/app/
 
-COPY package*.json .
+COPY package.json .
+
+COPY yarn.lock .
 
 RUN yarn install
 
 COPY ./ ./
-
-RUN yarn build
 
 EXPOSE 3000
 

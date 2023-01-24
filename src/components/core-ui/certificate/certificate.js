@@ -47,7 +47,7 @@ const Certificate = () => {
       </div>
       <Slider {...settings}>
         {certificateData.map((item) => (
-          <Card sx={{ height: { xs: 320, sm: 480 } }}>
+          <Card key={item.id} sx={{ height: { xs: 320, sm: 480 } }}>
             <CardActionArea>
               <CardMedia
                 component='img'

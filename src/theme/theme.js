@@ -15,9 +15,9 @@ export const theLightTheme = {
 export const theDarkTheme = {
     type: 'dark',
     primary: '#1D9BF0',
-    quaternary: '#1E2732',
+    secondary: '#0F0C41',
+    quaternary: '#0C0B33',
     quaternaryLight: '#8b98a5',
-    secondary: '#15202B',
     tertiary: '#EFF3F4',
     buttonColor: '#8B98A5',
     contactsimg: contactsGreen

@@ -1,9 +1,10 @@
 import { makeStyles } from '@mui/styles';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../contexts/theme-context';
 import BlogUI from '../core-ui/blog/blog-ui';
 
 function Blog() {
+    const [blogData, setBlogData] = useState([])
     const { theme } = useContext(ThemeContext);
 
     const useStyles = makeStyles(() => ({
@@ -33,8 +34,15 @@ function Blog() {
 
     const classes = useStyles();
 
+
+    useEffect(() => {
+        fetch("https://dev.to/api/articles?username=said7388")
+            .then((response) => response.json())
+            .then(data => setBlogData(data))
+    }, [])
+
     return (
-        <BlogUI classes={classes} />
+        <BlogUI classes={classes} blogData={blogData} />
     )
 }
 

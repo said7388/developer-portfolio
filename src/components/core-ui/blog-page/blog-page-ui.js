@@ -8,6 +8,7 @@ import SingleBlog from '../blog/single-blog/single-blog';
 import './blog.css';
 
 const BlogPageUI = ({ theme, classes, filteredArticles, setSearch, search }) => {
+  console.log(filteredArticles)
   return (
     <div className="blogPage" style={{ backgroundColor: theme.secondary }}>
       <Helmet>
@@ -30,8 +31,8 @@ const BlogPageUI = ({ theme, classes, filteredArticles, setSearch, search }) => 
                 theme={theme}
                 title={blog.title}
                 desc={blog.description}
-                date={blog.date}
-                image={blog.image}
+                date={blog.created_at}
+                image={blog.cover_image}
                 url={blog.url}
                 key={blog.id}
                 id={blog.id}

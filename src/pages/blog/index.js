@@ -2,18 +2,17 @@ import { makeStyles } from '@mui/styles';
 import React, { useContext, useState } from 'react';
 import BlogPageUI from '../../components/core-ui/blog-page/blog-page-ui';
 import { ThemeContext } from '../../contexts/theme-context';
-import { blogData } from '../../data/blogData';
+import UseBlog from '../../hooks/useBlog';
 
 function BlogPage() {
-
+    const { blogs } = UseBlog()
     const [search, setSearch] = useState('')
     const { theme } = useContext(ThemeContext);
 
-    const filteredArticles = blogData.filter((blog) => {
+    const filteredArticles = blogs?.filter((blog) => {
         const content = blog.title + blog.description + blog.date
         return content.toLowerCase().includes(search.toLowerCase())
     })
-
 
     const useStyles = makeStyles((t) => ({
         search: {
@@ -62,13 +61,13 @@ function BlogPage() {
     const classes = useStyles();
 
     return (
-        <BlogPageUI 
-        theme={theme}
-        classes={classes}
-        filteredArticles={filteredArticles}
-        setSearch={setSearch}
-        search={search}
-         />
+        <BlogPageUI
+            theme={theme}
+            classes={classes}
+            filteredArticles={filteredArticles}
+            setSearch={setSearch}
+            search={search}
+        />
     )
 }
 

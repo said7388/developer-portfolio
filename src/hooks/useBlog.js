@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { aboutData } from '../data/aboutData';
+import { contactsData } from '../data/contactsData';
 
 function UseBlog() {
   const [blogs, setBlogs] = useState([]);
-  const { devUsername } = aboutData;
+  const { devUsername } = contactsData;
 
   useEffect(() => {
     fetch(`https://dev.to/api/articles?username=${devUsername}`)

@@ -3,12 +3,12 @@ import React from 'react';
 import { HashLink as NavLink } from 'react-router-hash-link';
 import Typed from 'react-typed';
 import { headerData } from '../../../data/headerData';
-import { socialsData } from '../../../data/socialsData';
 import './landing.css';
 
 import {
     FaFacebook, FaGithub, FaLinkedin, FaTwitter
 } from 'react-icons/fa';
+import { contactsData } from '../../../data/contactsData';
 
 function LandingUI({ theme, drawerOpen, classes }) {
 
@@ -21,9 +21,9 @@ function LandingUI({ theme, drawerOpen, classes }) {
                     style={{ backgroundColor: theme.quaternary }}
                 >
                     <div className='lcl--content'>
-                        {socialsData.linkedIn && (
+                        {contactsData.linkedIn && (
                             <a
-                                href={socialsData.linkedIn}
+                                href={contactsData.linkedIn}
                                 target='_blank'
                                 rel='noreferrer'
                             >
@@ -34,9 +34,9 @@ function LandingUI({ theme, drawerOpen, classes }) {
                                 />
                             </a>
                         )}
-                        {socialsData.github && (
+                        {contactsData.github && (
                             <a
-                                href={socialsData.github}
+                                href={contactsData.github}
                                 target='_blank'
                                 rel='noreferrer'
                             >
@@ -47,9 +47,9 @@ function LandingUI({ theme, drawerOpen, classes }) {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
+                        {contactsData.twitter && (
                             <a
-                                href={socialsData.twitter}
+                                href={contactsData.twitter}
                                 target='_blank'
                                 rel='noreferrer'
                             >
@@ -60,9 +60,9 @@ function LandingUI({ theme, drawerOpen, classes }) {
                                 />
                             </a>
                         )}
-                        {socialsData.facebook && (
+                        {contactsData.facebook && (
                             <a
-                                href={socialsData.facebook}
+                                href={contactsData.facebook}
                                 target='_blank'
                                 rel='noreferrer'
                             >

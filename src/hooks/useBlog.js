@@ -1,5 +1,3 @@
-// @flow strict
-
 import { useEffect, useState } from 'react';
 import { aboutData } from '../data/aboutData';
 

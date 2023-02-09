@@ -4,17 +4,21 @@ import { Helmet } from 'react-helmet';
 import { AiOutlineHome } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { headerData } from '../../../data/headerData';
-import SingleBlog from '../blog/single-blog/single-blog';
+import BlogCard from '../blog/blog-card/blog-card';
 import './blog.css';
 
 const BlogPageUI = ({ theme, classes, filteredArticles, setSearch, search }) => {
-  console.log(filteredArticles)
+
   return (
-    <div className="blogPage" style={{ backgroundColor: theme.secondary }}>
+    <div
+      className="blogPage"
+      style={{ backgroundColor: theme.secondary }}>
       <Helmet>
         <title>{headerData.name} | Blog</title>
       </Helmet>
-      <div className="blogPage--header" style={{ backgroundColor: theme.primary }}>
+      <div
+        className="blogPage--header"
+        style={{ backgroundColor: theme.primary }}>
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
@@ -22,20 +26,22 @@ const BlogPageUI = ({ theme, classes, filteredArticles, setSearch, search }) => 
       </div>
       <div className="blogPage--container">
         <div className="blog--search">
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search} />
+          <input type="text"
+            value={search} onChange={(e) => setSearch(e.target.value)}
+            placeholder="Seach blog..."
+            className={classes.search} />
         </div>
         <div className="blogs--container">
-          <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">
-            {filteredArticles.reverse().map(blog => (
-              <SingleBlog
+          <Grid
+            className="blog-grid"
+            container direction="row"
+            alignItems="center"
+            justifyContent="center">
+            {filteredArticles.map(blog => (
+              <BlogCard
                 theme={theme}
-                title={blog.title}
-                desc={blog.description}
-                date={blog.created_at}
-                image={blog.cover_image}
-                url={blog.url}
+                blog={blog}
                 key={blog.id}
-                id={blog.id}
               />
             ))}
           </Grid>

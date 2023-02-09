@@ -8,6 +8,32 @@
   border-radius: 5px;
 }
 
+.blog-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.public-reaction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.blog-card-reaction {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px !important;
+}
+
+.blog-card-reaction svg {
+  width: 14px;
+  height: 14px;
+}
+
 .singleBlog--image {
   height: 50%;
   width: 100%;

@@ -8,7 +8,12 @@ function UseBlog() {
   useEffect(() => {
     fetch(`https://dev.to/api/articles?username=${devUsername}`)
       .then((response) => response.json())
-      .then(data => setBlogs(data))
+      .then(data => {
+        const filtered = data.sort(function (a, b) {
+          return b.public_reactions_count - a.public_reactions_count;
+        });
+        setBlogs(filtered)
+      })
   }, [devUsername]);
 
   return { blogs };

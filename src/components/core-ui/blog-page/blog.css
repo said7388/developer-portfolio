@@ -7,7 +7,7 @@
 }
 
 .blogPage--header {
-  height: 35vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 992px) {
   .blogPage--header {
-    height: 25vh;
+    height: 15vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@
   }
 
   .blog-grid {
-    gap: 3rem;
+    gap: 1rem;
   }
   .blog--input {
     width: 100%;
@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 400px) {
   .blogPage--header {
-    height: 20vh;
+    height: 15vh;
   }
   .blogPage--header h1 {
     font-size: 2.5rem;

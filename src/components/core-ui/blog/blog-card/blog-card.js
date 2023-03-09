@@ -7,6 +7,7 @@ import { timeConverter } from '../../../../utils/timeConverter';
 import './blog-card.css';
 
 function BlogCard({ blog, theme }) {
+    console.log(blog)
 
     return (
         <Fade bottom>
@@ -45,6 +46,7 @@ function BlogCard({ blog, theme }) {
                             }
                         </div>
                     </div>
+                    <p style={{ color: theme.primary }}>3 Min Read</p>
                     <h3
                         style={{ color: theme.tertiary, fontWeight: 500 }}>
                         {blog.title}

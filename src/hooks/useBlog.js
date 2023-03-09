@@ -9,9 +9,7 @@ function UseBlog() {
     fetch(`https://dev.to/api/articles?username=${devUsername}`)
       .then((response) => response.json())
       .then(data => {
-        const filtered = data.sort(function (a, b) {
-          return b.public_reactions_count - a.public_reactions_count;
-        });
+        const filtered = data.sort(() => Math.random() - 0.5);
         setBlogs(filtered)
       })
   }, [devUsername]);

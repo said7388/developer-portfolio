@@ -1,9 +1,7 @@
 import { Container } from '@mui/material';
 import React, { useContext } from 'react';
-import experience from '../../../assets/lottie/development.json';
 import { ThemeContext } from '../../../contexts/theme-context';
 import { experienceData } from '../../../data/experienceData';
-import AnimationLottie from '../../helper/animation-lottie';
 import ExperienceCard from './experience-card';
 import './experience.css';
 

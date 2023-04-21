@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { HashLink as NavLink } from 'react-router-hash-link';
-import { Box } from '@mui/material';
 import Typed from 'react-typed';
 import { headerData } from '../../../data/headerData';
 import './landing.css';

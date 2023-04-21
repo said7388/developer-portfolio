@@ -11,12 +11,12 @@ function ProjectsUI({ theme, classes }) {
         <>
             {projectsData.length > 0 && (
                 <div className="projects" id="projects" style={{ backgroundColor: theme.secondary }}>
-                    <div className="projects--header">
-                        <h1 style={{ color: theme.primary }}>Projects</h1>
+                    <div className="projects--header" id="projetos">
+                        <h1 style={{ color: theme.primary }}>Projetos</h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {projectsData.slice(0, 3).map(project => (
+                            {projectsData.map(project => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -30,17 +30,6 @@ function ProjectsUI({ theme, classes }) {
                                 />
                             ))}
                         </div>
-
-                        {projectsData.length > 3 && (
-                            <div className="projects--viewAll">
-                                <Link to="/projects">
-                                    <button className={classes.viewAllBtn}>
-                                        View All
-                                        <HiArrowRight className={classes.viewArr} />
-                                    </button>
-                                </Link>
-                            </div>
-                        )}
                     </div>
                 </div>
             )}

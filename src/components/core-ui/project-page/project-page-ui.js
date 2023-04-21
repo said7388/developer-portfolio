@@ -3,7 +3,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { AiOutlineHome } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { headerData } from '../../../data/headerData';
 import SingleProject from '../../container/single-project';
 import './projectPage.css';
 
@@ -11,13 +10,13 @@ const ProjectPageUI = ({ theme, classes, search, setSearch, filteredArticles }) 
   return (
     <div className="projectPage" style={{ backgroundColor: theme.secondary }}>
       <Helmet>
-        <title>{headerData.name} | Projects</title>
+        <title>Projetos</title>
       </Helmet>
       <div className="projectPage-header" style={{ backgroundColor: theme.primary }}>
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
-        <h1 style={{ color: theme.secondary }}>Projects</h1>
+        <h1 style={{ color: theme.secondary }}>Projetos</h1>
       </div>
       <div className="projectPage-container">
         <div className="projectPage-search">

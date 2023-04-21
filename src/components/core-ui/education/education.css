@@ -3,9 +3,7 @@
 }
 
 .education-body {
-  display: grid;
-  grid-template-columns: 35% 65%;
-  align-items: center;
+  display: flex;
   justify-content: center;
   width: 100%;
   color: hsla(117, 56%, 49%, 0.702);
@@ -17,8 +15,7 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
   margin-left: 7%;
 }
 
@@ -33,8 +30,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 90%;
-  height: 140px;
+  width: 100%;
+  height: 100%;
   padding: 1.5rem;
   border-radius: 20px;
   margin-bottom: 1.5rem;
@@ -171,5 +168,20 @@
 @media screen and (max-width: 600px) {
   .education-description>h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .education-card {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    height: 150px;
+  }
+  .education-details>h4 {
+    font-size: 1rem;
+  }
+
+  .education-details>h5 {
+    font-size: 1rem;
   }
 }

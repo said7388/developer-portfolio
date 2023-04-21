@@ -34,6 +34,7 @@ import memsql from '../assets/svg/skills/memsql.svg'
 import mongoDB from '../assets/svg/skills/mongoDB.svg'
 import mysql from '../assets/svg/skills/mysql.svg'
 import nextJS from '../assets/svg/skills/nextJS.svg'
+import nodeJs from '../assets/svg/skills/nodejs.svg'
 import nginx from '../assets/svg/skills/nginx.svg'
 import numpy from '../assets/svg/skills/numpy.svg'
 import nuxtJS from '../assets/svg/skills/nuxtJS.svg'
@@ -72,7 +73,7 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
-
+import reactQuery from '../assets/svg/skills/react-query.svg'
 import canva from '../assets/svg/skills/canva.svg'
 
 
@@ -101,6 +102,8 @@ export const skillsImage = (skill) => {
             return javascript;
         case 'next js':
             return nextJS;
+        case 'node js':
+            return nodeJs;
         case 'nuxt js':
             return nuxtJS;
         case 'react':
@@ -227,6 +230,8 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'react query':
+            return reactQuery;
         default:
             break;
     }

@@ -28,26 +28,26 @@
 }
 
 .about-body {
-  display: grid;
-  grid-template-columns: 60% 40%;
+  display: flex;
+  justify-content: center;
   padding-top: 8rem;
-  height: fit-content;
 }
 
 .about-description {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
   flex: 0.5;
   width: 100%;
   height: fit-content;
+  margin-bottom: 2rem;
 }
 
 .about-description > h2 {
   margin-bottom: 40px;
   font-size: 2.5rem;
   font-family: var(--primaryFont);
+  text-align: center;
 }
 
 .about-description > p {
@@ -56,7 +56,7 @@
   font-family: var(--primaryFont);
 }
 
-.about-animation {
+.about-photo {
   pointer-events: none;
   display: flex;
   justify-content: center;

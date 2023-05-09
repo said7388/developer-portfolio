@@ -34,7 +34,7 @@ function LandingUI({ theme, classes }) {
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
-                                    href="https://drive.google.com/file/d/19QRUHXsjgDZOxlUqBZjFpRRzTzar4BkS/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1VIxDv-pJA7PkiIIG0NCE4UXwHy0s-eDS/view?usp=sharing"
                                     download='resume'
                                     target='_blank'
                                     rel='noreferrer'

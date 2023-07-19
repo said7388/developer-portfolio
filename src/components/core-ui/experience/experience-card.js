@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import expImgBlack from '../../../assets/svg/experience/expImgBlack.svg';
 import expImgWhite from '../../../assets/svg/experience/expImgWhite.svg';
 import { ThemeContext } from '../../../contexts/theme-context';
-import './experience.css';
 
 function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
     const { theme } = useContext(ThemeContext);

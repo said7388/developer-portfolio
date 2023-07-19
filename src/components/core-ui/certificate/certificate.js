@@ -13,7 +13,6 @@ import { HiExternalLink } from "react-icons/hi";
 import Slider from "react-slick";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { certificateData } from "../../../data/certificate-data";
-import "./certificate.css";
 
 const Certificate = () => {
   const { theme } = useContext(ThemeContext);

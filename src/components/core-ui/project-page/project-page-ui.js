@@ -5,7 +5,6 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { headerData } from '../../../data/headerData';
 import SingleProject from '../../container/single-project';
-import './projectPage.css';
 
 const ProjectPageUI = ({ theme, classes, search, setSearch, filteredArticles }) => {
   return (

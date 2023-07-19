@@ -5,14 +5,14 @@
   height: 30px;
   font-size: 3rem;
   z-index: 999;
-}
 
-.changeTheme button {
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background: none;
-  padding: 20px;
+  & button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 800px) {

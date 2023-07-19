@@ -1,0 +1,14 @@
+$font-family_1: var(--primaryFont);
+
+.certificate-header {
+  h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-family: $font-family_1;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+}

@@ -3,7 +3,6 @@ import { HiArrowRight } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import { projectsData } from '../../../data/projectsData';
 import SingleProject from '../../container/single-project';
-import './projects.css';
 
 function ProjectsUI({ theme, classes }) {
 

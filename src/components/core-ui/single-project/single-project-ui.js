@@ -2,7 +2,6 @@ import React from 'react';
 import { FaCode, FaPlay } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import placeholder from '../../../assets/png/placeholder.png';
-import './single-project.css';
 
 function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, classes }) {
 

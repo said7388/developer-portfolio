@@ -3,7 +3,6 @@ import { HiArrowRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../contexts/theme-context';
 import BlogCard from './blog-card/blog-card';
-import './blog.css';
 
 const BlogUI = ({ classes, blogData }) => {
   const { theme } = useContext(ThemeContext);

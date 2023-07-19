@@ -4,7 +4,6 @@ import { FaCommentAlt } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import placeholder from '../../../../assets/png/placeholder.png';
 import { timeConverter } from '../../../../utils/timeConverter';
-import './blog-card.css';
 
 function BlogCard({ blog, theme }) {
     console.log(blog)

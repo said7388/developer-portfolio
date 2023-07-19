@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import './app.css';
 import BackToTop from './components/helper/back-to-top/back-to-top';
 import ChangeTheme from './components/helper/change-theme/change-theme';
 import ScrollToTop from './components/helper/scroll-to-top';

@@ -7,7 +7,6 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 import { ThemeContext } from '../../../contexts/theme-context';
 import { contactsData } from '../../../data/contactsData';
-import './contacts.css';
 
 const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactForm, name, setName, form, email, setEmail, message, setMessage }) => {
   const { theme } = useContext(ThemeContext);

@@ -8,7 +8,6 @@ import { MdPhone } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
 import { HashLink as NavLink } from 'react-router-hash-link';
 import { headerData } from '../../../data/headerData';
-import './navbar.css';
 
 function NavbarUI({ theme, shortname, classes, handleDrawerOpen, handleDrawerClose, open, changeTheme, isDark }) {
 

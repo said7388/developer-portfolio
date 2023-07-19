@@ -1,3 +1,9 @@
+$color_1: hsla(117, 56%, 49%, 0.702);
+$font-family_1: var(--primaryFont);
+
+/* .education-image {
+    display: none;
+  } */
 .education {
   min-height: fit-content;
 }
@@ -8,7 +14,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: hsla(117, 56%, 49%, 0.702);
+  color: $color_1;
 }
 
 .education-description {
@@ -20,12 +26,12 @@
   align-items: flex-start;
   justify-content: center;
   margin-left: 7%;
-}
 
-.education-description>h1 {
-  font-size: 2.5rem;
-  font-family: var(--primaryFont);
-  margin-bottom: 2rem;
+  > h1 {
+    font-size: 2.5rem;
+    font-family: $font-family_1;
+    margin-bottom: 2rem;
+  }
 }
 
 .education-card {
@@ -49,33 +55,33 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
 
-.educard-img>img {
-  width: 40px;
+  > img {
+    width: 40px;
+  }
 }
 
 .education-details {
   margin-left: 0.6rem;
-}
 
-.education-details>h6 {
-  font-family: var(--primaryFont);
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
+  > h6 {
+    font-family: $font-family_1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
 
-.education-details>h4 {
-  font-family: var(--primaryFont);
-  font-size: 1.225rem;
-  font-weight: 600;
-}
+  > h4 {
+    font-family: $font-family_1;
+    font-size: 1.225rem;
+    font-weight: 600;
+  }
 
-.education-details>h5 {
-  font-family: var(--primaryFont);
-  font-size: 1.15rem;
-  font-weight: 600;
+  > h5 {
+    font-family: $font-family_1;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
 }
 
 .education-image {
@@ -84,13 +90,11 @@
   flex: 0.35;
   margin-top: 1rem;
   pointer-events: none;
-}
 
-.education-image>img {
-  width: 100%;
+  > img {
+    width: 100%;
+  }
 }
-
-@media (min-width: 992px) and (max-width: 1380px) {}
 
 @media screen and (max-width: 992px) {
   .education-body {
@@ -105,17 +109,13 @@
     min-height: 100%;
   }
 
-  /* .education-image {
-    display: none;
-  } */
-
   .education-description {
     flex: 1;
     margin: auto;
-  }
 
-  .education-description>h1 {
-    font-size: 3.2rem;
+    > h1 {
+      font-size: 3.2rem;
+    }
   }
 
   .education-card {
@@ -126,13 +126,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .education-description>h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    align-self: center;
-  }
-
   .education-description {
+    > h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      align-self: center;
+    }
+
     padding: 1rem;
   }
 
@@ -146,30 +146,34 @@
     border-radius: 50%;
     width: 45px;
     height: 45px;
+
+    > img {
+      width: 30px;
+    }
   }
 
-  .educard-img>img {
-    width: 30px;
-  }
+  .education-details {
+    > h6 {
+      font-size: 0.85rem;
+      margin-bottom: 0.45rem;
+    }
 
-  .education-details>h6 {
-    font-size: 0.85rem;
-    margin-bottom: 0.45rem;
-  }
+    > h4 {
+      font-size: 1.125rem;
+      line-height: 126%;
+    }
 
-  .education-details>h4 {
-    font-size: 1.125rem;
-    line-height: 126%;
-  }
-
-  .education-details>h5 {
-    font-size: 1.05rem;
-    line-height: 126%;
+    > h5 {
+      font-size: 1.05rem;
+      line-height: 126%;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .education-description>h1 {
-    font-size: 2.5rem;
+  .education-description {
+    > h1 {
+      font-size: 2.5rem;
+    }
   }
 }

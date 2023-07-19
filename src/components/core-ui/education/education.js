@@ -5,7 +5,6 @@ import { ThemeContext } from '../../../contexts/theme-context';
 import { educationData } from '../../../data/educationData';
 import AnimationLottie from '../../helper/animation-lottie';
 import EducationCard from './education-card';
-import './education.css';
 
 function Education() {
 

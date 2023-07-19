@@ -2,7 +2,6 @@ import { makeStyles } from '@mui/styles';
 import React, { useContext } from 'react';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { ThemeContext } from '../../../contexts/theme-context';
-import './change-theme.css';
 
 const ChangeTheme = () => {
   const { theme, changeTheme, isDark } = useContext(ThemeContext);

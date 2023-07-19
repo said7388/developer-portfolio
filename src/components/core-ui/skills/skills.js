@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 import { ThemeContext } from '../../../contexts/theme-context';
 import { skillsData } from '../../../data/skillsData';
 import { skillsImage } from '../../../utils/skillsImage';
-import './skills.css';
 
 function Skills() {
     const { theme } = useContext(ThemeContext);

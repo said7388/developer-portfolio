@@ -1,7 +1,12 @@
+$color_1: var(--primary-2);
+$font-family_1: "BestermindRegular";
+$background-color_1: transparent;
+$background-color_2: #15202b;
+
 .navbar {
   height: 6.5rem;
   position: absolute;
-  background-color: transparent;
+  background-color: $background-color_1;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -16,34 +21,34 @@
   width: 100%;
   padding: 0 3rem;
   margin-top: 1rem;
-}
-
-.navbar--container > h1 {
-  font-family: "BestermindRegular";
-  color: var(--primary-2);
-  font-size: 2.5rem;
-  user-select: none;
+  > h1 {
+    font-family: $font-family_1;
+    color: $color_1;
+    font-size: 2.5rem;
+    user-select: none;
+  }
 }
 
 .navLink--container {
   margin-top: 5rem;
 }
 
-.drawer > .MuiBackdrop-root {
-  background: rgba(33, 33, 33, 0.15) !important;
-  backdrop-filter: blur(20px) !important;
-}
-
-.drawer > .MuiDrawer-paper {
-  background-color: #15202b !important;
+.drawer {
+  > .MuiBackdrop-root {
+    background: rgba(33, 33, 33, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+  }
+  > .MuiDrawer-paper {
+    background-color: $background-color_2 !important;
+  }
 }
 
 @media (max-width: 1100px) {
   .navbar--container {
     padding: 0 2rem;
-  }
-  .navbar--container > h1 {
-    font-size: 2.2rem;
+    > h1 {
+      font-size: 2.2rem;
+    }
   }
   .nav-menu {
     font-size: 2.2rem;
@@ -59,13 +64,15 @@
 
 @media (max-width: 600px) {
   .nav-menu {
-    color: var(--primary-2);
+    color: $color_1;
+    &:hover {
+      color: $color_1;
+    }
   }
-  .navbar--container > h1 {
-    font-size: 2rem;
-  }
-  .nav-menu:hover {
-    color: var(--primary-2);
+  .navbar--container {
+    > h1 {
+      font-size: 2rem;
+    }
   }
   .MuiDrawer-paper {
     border-radius: 0 !important;
@@ -79,8 +86,8 @@
   .navbar--container {
     padding: 0 1rem;
     margin-top: 0rem;
-  }
-  .navbar--container > h1 {
-    font-size: 1.5rem;
+    > h1 {
+      font-size: 1.5rem;
+    }
   }
 }

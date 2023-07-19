@@ -2,7 +2,6 @@ import { makeStyles } from '@mui/styles';
 import React, { useContext, useState } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
 import { ThemeContext } from '../../../contexts/theme-context';
-import './back-to-top.css';
 
 function BackToTop() {
     const [visible, setVisible] = useState(false);

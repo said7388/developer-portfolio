@@ -5,7 +5,6 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { headerData } from '../../../data/headerData';
 import BlogCard from '../blog/blog-card/blog-card';
-import './blog.css';
 
 const BlogPageUI = ({ theme, classes, filteredArticles, setSearch, search }) => {
 

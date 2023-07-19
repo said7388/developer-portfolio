@@ -1,4 +1,3 @@
-import { Container } from '@mui/material';
 import React, { useContext } from 'react';
 import codings from '../../../assets/lottie/coding.json';
 import { ThemeContext } from '../../../contexts/theme-context';
@@ -10,7 +9,7 @@ function About() {
     const { theme } = useContext(ThemeContext);
     return (
         <div style={{ backgroundColor: theme.secondary }}>
-            <Container className="about" id="about">
+            <div className="about" id="about">
                 <div className="line-styling">
                     <div className="style-circle"
                         style={{ backgroundColor: theme.primary }}></div>
@@ -20,6 +19,7 @@ function About() {
                         style={{ backgroundColor: theme.primary }}></div>
                 </div>
                 <div className="about-body">
+                    {/* <BsFillCheckCircleFill className="section-icon" /> */}
                     <div className="about-description">
                         <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
                         <p style={{ color: theme.tertiary }}>
@@ -30,7 +30,7 @@ function About() {
                         <AnimationLottie animationPath={codings} />
                     </div>
                 </div>
-            </Container>
+            </div>
         </div>
     )
 }

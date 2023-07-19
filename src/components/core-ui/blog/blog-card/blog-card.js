@@ -6,7 +6,7 @@ import placeholder from '../../../../assets/png/placeholder.png';
 import { timeConverter } from '../../../../utils/timeConverter';
 
 function BlogCard({ blog, theme }) {
-    console.log(blog)
+    // console.log(blog)
 
     return (
         <Fade bottom>

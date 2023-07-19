@@ -1,4 +1,3 @@
-import { Container } from '@mui/material';
 import React, { useContext } from 'react';
 import experience from '../../../assets/lottie/development.json';
 import { ThemeContext } from '../../../contexts/theme-context';
@@ -11,7 +10,7 @@ function Experience() {
     const { theme } = useContext(ThemeContext);
     return (
         <div style={{ backgroundColor: theme.secondary }}>
-            <Container className="experience" id="experience">
+            <div className="experience" id="experience">
                 <div className="experience-body">
                     <div className="experience-image">
                         <AnimationLottie animationPath={experience} />
@@ -25,11 +24,12 @@ function Experience() {
                                 jobtitle={exp.jobtitle}
                                 company={exp.company}
                                 startYear={exp.startYear}
-                                endYear={exp.endYear} />
+                                endYear={exp.endYear}
+                            />
                         ))}
                     </div>
                 </div>
-            </Container>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,3 @@
-import { Container } from '@mui/material';
 import React, { useContext } from 'react';
 import education from '../../../assets/lottie/education.json';
 import { ThemeContext } from '../../../contexts/theme-context';
@@ -11,7 +10,7 @@ function Education() {
     const { theme } = useContext(ThemeContext);
     return (
         <div style={{ backgroundColor: theme.secondary }}>
-            <Container className="education" id="resume">
+            <div className="education" id="resume">
                 <div className="education-body">
                     <div className="education-image">
                         <AnimationLottie animationPath={education} />
@@ -30,7 +29,7 @@ function Education() {
                         ))}
                     </div>
                 </div>
-            </Container>
+            </div>
         </div>
     )
 }

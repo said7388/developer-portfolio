@@ -55,3 +55,30 @@ img {
     overflow-x: hidden;
   }
 }
+
+.homepage-content-area {
+  position: relative;
+
+  & .svg-area {
+    position: absolute;
+    height: 100%;
+    left: -10px;
+    top: 0;
+
+    & .svg-line {
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+      path {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}
+
+.section-icon {
+  position: absolute;
+  left: 0;
+}

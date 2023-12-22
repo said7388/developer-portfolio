@@ -26,7 +26,7 @@ function Skills() {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="w-full my-12">
         <Marquee
           gradient={false}
           speed={80}

@@ -25,7 +25,7 @@ function HeroSection() {
             Hello, <br />
             This is
             <span className=" text-pink-500"> ABU SAID</span>
-           {` , and I'm a Passionate`}
+           {` , a Passionate`}
             <span className=" text-[#16f2b3]"> Software Engineer.</span>
           </h1>
 

@@ -27,6 +27,7 @@ function Experience() {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
+
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">

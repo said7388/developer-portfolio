@@ -13,6 +13,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
+    "sass": "^1.69.5",
     "tailwindcss": "latest"
   }
 }

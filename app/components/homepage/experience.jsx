@@ -1,5 +1,6 @@
 // @flow strict
 
+import { experiences } from "@/utils/data/experience";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../animation-lottie";
 import GlowCard from "../glow-card";
@@ -9,11 +10,11 @@ function Experience() {
   return (
     <div className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
 
-      <div class="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
-      <div class="flex justify-center -translate-y-[1px]">
-        <div class="w-3/4">
-          <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+      <div className="flex justify-center -translate-y-[1px]">
+        <div className="w-3/4">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
         </div>
       </div>
 
@@ -35,55 +36,31 @@ function Experience() {
           </div>
 
           <div>
-            <div class="flex flex-col gap-6">
-              <GlowCard identifier={1}>
-                <div className="p-3">
-                  <div className="flex justify-center">
-                    <p className="text-sm text-[#16f2b3]">(Jan 2022 - Present)</p>
-                  </div>
-                  <div class="flex items-center gap-x-8 p-4">
-                    <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                      <BsPersonWorkspace size={36} />
+            <div className="flex flex-col gap-6">
+              {
+                experiences.map(experience => (
+                  <GlowCard key={experience.id} identifier={experience.id}>
+                    <div className="p-3">
+                      <div className="flex justify-center">
+                        <p className="text-sm text-[#16f2b3]">
+                          {experience.duration}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-x-8 px-3 py-5">
+                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                          <BsPersonWorkspace size={36} />
+                        </div>
+                        <div className="">
+                          <p className="text-xl mb-2 font-medium  uppercase">
+                            {experience.title}
+                          </p>
+                          <p className="text-base">{experience.company}</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="">
-                      <p className="text-xl mb-2 font-medium  uppercase">Software Engineer I</p>
-                      <p className="text-base">Teton Private Ltd.</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-              <GlowCard identifier={2}>
-                <div className="p-3">
-                  <div className="flex justify-center">
-                    <p className="text-sm text-[#16f2b3]">(Jan 2022 - Present)</p>
-                  </div>
-                  <div class="flex items-center gap-x-8 p-4">
-                    <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                      <BsPersonWorkspace size={36} />
-                    </div>
-                    <div className="">
-                      <p className="text-xl mb-2 font-medium  uppercase">Software Engineer I</p>
-                      <p className="text-base">Teton Private Ltd.</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-              <GlowCard identifier={3}>
-                <div className="p-3">
-                  <div className="flex justify-center">
-                    <p className="text-sm text-[#16f2b3]">(Jan 2022 - Present)</p>
-                  </div>
-                  <div class="flex items-center gap-x-8 p-4">
-                    <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                      <BsPersonWorkspace size={36} />
-                    </div>
-                    <div className="">
-                      <p className="text-xl mb-2 font-medium  uppercase">Software Engineer I</p>
-                      <p className="text-base">Teton Private Ltd.</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
+                  </GlowCard>
+                ))
+              }
             </div>
           </div>
         </div>

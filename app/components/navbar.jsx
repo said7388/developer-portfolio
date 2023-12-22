@@ -10,7 +10,7 @@ function Navbar() {
             Logo
           </div>
           <button type="button" className="focus:bg-blue-750 ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-400 hover:bg-blue-600 focus:outline-none md:hidden" aria-controls="navbar-default" aria-expanded="false">
-            <span className="sr-only">Expand main menu</span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="27" width="27" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            <span className="sr-only">Expand main menu</span><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="27" width="27" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
           </button>
           <ul className="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100" id="navbar-default">
             <li>

@@ -9,7 +9,7 @@ const GlowCard = ({ children , identifier}) => {
     const CONFIG = {
       proximity: 40,
       spread: 80,
-      blur: 16,
+      blur: 12,
       gap: 32,
       vertical: false,
       opacity: 0,

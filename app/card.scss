@@ -32,7 +32,7 @@
   background-attachment: fixed;
   position: absolute;
   inset: -5px;
-  border: 10px solid transparent;
+  border: 8px solid transparent;
   border-radius: 12px;
   mask: linear-gradient(#0000, #0000),
     conic-gradient(from calc((var(--start) - (var(--spread) * 0.5)) * 1deg),
@@ -57,9 +57,9 @@
   border-radius: 12px;
   mask: linear-gradient(#0000, #0000),
     conic-gradient(from calc(((var(--start) + (var(--spread) * 0.25)) - (var(--spread) * 1.5)) * 1deg),
-      hsl(0 0% 100% / 0.15) 0deg,
+      #ffffff26 0deg,
       white,
-      hsl(0 0% 100% / 0.15) calc(var(--spread) * 2.5deg));
+      #ffffff26 calc(var(--spread) * 2.5deg));
   mask-clip: padding-box, border-box;
   mask-composite: intersect;
   opacity: var(--active);

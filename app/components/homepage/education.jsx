@@ -4,7 +4,7 @@ import { educations } from "@/utils/data/educations";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../animation-lottie";
 import GlowCard from "../glow-card";
-import lottieFile from '/public/lottie/education.json';
+import lottieFile from '/public/lottie/study.json';
 
 function Education() {
   return (

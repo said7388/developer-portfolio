@@ -4,7 +4,7 @@ import { experiences } from "@/utils/data/experience";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../animation-lottie";
 import GlowCard from "../glow-card";
-import experience from '/public/lottie/development.json';
+import experience from '/public/lottie/code.json';
 
 function Experience() {
   return (
@@ -22,7 +22,7 @@ function Experience() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Experience
+            Work Experience
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -31,7 +31,7 @@ function Experience() {
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
-            <div className="w-3/4 h-3/4">
+            <div className="w-full h-full">
               <AnimationLottie animationPath={experience} />
             </div>
           </div>

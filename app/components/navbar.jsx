@@ -7,7 +7,7 @@ function Navbar() {
       <div className="mx-auto px-3 py-3 lg:px-6 2xl:max-w-7xl">
         <div className="flex flex-wrap items-center justify-between">
           <div className="mr-14 flex flex-shrink-0 items-center">
-            Logo
+            <span className=" text-[#16f2b3] text-2xl font-bold"> ABU SAID</span>
           </div>
           <button type="button" className="focus:bg-blue-750 ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-400 hover:bg-blue-600 focus:outline-none md:hidden" aria-controls="navbar-default" aria-expanded="false">
             <span className="sr-only">Expand main menu</span><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="27" width="27" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>

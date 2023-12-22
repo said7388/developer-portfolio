@@ -43,7 +43,7 @@ function Experience() {
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
                     <div className="p-3">
                       <div className="flex justify-center">
-                        <p className="text-sm text-[#16f2b3]">
+                        <p className="text-xs sm:text-sm text-[#16f2b3]">
                           {experience.duration}
                         </p>
                       </div>
@@ -51,11 +51,13 @@ function Experience() {
                         <div className="text-violet-500  transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
-                        <div className="">
-                          <p className="text-xl mb-2 font-medium  uppercase">
+                        <div>
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {experience.title}
                           </p>
-                          <p className="text-base">{experience.company}</p>
+                          <p className="text-sm sm:text-base">
+                            {experience.company}
+                          </p>
                         </div>
                       </div>
                     </div>

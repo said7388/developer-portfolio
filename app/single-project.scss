@@ -1,0 +1,54 @@
+.singleProject {
+
+  @apply w-[304px] h-[360px] flex flex-col items-center justify-center relative cursor-pointer overflow-hidden px-8 py-[1.4rem];
+
+  &:hover {
+    img {
+      @apply opacity-0;
+    }
+
+    .project--showcaseBtn {
+      a {
+        &:nth-child(2) {
+          transform: translateX(-140px) scale(1.1) !important;
+        }
+      }
+    }
+
+    .project--desc {
+      @apply translate-x-[-2%] translate-y-[40%];
+    }
+
+    .project--lang {
+      @apply translate-x-0;
+    }
+  }
+
+  .project--desc {
+    @apply absolute w-[95%] h-40 translate-x-[-110%] translate-y-[40%] transition-transform duration-[0.9s] leading-[110%] flex items-center justify-center p-[15px] rounded-[0_20px_20px_0] left-0 top-0;
+  }
+
+  .project--lang {
+    @apply absolute w-[140px] text-[0.8rem] flex justify-center gap-2 flex-col translate-x-full transition-transform duration-[0.5s] delay-[0.3s] p-[0.825rem] rounded-[10px_0_0_10px] right-0 bottom-5;
+  }
+}
+
+.projectContent {
+  @apply flex flex-col items-center justify-between w-full h-full;
+
+  >h2 {
+    @apply not-italic font-semibold text-[1.525rem] leading-[110%] text-center;
+  }
+
+  >img {
+    @apply w-full h-3/5 transition-opacity duration-[0.7s] delay-[0.3s];
+  }
+}
+
+.project--showcaseBtn {
+  @apply flex items-center justify-between w-full;
+
+  >a {
+    @apply cursor-pointer no-underline transition-transform duration-[0.5s] delay-[0.3s];
+  }
+}

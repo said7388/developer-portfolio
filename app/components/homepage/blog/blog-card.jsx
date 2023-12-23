@@ -8,7 +8,7 @@ import { FaCommentAlt } from 'react-icons/fa';
 function BlogCard({ blog }) {
 
   return (
-    <div className="border border-[#2a2e5a] hover:border-gray-400 transition-all duration-500 bg-[#101123] rounded-lg relative"
+    <div className="border border-[#2a2e5a] hover:border-[rgb(70,76,106)] transition-all duration-500 bg-[#101123] rounded-lg relative"
     >
       <div className="h-56 w-auto cursor-pointer overflow-hidden rounded-t-lg">
         <Image
@@ -20,7 +20,7 @@ function BlogCard({ blog }) {
         />
       </div>
       <div className="p-2 sm:p-4 flex flex-col">
-        <div className="flex justify-between items-center text-pink-500 text-sm">
+        <div className="flex justify-between items-center text-[#4ccfaf] text-sm">
           <p>{timeConverter(blog.published_at)}</p>
           <div className="flex items-center gap-4 ">
             <p className="flex items-center gap-1">
@@ -40,7 +40,7 @@ function BlogCard({ blog }) {
             {blog.title}
           </p>
         </Link>
-        <p className='mb-3 text-sm text-pink-500'>
+        <p className='mb-3 text-sm text-[#4ccfaf]'>
           {`${blog.reading_time_minutes} Min Read`}
         </p>
         <p className='text-base text-[#d3d8e8] pb-6'>
@@ -48,7 +48,7 @@ function BlogCard({ blog }) {
         </p>
         <div className="absolute right-3 bottom-3">
           <Link target='_blank' href={blog.url}>
-            <button className='bg-[#4ccfaf] px-3 py-1.5 rounded-full text-black text-xs'>
+            <button className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs'>
               Read More
             </button>
           </Link>

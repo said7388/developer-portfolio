@@ -30,6 +30,15 @@ export const projectsData = [
         code: 'https://github.com/said7388/Travel-Agency-client',
         demo: 'https://travel-agency-fc58b.web.app/',
         image: eight
+    },
+    {
+        id: 4,
+        projectName: 'Travel Agency',
+        projectDesc: 'This project about travel agency management.',
+        tags: ['React', 'CSS', 'Material Ui'],
+        code: 'https://github.com/said7388/Travel-Agency-client',
+        demo: 'https://travel-agency-fc58b.web.app/',
+        image: eight
     }
 ]
 

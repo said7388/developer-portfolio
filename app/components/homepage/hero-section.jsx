@@ -23,10 +23,11 @@ function HeroSection() {
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
             Hello, <br />
-            
-            <span className=" text-pink-500">This is ABU SAID</span>
-           {` , a Professional `}
-            <span className=" text-[#16f2b3]">FullStack Software Engineer.</span>
+            This is {' '}
+            <span className=" text-[#16f2b3]">ABU SAID</span>
+            {` , a Professional `}
+            <span className=" text-[#16f2b3]">Full-Stack</span>
+            {' '} Software Developer.
           </h1>
 
           <div className="my-12 flex items-center gap-5">
@@ -61,7 +62,7 @@ function HeroSection() {
               <MdDownload size={16} />
             </Link>
           </div>
-          
+
         </div>
         <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
           <div className="flex flex-row">

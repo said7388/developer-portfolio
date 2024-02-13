@@ -29,9 +29,9 @@ export default async function Home() {
       <AboutSection />
       <Experience />
       <Skills />
+      <Projects />
       <Education />
       <Blog blogs={blogs} />
-      <Projects />
     </>
   )
 };

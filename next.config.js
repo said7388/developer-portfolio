@@ -5,6 +5,6 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['res.cloudinary.com']
+    domains: ['res.cloudinary.com', 'media.dev.to']
   }
 }

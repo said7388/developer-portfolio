@@ -1,6 +1,6 @@
 .singleProject {
   &:hover {
-    img {
+    .cover-image {
       @apply opacity-0;
     }
 
@@ -13,7 +13,7 @@
     }
 
     .project--desc {
-      @apply translate-x-[-2%] translate-y-[40%];
+      @apply translate-x-[-2%] translate-y-[50%];
     }
 
     .project--lang {

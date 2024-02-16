@@ -16,7 +16,7 @@ function HeroSection() {
         alt="Hero"
         width={1572}
         height={795}
-        className="absolute -top-20 -z-10"
+        className="absolute -top-[98px] -z-10"
       />
 
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">

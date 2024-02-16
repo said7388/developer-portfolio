@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function AboutSection() {
   return (
-    <div className="my-12 lg:my-16 relative">
+    <div id="about" className="my-12 lg:my-16 relative">
       <div className="hidden lg:flex flex-col items-center absolute top-16 -right-8">
         <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           ABOUT ME

@@ -10,7 +10,7 @@ function BlogCard({ blog }) {
   return (
     <div className="border border-[#1d293a] hover:border-[rgb(70,76,106)] transition-all duration-500 bg-[#1b203e] rounded-lg relative"
     >
-      <div className="h-56 w-auto cursor-pointer overflow-hidden rounded-t-lg">
+      <div className="h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
         <Image
           src={blog?.cover_image}
           height={1080}
@@ -19,10 +19,10 @@ function BlogCard({ blog }) {
           className='h-full w-full hover:scale-110 transition-all duration-300'
         />
       </div>
-      <div className="p-2 sm:p-4 flex flex-col">
+      <div className="p-2 sm:p-3 flex flex-col">
         <div className="flex justify-between items-center text-[#16f2b3] text-sm">
           <p>{timeConverter(blog.published_at)}</p>
-          <div className="flex items-center gap-4 ">
+          <div className="flex items-center gap-3">
             <p className="flex items-center gap-1">
               <BsHeartFill />
               <span>{blog.public_reactions_count}</span>
@@ -36,14 +36,14 @@ function BlogCard({ blog }) {
           </div>
         </div>
         <Link target='_blank' href={blog.url}>
-          <p className='my-4 cursor-pointer text-lg sm:text-xl font-medium hover:text-violet-500'>
+          <p className='my-3 cursor-pointer text-lg sm:text-xl font-medium hover:text-violet-500'>
             {blog.title}
           </p>
         </Link>
-        <p className='mb-3 text-sm text-[#16f2b3]'>
+        <p className='mb-2 text-sm text-[#16f2b3]'>
           {`${blog.reading_time_minutes} Min Read`}
         </p>
-        <p className='text-base text-[#d3d8e8] pb-6'>
+        <p className='text-base text-[#d3d8e8] pb-6 line-clamp-3'>
           {blog.description}
         </p>
         {/* <div className="">

@@ -8,7 +8,6 @@ import ContactUI from '../core-ui/contacts/contacts-ui';
 
 const Contacts = () => {
   const [open, setOpen] = useState(false);
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');

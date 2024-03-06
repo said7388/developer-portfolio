@@ -1,4 +1,5 @@
 // @flow strict
+import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
@@ -32,7 +33,7 @@ function ContactSection() {
                 <input
                   className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
                   type="email"
-                  maxlength="100"
+                  maxLength="100"
                   name="_replyto"
                   required=""
                 />
@@ -41,7 +42,7 @@ function ContactSection() {
                 <label className="text-lg font-medium">Your message: </label>
                 <textarea
                   className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
-                  maxlength="500"
+                  maxLength="500"
                   name="message"
                   required=""
                   rows="5"
@@ -66,7 +67,7 @@ function ContactSection() {
                 className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={36}
               />
-              <span>abusaid7388@gmail.com</span>
+              <span>{personalData.email}</span>
             </p>
             <p className="text-xl flex items-center gap-3">
               <IoMdCall
@@ -74,7 +75,7 @@ function ContactSection() {
                 size={36}
               />
               <span>
-                +8801608797655
+                {personalData.phone}
               </span>
             </p>
             <p className="text-xl flex items-center gap-3">
@@ -83,36 +84,36 @@ function ContactSection() {
                 size={36}
               />
               <span>
-                Middle Badda, Dhaka, Bangladesh - 1212
+                {personalData.address}
               </span>
             </p>
           </div>
           <div className="mt-8 lg:mt-16 flex items-center gap-5 lg:gap-10">
-            <Link href="/">
+            <Link target="_blank" href={personalData.github}>
               <IoLogoGithub
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link href="/">
+            <Link target="_blank" href={personalData.linkedIn}>
               <BiLogoLinkedin
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link href="/">
+            <Link target="_blank" href={personalData.twitter}>
               <FaXTwitter
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link href="/">
+            <Link target="_blank" href={personalData.stackOverflow}>
               <FaStackOverflow
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}
               />
             </Link>
-            <Link href="/">
+            <Link target="_blank" href={personalData.facebook}>
               <FaFacebook
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={48}

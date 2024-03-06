@@ -1,5 +1,6 @@
 // @flow strict
 
+import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 
 
@@ -18,8 +19,7 @@ function AboutSection() {
             Who I am?
           </p>
           <p className="text-gray-200 text-lg">
-            {`My name is ABU SAID. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. 
-I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.`}
+            {personalData.description}
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">

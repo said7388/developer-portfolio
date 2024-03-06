@@ -5,7 +5,7 @@ import * as React from 'react';
 function ProjectCard({ project }) {
 
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
@@ -36,14 +36,14 @@ function ProjectCard({ project }) {
           </div>
 
           <div className="ml-8 mr-2">
-            <span className=" text-white">usedTools:</span>
+            <span className=" text-white">tools:</span>
             <span className="text-gray-400">{` ['`}</span>
             {
-              project.tags.map((tag, i) => (
+              project.tools.map((tag, i) => (
                 <React.Fragment key={i}>
                   <span className="text-amber-300">{tag}</span>
                   {
-                    project.tags.length - 1 !== i &&
+                    project.tools.length - 1 !== i &&
                     <span className="text-gray-400">{`','`}</span>
                   }
                 </React.Fragment>

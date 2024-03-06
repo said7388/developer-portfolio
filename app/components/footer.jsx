@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex justify-center -z-40">
           <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm">
             © Developer Portfolio by <span className="text-[#16f2b3]">Abu Said</span>
           </p>

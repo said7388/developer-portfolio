@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import './card.scss';
+import Footer from './components/homepage/footer';
 import Navbar from './components/navbar';
 import './globals.scss';
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )

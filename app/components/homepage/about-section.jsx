@@ -18,7 +18,7 @@ function AboutSection() {
           <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
             Who I am?
           </p>
-          <p className="text-gray-200 text-lg">
+          <p className="text-gray-200 text-sm lg:text-lg">
             {personalData.description}
           </p>
         </div>

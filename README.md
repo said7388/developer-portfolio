@@ -6,7 +6,7 @@
 
 # Demo :movie_camera:
 
-![](./public/image/portfolio.gif)
+![](./public/image/screen.png)
 
 ## View live preview [here](https://abusaid.netlify.app/).
 

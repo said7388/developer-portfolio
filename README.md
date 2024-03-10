@@ -86,7 +86,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Usage :joystick:
 
-Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
+Go to [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
 
 Eg:
 

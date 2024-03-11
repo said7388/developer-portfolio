@@ -46,7 +46,7 @@ function Education() {
               {
                 educations.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
-                    <div className="p-3 relative">
+                    <div className="p-3 relative text-white">
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
@@ -64,7 +64,7 @@ function Education() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium  uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>

@@ -1,30 +1,39 @@
 {
-  "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
-  "version": "0.1.0",
+  "name": "coming-soon",
+  "desription": "Clean Coming Soon Template (Tailwind CSS, NextJs & HTML5)",
+  "version": "1.0.0",
+  "keywords": [
+    "coming soon",
+    "tailwind",
+    "tailwindcss",
+    "nextjs",
+    "html"
+  ],
+  "author": "Themeptation",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "type-check": "tsc"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.1",
-    "lottie-react": "^2.4.0",
+    "autoprefixer": "^10.4.0",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-fast-marquee": "^1.6.2",
-    "react-icons": "^4.11.0",
-    "react-toastify": "^10.0.4"
+    "postcss": "^8.3.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sharp": "^0.29.3",
+    "tailwindcss": "^2.2.19",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "12.0.4"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "sass": "^1.69.5",
-    "tailwindcss": "latest"
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "typescript": "4.5.2"
   }
 }

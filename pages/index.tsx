@@ -2,12 +2,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 const IndexPage = () => (
-  <Layout title="Coming Soon - Clean Coming Soon Page (Tailwind CSS, NextJs & HTML5) created by themeptation.net">
-    <img
-      src="/images/xera.svg"
-      alt="Themeptation "
-      className="absolute h-96 -top-20 -right-16 lg:right-5 lg:top-10 animate-blob"
-    />
+  <Layout title="Coming Soon - 0xManticore">
     <img
       src="/images/shapes.svg"
       alt="hero"

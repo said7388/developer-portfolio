@@ -1,20 +1,26 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: 'Senior Full Stack Developer',
+    company: "Softway Medical by Bubble-Go",
+    duration: "(Apr 2023 - Feb 2024)"
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: "Full Stack Developer",
+    company: "itim Group plc",
+    duration: "(Oct 2019 - Apr 2023)"
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: "Technology Consultant",
+    company: "Transportes Andrade Limitada",
+    duration: "(May 2017 - May 2019)"
+  },
+  {
+    id: 4,
+    title: "Software Developer",
+    company: "Support - Sistemas de Gestão",
+    duration: "(Apr 2013 - Jun 2015)"
   }
 ]

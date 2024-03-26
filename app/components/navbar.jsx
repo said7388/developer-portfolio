@@ -1,4 +1,5 @@
 // @flow strict
+import { personalData } from "@/utils/data/personal-data";
 import Link from "next/link";
 
 
@@ -10,7 +11,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            ABU SAID
+            {personalData.name}
           </Link>
         </div>
 
@@ -28,12 +29,6 @@ function Navbar() {
           </li>
           <li>
             <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></a>
-          </li>
-          <li>
-            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#blogs"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div></a>
-          </li>
-          <li>
-            <a className="block px-4 py-2 no-underline outline-none hover:no-underline" href="#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></a>
           </li>
         </ul>
       </div>

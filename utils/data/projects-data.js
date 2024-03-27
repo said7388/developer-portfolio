@@ -1,51 +1,92 @@
-import ayla from '/public/image/ayla.jpg';
-import crefin from '/public/image/crefin.jpg';
-import realEstate from '/public/image/real-estate.jpg';
-import travel from '/public/image/travel.jpg';
+import ayla from "/public/image/ayla.jpg";
+import crefin from "/public/image/crefin.jpg";
+import realEstate from "/public/image/real-estate.jpg";
+import travel from "/public/image/travel.jpg";
 
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
+        name: "Jp Gadgets",
+        description:
+            "Building and maintaining an ecommerce application that focus on providing Tech Savvy peeps with products and latest gadgets online",
+        tools: [
+            "Express",
+            "MongoDB",
+            "Node Mailer",
+            "Typescript",
+            "Tailwind",
+            "ViteJs",
+            "React",
+        ],
+        role: "Fullstack Developer",
+        code: "",
+        link: "https://jpgadget.vercel.app/",
+        demo: "",
         image: crefin,
     },
     {
         id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
+        name: "Trippy App",
+        description:
+            "An online application that provides users with travel ameneties, locations, and all travel itinerery all in one app",
+        tools: [
+            "React",
+            "Vite",
+            "Google Maps",
+            "Javascript",
+            "Express",
+            "MongoDB",
+        ],
+        role: "Full Stack Developer",
+        code: "",
+        link: "https://trippy-huas.onrender.com/",
+        demo: "",
         image: travel,
     },
     {
         id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
+        name: "The Express Trades",
+        description:
+            "An online crypto market web application built with nodejs reactjs ,typescript and tailwind leveraging tradeview developer tools and kora payment gateway",
+        tools: [
+            "React",
+            "Tailwind",
+            "Express",
+            "TypeScript",
+            "MongoDB",
+            "Redux",
+            "React Router",
+            "Korapay",
+            "NodeJs",
+            "JWT",
+        ],
+        code: "",
+        link: "https://www.theexpresstrades.com/",
+        role: "Full Stack Developer",
+        demo: "",
         image: realEstate,
     },
     {
         id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
+        name: "Merchant Portal",
+        description:
+            "My team and I developed Afiari Business Dashboard application called Merchant Portal. As a front-end developer, I worked on creating the dashboard using Typescript, React, Tailwind, Redux, RestAPI, and other necessary npm libraries. We used React Redux to manage the application's state and Afiari Inc RestAPI to communicate and interact with shopping page and database, replicating UI desing with Tailwind CSS",
+        tools: [
+            "Typescript",
+            "Tailwind",
+            "Redux",
+            "React Router",
+            "Azure Dev Ops",
+            "Recharts",
+            "Ant Design",
+        ],
+        code: "",
+        link: "https://as-app-merchant-portal-staging.azurewebsites.net/",
+        demo: "",
         image: ayla,
-        role: 'Full Stack Developer',
-    }
+        role: "Front End Developer",
+    },
 ];
-
 
 // Do not remove any property.
 // Leave it blank instead as shown below

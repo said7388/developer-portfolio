@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Certificate Of Completion",
+    duration: "2023 - Present",
+    institution: "The Curve Africa",
   },
   {
     id: 2,
     title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    duration: "2015 - 2018",
+    institution: "Bola Ige Millenium Senior Secondary School",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Junior School Leaving Certificate",
+    duration: "2013 - 2015",
+    institution: "Ajeromi Ifelodun Junior High School",
   }
 ]

@@ -9,7 +9,7 @@ export const skillsData = [
     'Canva',
     'java',
     'MySQL',
-    'excel',
+    'azure',
     'django',
 
 ]

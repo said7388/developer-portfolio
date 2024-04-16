@@ -3,14 +3,13 @@ export const skillsData = [
     'Figma',
     'Javascript',
     'CSS',
-    'React',
     'python',
     'git',
     'c++',
     'Canva',
     'java',
     'MySQL',
-    'numpy',
+    'excel',
     'django',
 
 ]

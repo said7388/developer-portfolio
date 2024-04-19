@@ -1,20 +1,24 @@
 export const educations = [
+  
+  
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Bachelor of Computer Applications (B.C.A.)",
+    duration: "2018 - 2021",
+    institution: "Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon",
   },
   {
-    id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    id: 1,
+    title: "Master of Computer Application (MCA)",
+    duration: "2021 - 2023",
+    institution: "Savitribai Phule Pune University (SPPU), Pune",
+
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  }
+    title: "SSC & HSC",
+    duration: "2015 - 2017",
+    institution: "Maharashtra State Board",
+  },
+ 
 ]

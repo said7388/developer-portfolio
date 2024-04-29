@@ -8,7 +8,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
 
-function ContactForm() {
+function ContactWithCaptcha() {
   const [input, setInput] = useState({
     name: '',
     email: '',
@@ -152,4 +152,4 @@ function ContactForm() {
   );
 };
 
-export default ContactForm;
+export default ContactWithCaptcha;

@@ -3,6 +3,7 @@
 </p>
 
 ---
+
 # [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
 
 ---
@@ -23,25 +24,25 @@
 
 ## Table of Contents :scroll:
 
-- [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
-- [Packages Used](#packages-used-package)
+-   [Sections](#sections-bookmark)
+-   [Demo](#demo-movie_camera)
+-   [Installation](#installation-arrow_down)
+-   [Getting Started](#getting-started-dart)
+-   [Usage](#usage-joystick)
+-   [Packages Used](#packages-used-package)
 
 ---
 
 # Sections :bookmark:
 
-- HERO SECTION
-- ABOUT ME
-- EXPERIENCE
-- SKILLS
-- PROJECTS
-- EDUCATION
-- BLOG
-- CONTACTS
+-   HERO SECTION
+-   ABOUT ME
+-   EXPERIENCE
+-   SKILLS
+-   PROJECTS
+-   EDUCATION
+-   BLOG
+-   CONTACTS
 
 ---
 
@@ -49,8 +50,8 @@
 
 ### You will need to download Git and Node to run this project
 
-- [Git](https://git-scm.com/downloads)
-- [Node](https://nodejs.org/en/download/)
+-   [Git](https://git-scm.com/downloads)
+-   [Node](https://nodejs.org/en/download/)
 
 #### Make sure you have the latest version of both Git and Node on your computer.
 
@@ -115,21 +116,21 @@ Eg:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
-  profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "...",
+    name: "Herbert Nikolajewski",
+    profile: "/profile.png",
+    designation: "Full-Stack Software Developer",
+    description: "My name is Herbert Nikolajewski....",
+    email: "abusaid7388@gmail.com",
+    phone: "+8801608797655",
+    address: "Dhaka, Bangladesh",
+    github: "https://github.com/said7388",
+    facebook: "https://www.facebook.com/abusaid.riyaz/",
+    linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
+    twitter: "https://twitter.com/said7388",
+    stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
+    leetcode: "https://leetcode.com/said3812/",
+    devUsername: "said7388",
+    resume: "...",
 };
 ```
 

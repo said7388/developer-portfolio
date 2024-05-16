@@ -12,6 +12,7 @@ const AllProjects = () => {
           'https://portfolio-api-8sz6.onrender.com/api/projects'
         );
         const data = await response.json();
+        console.log(data);
         setProjects(data);
       } catch (error) {
         console.error('Error fetching projects:', error);

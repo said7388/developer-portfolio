@@ -1,3 +1,4 @@
+// components/ProjectCard.js
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaHeart, FaCommentAlt } from 'react-icons/fa';
@@ -6,13 +7,19 @@ const ProjectCard = ({ project }) => {
   return (
     <div className='border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group'>
       <div className='h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg'>
-        <Image
-          src={project.image}
-          height={1080}
-          width={1920}
-          alt={project.title}
-          className='h-full w-full group-hover:scale-110 transition-all duration-300'
-        />
+        {project.image ? (
+          <Image
+            src={project.image}
+            height={1080}
+            width={1920}
+            alt={project.title}
+            className='h-full w-full group-hover:scale-110 transition-all duration-300'
+          />
+        ) : (
+          <div className='h-full w-full bg-gray-300 flex items-center justify-center'>
+            <span>No Image Available</span>
+          </div>
+        )}
       </div>
       <div className='p-2 sm:p-3 flex flex-col'>
         <Link href={`/projects/${project._id}`} target='_blank'>
@@ -26,13 +33,13 @@ const ProjectCard = ({ project }) => {
         <div className='flex justify-between items-center text-[#16f2b3] text-sm'>
           <div className='flex items-center gap-1'>
             <FaHeart />
-            <span>{project.likes.length}</span>
+            <span>{project.likes?.length || 0}</span>
           </div>
           <div className='flex items-center gap-1'>
             <FaCommentAlt />
-            <span>{project.comments.length}</span>
+            <span>{project.comments?.length || 0}</span>
           </div>
-          <p>{project.views} views</p>
+          <p>{project.views || 0} views</p>
         </div>
       </div>
     </div>

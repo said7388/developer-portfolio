@@ -1,12 +1,12 @@
 // @flow strict
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import BlogCard from './blog-card';
+import ProjectCard from './ProjectCard';
 
-function Blog({ blogs }) {
+function Project({ projects }) {
   return (
     <div
-      id='blogs'
+      id='projects'
       className='relative z-50 border-t my-12 lg:my-24 border-[#25213b]'>
       <div className='w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20'></div>
 
@@ -27,10 +27,11 @@ function Blog({ blogs }) {
       </div>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10'>
-        {blogs
+        {projects
           .slice(0, 6)
           .map(
-            (blog, i) => blog?.cover_image && <BlogCard blog={blog} key={i} />
+            (project, i) =>
+              project?.cover_image && <ProjectCard project={project} key={i} />
           )}
       </div>
 
@@ -47,4 +48,4 @@ function Blog({ blogs }) {
   );
 }
 
-export default Blog;
+export default Project;

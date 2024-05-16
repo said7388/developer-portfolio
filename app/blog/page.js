@@ -1,21 +1,20 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
-import BlogCard from "../components/homepage/blog/blog-card";
+import ProjectCard from "../components/homepage/blog/ProjectCard";
 
-async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
-
+async function getProjects() {
+  const res = await fetch('https://portfolio-api-8sz6.onrender.com/api/projects');
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error('Failed to fetch projects');
   }
-
   const data = await res.json();
+  console.log(data);
   return data;
-};
+}
 
 async function page() {
-  const blogs = await getBlogs();
+  const projects = await getProjects();
 
   return (
     <div className="py-8">
@@ -30,12 +29,9 @@ async function page() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
-        {
-          blogs.map((blog, i) => (
-            blog?.cover_image &&
-            <BlogCard blog={blog} key={i} />
-          ))
-        }
+        {projects.map((project, i) => (
+          <ProjectCard project={project} key={i} />
+        ))}
       </div>
     </div>
   );

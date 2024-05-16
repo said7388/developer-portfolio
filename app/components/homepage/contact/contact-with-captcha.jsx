@@ -78,7 +78,7 @@ function ContactWithCaptcha() {
   return (
     <div className=''>
       <p className='font-medium mb-5 text-[#16f2b3] text-xl uppercase'>
-        Contact with me
+        Contact me
       </p>
       <div className='max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5'>
         <p className='text-sm text-[#d3d8e8]'>
@@ -148,7 +148,7 @@ function ContactWithCaptcha() {
               className='flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold'
               role='button'
               onClick={handleSendMail}>
-              <span>Send</span>
+              <span>Send Message</span>
               <TbMailForward className='mt-1' size={18} />
             </button>
           </div>

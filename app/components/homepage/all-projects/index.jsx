@@ -27,6 +27,45 @@ const AllProjects = () => {
     fetchProjects();
   }, [currentPage]);
 
+  const handleLikedProject = async (projectId, userId) => {
+    try {
+      const updatedProjects = projects.map((project) => {
+        if (project._id === projectId) {
+          return {
+            ...project,
+            likes: [...project.likes, userId],
+          };
+        }
+        return project;
+      });
+      setProjects(updatedProjects);
+    } catch (error) {
+      console.error('Error updating project', error);
+    }
+  };
+
+  const handleIncrementView = async (projectId) => {
+    try {
+      const response = await axios.post(`/api/increment-view/${projectId}`);
+      if (response.status === 200) {
+        const updatedProjects = projects.map((project) => {
+          if (project._id === projectId) {
+            return {
+              ...project,
+              views: project.views + 1,
+            };
+          }
+          return project;
+        });
+        setProjects(updatedProjects);
+      } else {
+        console.error('Failed to increment view count');
+      }
+    } catch (error) {
+      console.error('Error incrementing view count:', error);
+    }
+  };
+
   return (
     <div className='py-8'>
       <div className='flex justify-center my-5 lg:py-8'>
@@ -42,7 +81,12 @@ const AllProjects = () => {
         {/* Check if projects is an array and has at least one element */}
         {Array.isArray(projects) && projects.length > 0 ? (
           projects.map((project, i) => (
-            <ProjectCard key={i} project={project} />
+            <ProjectCard
+              key={i}
+              project={project}
+              handleLikedProject={handleLikedProject}
+              handleIncrementView={handleIncrementView}
+            />
           ))
         ) : (
           <p>Loading projects...</p> // Display a loading message when projects is empty

@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
         )}
       </div>
       <div className='p-2 sm:p-3 flex flex-col'>
-        <Link href={`/projects/${project._id}`} target='_blank'>
+        <Link href={`/projects/${project.url}`} target='_blank'>
           <p className='my-2 lg:my-3 cursor-pointer text-lg text-white sm:text-xl font-medium hover:text-violet-500'>
             {project.title}
           </p>

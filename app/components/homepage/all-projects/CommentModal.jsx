@@ -1,4 +1,3 @@
-// components/CommentModal.jsx
 import React, { useState, useEffect } from 'react';
 import AddComment from './AddComment';
 
@@ -11,7 +10,8 @@ const CommentModal = ({ project, onClose }) => {
         const response = await fetch(
           `https://portfolio-api-8sz6.onrender.com/api/get-comments/${project._id}`
         );
-        setComments(response.data);
+        const data = await response.json();
+        setComments(data);
       } catch (error) {
         console.error('Error fetching comments:', error);
       }
@@ -27,12 +27,16 @@ const CommentModal = ({ project, onClose }) => {
           &times;
         </span>
         <h2>Comments</h2>
-        {comments.map((comment) => (
-          <div key={comment._id}>
-            <p>{comment.text}</p>
-            <p>By: {comment.user.name}</p>
-          </div>
-        ))}
+        {comments.length > 0 ? (
+          comments.map((comment) => (
+            <div key={comment._id}>
+              <p>{comment.text}</p>
+              <p>By: {comment.user.name}</p>
+            </div>
+          ))
+        ) : (
+          <p>No comments yet.</p>
+        )}
         <AddComment projectId={project._id} />
       </div>
     </div>

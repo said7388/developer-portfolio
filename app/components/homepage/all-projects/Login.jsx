@@ -6,6 +6,11 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const handleGoogleLogin = () => {
+    window.location.href =
+      'https://portfolio-api-8sz6.onrender.com/api/google-auth'; // Replace with your backend URL
+  };
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -41,6 +46,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type='submit'>Login</button>
+        <button onClick={handleGoogleLogin}>Login with Google</button>
       </form>
     </div>
   );

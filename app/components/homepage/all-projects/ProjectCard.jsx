@@ -21,14 +21,16 @@ function ProjectCard({ project }) {
           <div className='flex items-center gap-3'>
             <p className='flex items-center gap-1'>
               <BsHeartFill />
-              <span>{project.likes}</span>
+              <span>{project.likes.length}</span>
             </p>
-            {project.comments > 0 && (
+            {project.comments.length > 0 && (
               <p className='flex items-center gap-1'>
                 <FaCommentAlt />
-                <span>{project.comments}</span>
+                <span>{project.comments.length}</span>
               </p>
             )}
+          </div>
+          <div className='flex justify-end'>
             <p>{project.views || 0} views</p>
           </div>
         </div>

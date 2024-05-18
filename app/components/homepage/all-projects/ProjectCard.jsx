@@ -6,6 +6,8 @@ import { BsHeartFill } from 'react-icons/bs';
 import { FaCommentAlt } from 'react-icons/fa';
 import axios from 'axios';
 import CommentModal from './CommentModal';
+import { getCookie } from './getCookie';
+import { useRouter } from 'next/router';
 
 function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
   const [isLiked, setIsLiked] = useState(false);
@@ -13,9 +15,10 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
 
   const handleLike = async () => {
     try {
-      const token = localStorage.getItem('token');
+      const token = getCookie('accessToken');
       if (!token) {
-        return res.status(404).send('you need to login');
+        router.push('/login');
+        return;
       }
       // Make a POST request to the backend to like the project
       const response = await fetch(
@@ -48,8 +51,29 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
     setShowCommentModal(false);
   };
 
-  const handleViewIncrement = () => {
-    handleIncrementView(project._id);
+  const handleViewIncrement = async () => {
+    try {
+      const token = getCookie('accessToken');
+      if (!token) {
+        router.push('/login');
+        return;
+      }
+
+      await fetch(
+        'https://portfolio-api-8sz6.onrender.com/api/increment-view',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ projectId: project._id }),
+        }
+      );
+      handleIncrementView(project._id);
+    } catch (error) {
+      console.error('Error incrementing view count:', error);
+    }
   };
   return (
     <div className='border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group'>

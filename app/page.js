@@ -6,8 +6,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-import AllProjects from "./components/homepage/all-projects"
-
+import AllProjects from "./components/homepage/all-projects";
 
 
 export default async function Home() {
@@ -24,5 +23,6 @@ export default async function Home() {
       <AllProjects />
       <ContactSection />
     </>
+
   )
 };

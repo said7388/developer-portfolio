@@ -1,6 +1,6 @@
 // components/ProjectCard.js
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { BsHeartFill } from 'react-icons/bs';
 import { FaCommentAlt } from 'react-icons/fa';
@@ -13,11 +13,12 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
   const [isLiked, setIsLiked] = useState(false);
   const [showCommentModal, setShowCommentModal] = useState(false);
 
-  const handleLike = async () => {
+  const handleLike = useCallback(async () => {
+    // ... (your existing code for handleLike)
     try {
       const token = getCookie('accessToken');
       if (!token) {
-        router.push('/login');
+        window.location.href = '/Login'; // Redirect to the login page
         return;
       }
       // Make a POST request to the backend to like the project
@@ -41,7 +42,7 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
     } catch (error) {
       console.error('Error liking project:', error);
     }
-  };
+  }, []);
 
   const handleShowCommentModal = () => {
     setShowCommentModal(true);
@@ -51,11 +52,12 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
     setShowCommentModal(false);
   };
 
-  const handleViewIncrement = async () => {
+  const handleViewIncrement = useCallback(async () => {
+    // ... (your existing code for handleViewIncrement)
     try {
       const token = getCookie('accessToken');
       if (!token) {
-        router.push('/login');
+        window.location.href = '/login'; // Redirect to the login page
         return;
       }
 
@@ -74,7 +76,8 @@ function ProjectCard({ project, handleLikedProject, handleIncrementView }) {
     } catch (error) {
       console.error('Error incrementing view count:', error);
     }
-  };
+  }, []);
+
   return (
     <div className='border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group'>
       <div className='h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg'>

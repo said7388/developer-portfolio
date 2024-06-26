@@ -3,23 +3,24 @@ import seven from '../assets/svg/projects/seven.svg'
 import six from '../assets/svg/projects/six.svg'
 
 
-export const projectsData = [
-    {
+export const projectsData = [{
         id: 1,
-        projectName: 'Ayla Networks',
-        projectDesc: 'This project about Simplifying the Development of Smart Home & IoT Solutions.',
-        tags: ['React', 'SAAS', 'React Bootstrap'],
-        code: '',
-        demo: 'https://www.aylanetworks.com/',
+        projectName: 'hotstar frontend clone',
+        projectDesc: 'Self development project in the field of frontend.',
+        tags: ['HTML', 'CSS', 'Javascript',
+            'React Bootstrap'
+        ],
+        code: 'https://github.com/Nagarjun-07/Hotstar_frontend_clone',
+        demo: 'https://github.com/Nagarjun-07/Hotstar_frontend_clone',
         image: six
     },
     {
         id: 2,
-        projectName: 'Jewelry Niche',
-        projectDesc: 'This project is a Jewelry shop, Customer can be buy product and manage them and make payment.',
-        tags: ['React', 'Express', 'Material Ui'],
-        code: 'https://github.com/said7388/jewelry-niche',
-        demo: 'https://pandora-web.netlify.app/',
+        projectName: 'Python songsmith',
+        projectDesc: 'This project used to extract lyrics and make your own playlist ',
+        tags: ['Python', 'Machine learning'],
+        code: 'https://github.com/Nagarjun-07/python-songsmith',
+        demo: 'https://github.com/Nagarjun-07/python-songsmith',
         image: seven
     },
     {
@@ -29,22 +30,6 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material Ui'],
         code: 'https://github.com/said7388/Travel-Agency-client',
         demo: 'https://travel-agency-fc58b.web.app/',
-        image: eight
-    }
+        image: eight
+    }
 ]
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below
-
-/* 
-{
-    id: 1,
-    projectName: 'Car Pooling System',
-    projectDesc: '',
-    tags: ['Flutter', 'React'],
-    code: '',
-    demo: '',
-    image: ''
-}, 
-*/

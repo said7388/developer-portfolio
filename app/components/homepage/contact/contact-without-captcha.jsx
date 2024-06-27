@@ -1,31 +1,28 @@
 "use client";
 // @flow strict
 import { isValidEmail } from '@/utils/check-email';
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 import { useState } from 'react';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
 
 function ContactWithoutCaptcha() {
-  const [input, setInput] = useState({
+  const [error, setError] = useState({ email: false, required: false });
+  const [userInput, setUserInput] = useState({
     name: '',
     email: '',
     message: '',
   });
-  const [error, setError] = useState({
-    email: false,
-    required: false,
-  });
 
   const checkRequired = () => {
-    if (input.email && input.message && input.name) {
+    if (userInput.email && userInput.message && userInput.name) {
       setError({ ...error, required: false });
     }
   };
 
   const handleSendMail = async (e) => {
     e.preventDefault();
-    if (!input.email || !input.message || !input.name) {
+    if (!userInput.email || !userInput.message || !userInput.name) {
       setError({ ...error, required: true });
       return;
     } else if (error.email) {
@@ -39,11 +36,12 @@ function ContactWithoutCaptcha() {
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
 
     try {
-      const res = await emailjs.send(serviceID, templateID, input, options);
+      const res = await emailjs.send(serviceID, templateID, userInput, options);
+      const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
 
-      if (res.status === 200) {
+      if (res.status === 200 || teleRes.status === 200) {
         toast.success('Message sent successfully!');
-        setInput({
+        setUserInput({
           name: '',
           email: '',
           message: '',
@@ -71,9 +69,9 @@ function ContactWithoutCaptcha() {
               type="text"
               maxLength="100"
               required={true}
-              onChange={(e) => setInput({ ...input, name: e.target.value })}
+              onChange={(e) => setUserInput({ ...userInput, name: e.target.value })}
               onBlur={checkRequired}
-              value={input.name}
+              value={userInput.name}
             />
           </div>
 
@@ -84,11 +82,11 @@ function ContactWithoutCaptcha() {
               type="email"
               maxLength="100"
               required={true}
-              value={input.email}
-              onChange={(e) => setInput({ ...input, email: e.target.value })}
+              value={userInput.email}
+              onChange={(e) => setUserInput({ ...userInput, email: e.target.value })}
               onBlur={() => {
                 checkRequired();
-                setError({ ...error, email: !isValidEmail(input.email) });
+                setError({ ...error, email: !isValidEmail(userInput.email) });
               }}
             />
             {error.email &&
@@ -103,10 +101,10 @@ function ContactWithoutCaptcha() {
               maxLength="500"
               name="message"
               required={true}
-              onChange={(e) => setInput({ ...input, message: e.target.value })}
+              onChange={(e) => setUserInput({ ...userInput, message: e.target.value })}
               onBlur={checkRequired}
               rows="4"
-              value={input.message}
+              value={userInput.message}
             />
           </div>
           <div className="flex flex-col items-center gap-2">

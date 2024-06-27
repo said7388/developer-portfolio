@@ -26,4 +26,4 @@ export async function POST(request) {
       success: false,
     }, { status: 500 });
   }
-}
+};

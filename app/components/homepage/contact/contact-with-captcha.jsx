@@ -27,22 +27,12 @@ function ContactWithCaptcha() {
   };
 
   const handleSendMail = async (e) => {
+    e.preventDefault();
     if (!captcha) {
       toast.error('Please complete the captcha!');
       return;
-    } else {
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/google`, {
-        token: captcha
-      });
-
-      setCaptcha(null);
-      if (!res.data.success) {
-        toast.error('Captcha verification failed!');
-        return;
-      };
     };
 
-    e.preventDefault();
     if (!input.email || !input.message || !input.name) {
       setError({ ...error, required: true });
       return;
@@ -67,6 +57,7 @@ function ContactWithCaptcha() {
           email: '',
           message: '',
         });
+        setCaptcha(null);
       };
     } catch (error) {
       toast.error(error?.text || error);

@@ -1,3 +1,12 @@
+<p align="center" width="100%">
+    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
+</p>
+
+---
+# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
+
+---
+
 # Developer Portfolio
 
 ### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
@@ -94,6 +103,10 @@ Eg:
 NEXT_PUBLIC_EMAILJS_SERVICE_ID =
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
+NEXT_PUBLIC_GTM = # For site analytics
+NEXT_PUBLIC_APP_URL = "http://127.0.0.1:3000"
+NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
 ```
 
 ### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).

@@ -2,16 +2,19 @@
 // @flow strict
 import { isValidEmail } from '@/utils/check-email';
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
 
-function ContactForm() {
+function ContactWithCaptcha() {
   const [input, setInput] = useState({
     name: '',
     email: '',
     message: '',
   });
+  const [captcha, setCaptcha] = useState(null);
   const [error, setError] = useState({
     email: false,
     required: false,
@@ -25,6 +28,11 @@ function ContactForm() {
 
   const handleSendMail = async (e) => {
     e.preventDefault();
+    if (!captcha) {
+      toast.error('Please complete the captcha!');
+      return;
+    };
+
     if (!input.email || !input.message || !input.name) {
       setError({ ...error, required: true });
       return;
@@ -39,15 +47,17 @@ function ContactForm() {
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
 
     try {
-      const res = await emailjs.send(serviceID, templateID, input, options);
+      const res = await emailjs.send(serviceID, templateID, userInput, options);
+      const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
 
-      if (res.status === 200) {
+      if (res.status === 200 || teleRes.status === 200) {
         toast.success('Message sent successfully!');
-        setInput({
+        setUserInput({
           name: '',
           email: '',
           message: '',
         });
+        setCaptcha(null);
       };
     } catch (error) {
       toast.error(error?.text || error);
@@ -109,6 +119,10 @@ function ContactForm() {
               value={input.message}
             />
           </div>
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            onChange={(code) => setCaptcha(code)}
+          />
           <div className="flex flex-col items-center gap-2">
             {error.required &&
               <p className="text-sm text-red-400">
@@ -130,4 +144,4 @@ function ContactForm() {
   );
 };
 
-export default ContactForm;
+export default ContactWithCaptcha;

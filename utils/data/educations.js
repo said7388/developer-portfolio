@@ -2,19 +2,19 @@ export const educations = [
   {
     id: 1,
     title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    duration: "2021 - 2024",
+    institution: "Sharnbasva University Kalaburgi",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Higher Secondary Certificate(XII)",
+    duration: "2020 - 2021",
+    institution: "Shakunta Patil PU Collage of Science",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Secondary School Certificate(X)",
+    duration: "2018 - 2019",
+    institution: "Goverment High School Harsoor",
   }
 ]

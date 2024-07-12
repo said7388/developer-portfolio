@@ -1,7 +1,7 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
+    title: "Bachelor Degree(BCA)",
     duration: "2021 - 2024",
     institution: "Sharnbasva University Kalaburgi",
   },

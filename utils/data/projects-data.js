@@ -19,7 +19,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        name: 'AI TRAFFIC ENFORCEMENT SYSTEM 🚥',
+        name: 'AI TRAFFIC ENFORCEMENT SYSTEM🚦',
         description: 'Our project focuses on implementing a sophisticated camera-based system to enforce traffic rules by tracking and capturing images of bikes, including their license plates. This technology aims to enhance road safety and ensure compliance with traffic regulations.',
         tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
         code: '',

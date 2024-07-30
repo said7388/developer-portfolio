@@ -2,19 +2,19 @@ export const educations = [
   {
     id: 1,
     title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    duration: "2015 - 2021",
+    institution: "University of Lagos",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Secondary Certificate",
+    duration: "2008 - 2014",
+    institution: "Methodist Boy's High School",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Primary Certificate",
+    duration: "2003 - 2008",
+    institution: "Saint Mary's Private School",
   }
 ]

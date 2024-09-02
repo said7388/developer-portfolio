@@ -108,7 +108,7 @@ function ContactWithoutCaptcha() {
               role="button"
               onClick={handleSendMail}
             >
-              <span>Send ganten</span>
+              <span>Send Message</span>
               <TbMailForward className="mt-1" size={18} />
             </button>
           </div>

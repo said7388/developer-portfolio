@@ -1,3 +1,4 @@
+import { personalData } from "@/utils/data/personal-data";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
@@ -9,9 +10,9 @@ import ScrollToTop from "./components/helper/scroll-to-top";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Rajeev Singh - Software Developer",
+  title: `${personalData.name} - ${personalData.designation}`,
   description:
-    "This is the portfolio of Rajeev Singh. I am a CE student and a self taught developer. I am a quick learner and I am always looking for new challenges.",
+    `This is the portfolio of ${personalData.name}. I am a ${personalData.designation} and a self taught developer. I am a quick learner and I am always looking for new challenges.`,
 };
 
 export default function RootLayout({ children }) {

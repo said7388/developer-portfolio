@@ -1,5 +1,6 @@
 // @flow strict
 import Link from "next/link";
+import { personalData } from "@/utils/data/personal-data";
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            ABU SAID
+            {personalData.name}
           </Link>
         </div>
 

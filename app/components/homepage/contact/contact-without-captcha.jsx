@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
@@ -20,37 +21,58 @@ function ContactWithoutCaptcha() {
     }
   };
 
-  const handleSendMail = async (e) => {
+  const handleSendMail = (e) => {
     e.preventDefault();
-    if (!userInput.email || !userInput.message || !userInput.name) {
-      setError({ ...error, required: true });
-      return;
-    } else if (error.email) {
-      return;
-    } else {
-      setError({ ...error, required: false });
-    };
-
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
-
-    try {
-      const res = await emailjs.send(serviceID, templateID, userInput, options);
-      const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
-
-      if (res.status === 200 || teleRes.status === 200) {
-        toast.success('Message sent successfully!');
-        setUserInput({
-          name: '',
-          email: '',
-          message: '',
+    emailjs.send(
+      'service_xpbjoel', 
+      'template_vxjtd2n', 
+      userInput, 
+      'm-nGVL8IoltlAh8Ok'
+    ).then((result) => {
+        toast.success('Message sent successfully!', {
+          position: "top-center",
+          autoClose: 3000,
         });
-      };
-    } catch (error) {
-      toast.error(error?.text || error);
-    };
+      }, (error) => {
+        toast.error('Failed to send message. Please try again.', {
+          position: "top-center",
+          autoClose: 3000,
+        });
+      });
   };
+
+
+  // const handleSendMail = async (e) => {
+  //   e.preventDefault();
+  //   if (!userInput.email || !userInput.message || !userInput.name) {
+  //     setError({ ...error, required: true });
+  //     return;
+  //   } else if (error.email) {
+  //     return;
+  //   } else {
+  //     setError({ ...error, required: false });
+  //   };
+
+  //   const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  //   const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  //   const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
+
+  //   try {
+  //     const res = await emailjs.send(serviceID, templateID, userInput, options);
+  //     const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
+
+  //     if (res.status === 200 || teleRes.status === 200) {
+  //       toast.success('Message sent successfully!');
+  //       setUserInput({
+  //         name: '',
+  //         email: '',
+  //         message: '',
+  //       });
+  //     };
+  //   } catch (error) {
+  //     toast.error(error?.text || error);
+  //   };
+  // };
 
   return (
     <div className="">

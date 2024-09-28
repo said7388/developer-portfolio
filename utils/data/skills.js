@@ -16,7 +16,7 @@ export const skillsData = [
   'Bootstrap',
   'Docker',
   'Go',
-  'Figma',
+  'TensorFlow',
   'Firebase',
   'Azure',
   'MySQL',

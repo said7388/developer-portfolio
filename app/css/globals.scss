@@ -33,6 +33,14 @@ body {
   --index: 4;
 }
 
+#sticky-card-5 {
+  --index: 5;
+}
+
+#sticky-card-6 {
+  --index: 6;
+}
+
 .sticky-card {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);

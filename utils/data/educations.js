@@ -1,20 +1,26 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Bachelor of Science in Computer Engineering",
+    duration: "2020 - 2024",
+    institution: "University of Illinois Chicago ",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Google Cybersecurity Certificate",
+    duration: "2024",
+    institution: "CompTIA Security+ (In Progress)",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: " IBM Data Science Certificate",
+    duration: "2024",
+    institution: "",
+  },
+  {
+    id: 4,
+    title: "  AWS Cloud Solutions Architect Certificate ",
+    duration: "2024",
+    institution: "",
   }
 ]

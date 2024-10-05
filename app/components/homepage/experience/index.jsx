@@ -6,7 +6,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import experience from '/public/lottie/code.json';
-import { formatDistanceStrict, parseISO } from 'date-fns';
+import { parseISO } from 'date-fns';
 
 const calculateDuration = (startDate, endDate) => {
   const start = parseISO(startDate);

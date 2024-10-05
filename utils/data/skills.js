@@ -1,25 +1,64 @@
-export const skillsData = [
+const languageData = [
   'HTML',
-  'CSS',
-  'Javascript',
-  'Typescript',
-  'React',
-  'Next JS',
-  'Tailwind',
-  'MongoDB',
-  'MySQL',
-  'PostgreSQL',
-  'Git',
-  'AWS',
-  'Bootstrap',
-  'Docker',
-  'Go',
-  'Figma',
-  'Firebase',
-  'MaterialUI',
-  'Nginx',
-  'Strapi'
+  'JavaScript',
+  'TypeScript',
+  'Ruby',
+  'Python'
 ]
+
+const frontendData = [
+  'CSS',
+  'Bootstrap',
+  'JQuery',
+  'React',
+  'Vue'
+]
+
+const backendData = [
+  'ROR',
+  'Node',
+  'Express',
+  'Django'
+]
+
+const databaseData = [
+  'PostgreSQL',
+  'MongoDB',
+  'Redis',
+]
+
+const devopsData = [
+  'Docker',
+  'AWS',
+  'CI/CD',
+  'Nginx',
+  'Vercel',
+  'Netlify'
+]
+
+const toolsData = [
+  'VS Code',
+  'Slack',
+  'Trello',
+  'Github',
+  'ClickUp'
+]
+
+const osData = [
+  'Windows',
+  'MacOS',
+  'Ubuntu'
+]
+
+export const skillsData = {
+  languages: languageData,
+  frontend: frontendData,
+  backend: backendData,
+  databases: databaseData,
+  devops: devopsData,
+  tools: toolsData,
+}
+
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new

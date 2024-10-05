@@ -72,6 +72,19 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
+import rubyonrails from '/public/svg/skills/rubyonrails.svg';
+import nodejs from '/public/svg/skills/node-js.svg';
+import express from '/public/svg/skills/express.svg';
+import jquery from '/public/svg/skills/jquery.svg';
+import vercel from '/public/svg/skills/vercel.svg';
+import netlify from '/public/svg/skills/netlify.svg';
+import ci_cd from '/public/svg/skills/ci-cd.svg';
+import redis from '/public/svg/skills/redis.svg';
+import slack from '/public/svg/skills/slack.svg';
+import vs_code from '/public/svg/skills/vs-code.svg';
+import trello from '/public/svg/skills/trello.svg';
+import clickup from '/public/svg/skills/clickup.svg';
+import github from '/public/svg/skills/github.svg';
 
 
 export const skillsImage = (skill) => {
@@ -79,6 +92,22 @@ export const skillsImage = (skill) => {
   switch (skillID) {
     case 'gcp':
       return gcp;
+    case 'github':
+      return github;
+    case 'clickup':
+      return clickup;
+    case 'trello':
+      return trello;
+    case 'slack':
+      return slack;
+    case 'redis':
+      return redis;
+    case 'vs code':
+      return vs_code;
+    case 'ci/cd':
+      return ci_cd;
+    case 'netlify':
+      return netlify;
     case 'html':
       return html;
     case 'photoshop':
@@ -135,6 +164,8 @@ export const skillsImage = (skill) => {
       return c;
     case 'c++':
       return cplusplus;
+    case 'vercel':
+      return vercel;
     case 'c#':
       return csharp;
     case 'dart':
@@ -225,6 +256,14 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case 'canva':
       return canva;
+    case 'ror':
+      return rubyonrails;
+    case 'node':
+      return nodejs;
+    case 'express':
+      return express;
+    case 'jquery':
+      return jquery;
     default:
       break;
   }

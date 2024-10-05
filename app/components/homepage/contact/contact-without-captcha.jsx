@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
@@ -30,16 +31,16 @@ function ContactWithoutCaptcha() {
     } else {
       setError({ ...error, required: false });
     };
-
+    
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
-
+    
     try {
-      const res = await emailjs.send(serviceID, templateID, userInput, options);
-      const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
+      const data = { ...userInput, from_name: userInput.name, from_email: userInput.email };
+      const res = await emailjs.send(serviceID, templateID, data, options);
 
-      if (res.status === 200 || teleRes.status === 200) {
+      if (res.status === 200) {
         toast.success('Message sent successfully!');
         setUserInput({
           name: '',

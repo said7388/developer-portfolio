@@ -1,7 +1,6 @@
 "use client";
 // @flow strict
 import { isValidEmail } from '@/utils/check-email';
-import axios from 'axios';
 import { useState } from 'react';
 import { TbMailForward } from "react-icons/tb";
 import { toast } from 'react-toastify';
@@ -9,6 +8,7 @@ import emailjs from '@emailjs/browser';
 
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
+  const [disableButton, setDisableButton] = useState(false)
   const [userInput, setUserInput] = useState({
     name: '',
     email: '',
@@ -31,14 +31,14 @@ function ContactWithoutCaptcha() {
     } else {
       setError({ ...error, required: false });
     };
+    setDisableButton(true);
     
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
     
     try {
-      const data = { ...userInput, from_name: userInput.name, from_email: userInput.email };
-      const res = await emailjs.send(serviceID, templateID, data, options);
+      const res = await emailjs.send(serviceID, templateID, userInput, options);
 
       if (res.status === 200) {
         toast.success('Message sent successfully!');
@@ -47,9 +47,11 @@ function ContactWithoutCaptcha() {
           email: '',
           message: '',
         });
+        setDisableButton(false);
       };
     } catch (error) {
       toast.error(error?.text || error);
+      setDisableButton(false);
     };
   };
 
@@ -117,6 +119,7 @@ function ContactWithoutCaptcha() {
             <button
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
+              disabled={disableButton}
               onClick={handleSendMail}
             >
               <span>Send Message</span>

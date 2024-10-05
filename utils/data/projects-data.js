@@ -58,7 +58,7 @@ export const projectsData = [
         demo: '',
         link: '',
         image: ayla,
-    }
+    },
 ];
 
 

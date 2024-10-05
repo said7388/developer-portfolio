@@ -6,6 +6,25 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import experience from '/public/lottie/code.json';
+import { formatDistanceStrict, parseISO } from 'date-fns';
+
+const calculateDuration = (startDate, endDate) => {
+  const start = parseISO(startDate);
+  const end = endDate === 'Present' ? new Date() : parseISO(endDate);
+
+  const years = end.getFullYear() - start.getFullYear();
+  const months = end.getMonth() - start.getMonth();
+
+  const totalMonths = years * 12 + months;
+
+  if (totalMonths >= 12) {
+    const years = Math.floor(totalMonths / 12);
+    return `${years} year${years > 1 ? 's' : ''}`;
+  } else {
+    return `${totalMonths} month${totalMonths !== 1 ? 's' : ''}`;
+  }
+};
+
 
 function Experience() {
   return (
@@ -51,7 +70,7 @@ function Experience() {
                       />
                       <div className="flex justify-center">
                         <p className="text-xs sm:text-sm text-[#16f2b3]">
-                          {experience.duration}
+                          {experience.duration} {calculateDuration(experience.start_date, experience.end_date)}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
@@ -59,11 +78,11 @@ function Experience() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium">
                             {experience.title}
                           </p>
                           <p className="text-sm sm:text-base">
-                            {experience.company}
+                            {experience.link ? (<a href={experience.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">{experience.company}</a>) : (experience.company)}
                           </p>
                         </div>
                       </div>

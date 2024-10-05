@@ -30,6 +30,7 @@ const databaseData = [
 const devopsData = [
   'Docker',
   'AWS',
+  'Elastic Search',
   'CI/CD',
   'Nginx',
   'Vercel',
@@ -38,16 +39,17 @@ const devopsData = [
 
 const toolsData = [
   'VS Code',
+  'Postman',
+  'Github',
   'Slack',
   'Trello',
-  'Github',
   'ClickUp'
 ]
 
 const osData = [
-  'Windows',
-  'MacOS',
-  'Ubuntu'
+  'Window',
+  'Mac',
+  'Linux'
 ]
 
 export const skillsData = {
@@ -57,6 +59,7 @@ export const skillsData = {
   databases: databaseData,
   devops: devopsData,
   tools: toolsData,
+  os: osData,
 }
 
 

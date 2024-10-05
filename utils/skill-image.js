@@ -85,6 +85,11 @@ import vs_code from '/public/svg/skills/vs-code.svg';
 import trello from '/public/svg/skills/trello.svg';
 import clickup from '/public/svg/skills/clickup.svg';
 import github from '/public/svg/skills/github.svg';
+import elastic_search from '/public/svg/skills/elastic-search.svg';
+import postman from '/public/svg/skills/postman.svg';
+import window from '/public/svg/skills/window.svg';
+import mac from '/public/svg/skills/mac.svg';
+import linux from '/public/svg/skills/linux.svg';
 
 
 export const skillsImage = (skill) => {
@@ -92,6 +97,16 @@ export const skillsImage = (skill) => {
   switch (skillID) {
     case 'gcp':
       return gcp;
+    case 'linux':
+      return linux;
+    case 'mac':
+      return mac;
+    case 'window':
+      return window;
+    case 'postman':
+      return postman;
+    case 'elastic search':
+      return elastic_search;
     case 'github':
       return github;
     case 'clickup':

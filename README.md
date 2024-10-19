@@ -3,13 +3,14 @@
 </p>
 
 ---
+
 # [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
 
 ---
 
 # Developer Portfolio
 
-### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+#### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
 
 ---
 
@@ -28,6 +29,9 @@
 - [Installation](#installation-arrow_down)
 - [Getting Started](#getting-started-dart)
 - [Usage](#usage-joystick)
+- [Tutorials](#tutorials-wrench)
+  - [Gmail App Password Setup](#gmail-app-password-setup)
+  - [Create a Telegram Bot](#create-a-telegram-bot)
 - [Packages Used](#packages-used-package)
 
 ---
@@ -54,7 +58,7 @@
 
 #### Make sure you have the latest version of both Git and Node on your computer.
 
-```
+```bash
 node --version
 git --version
 ```
@@ -67,7 +71,7 @@ git --version
 
 To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
-```
+```bash
 git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
 
 cd developer-portfolio
@@ -95,18 +99,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Usage :joystick:
 
-Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
+Please create a new `.env` file from `.env.example` file.
 
 Eg:
 
 ```env
-NEXT_PUBLIC_EMAILJS_SERVICE_ID =
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
-NEXT_PUBLIC_GTM = # For site analytics
-NEXT_PUBLIC_APP_URL = "http://127.0.0.1:3000"
-NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
+NEXT_PUBLIC_GTM =
+NEXT_PUBLIC_APP_URL =
+TELEGRAM_BOT_TOKEN =
+TELEGRAM_CHAT_ID =
+GMAIL_PASSKEY =
+EMAIL_ADDRESS =
 ```
 
 ### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
@@ -133,9 +136,34 @@ export const personalData = {
 };
 ```
 
-`devUsername` Used for fetching blog from `dev.to`.
+`devUsername` is used for fetching blog posts from `dev.to`.
 
 ---
+
+# Tutorials :wrench:
+
+## Gmail App Password Setup
+
+1. **Log in to your Google Account** at [https://myaccount.google.com/](https://myaccount.google.com/).
+2. Navigate to **Security** from the left sidebar.
+3. Scroll down to the **"Signing in to Google"** section and make sure **2-Step Verification** is turned ON.
+4. Once 2-Step Verification is enabled, you'll see an option for **App Passwords**.
+5. Click on **App Passwords**. You may need to enter your Google account password again.
+6. In the **Select app** dropdown, choose "Mail", and for **Select device**, choose "Other (Custom name)" and name it appropriately (e.g., "Portfolio").
+7. Click **Generate**. A 16-character app password will be displayed. Save this password for later use in your environment variables (e.g., `GMAIL_PASSKEY`).
+
+## Create a Telegram Bot
+
+1. **Open Telegram** and search for the user **@BotFather**.
+2. Start a chat with BotFather and use the `/newbot` command to create a new bot.
+3. Choose a name for your bot.
+4. Set a unique username for your bot (must end with `bot`, e.g., `PortfolioAssistantBot`).
+5. Once your bot is created, BotFather will send you a **Token**. Save this token, as you will need it for your environment variables (e.g., `TELEGRAM_BOT_TOKEN`).
+6. To get your chat ID:
+   - Open your bot in Telegram and send it a message.
+   - Visit the following URL in your browser, replacing `BOT_TOKEN` with your actual bot token:  
+     `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
+   - Look for the `chat` object in the response, which contains your **chat ID** (you can use this value for `TELEGRAM_CHAT_ID`).
 
 ---
 

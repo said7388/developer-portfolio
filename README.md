@@ -10,7 +10,7 @@
 
 # Developer Portfolio
 
-Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+#### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
 
 ---
 
@@ -29,9 +29,11 @@ Are you struggling to create a professional portfolio website? Look no further! 
 - [Installation](#installation-arrow_down)
 - [Getting Started](#getting-started-dart)
 - [Usage](#usage-joystick)
+- [Deployment](#deployment-rocket)
 - [Tutorials](#tutorials-wrench)
   - [Gmail App Password Setup](#gmail-app-password-setup)
   - [Create a Telegram Bot](#create-a-telegram-bot)
+  - [Fetching Blog from dev.to](#fetching-blog-from-devto)
 - [Packages Used](#packages-used-package)
 
 ---
@@ -140,6 +142,34 @@ export const personalData = {
 
 ---
 
+# Deployment :rocket:
+
+Deploying the app to platforms like Vercel or Netlify is quick and easy.
+
+## Deploying to Vercel:
+
+1. **Sign up or log in** to [Vercel](https://vercel.com/).
+2. Once logged in, click on **"New Project"**.
+3. Select your **GitHub repo** (the one that contains your forked project) and click **Import**.
+4. Configure your environment variables in the Vercel dashboard by adding each key from your `.env` file.
+   - E.g., `NEXT_PUBLIC_GTM`, `NEXT_PUBLIC_APP_URL`, `TELEGRAM_BOT_TOKEN`, etc.
+5. Click on **Deploy**. Vercel will automatically detect your Next.js app and build it.
+6. Once the deployment is complete, you can visit your live website!
+
+### Updating After Deployment
+
+Whenever you push changes to your GitHub repo, Vercel will automatically redeploy the app, keeping your portfolio up-to-date.
+
+## Deploying to Netlify:
+
+1. **Sign up or log in** to [Netlify](https://www.netlify.com/).
+2. In the **Netlify Dashboard**, click **"New site from Git"**.
+3. Connect your **GitHub** account and select your repo.
+4. Configure your environment variables by going to **Site Settings > Build & Deploy > Environment** and adding keys from your `.env` file.
+5. Click **Deploy Site**. Netlify will build and deploy your portfolio.
+
+---
+
 # Tutorials :wrench:
 
 ## Gmail App Password Setup
@@ -165,19 +195,34 @@ export const personalData = {
      `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
    - Look for the `chat` object in the response, which contains your **chat ID** (you can use this value for `TELEGRAM_CHAT_ID`).
 
+## Fetching Blog from dev.to
+
+To display your blog posts from dev.to on the portfolio:
+
+1. Set your `devUsername` in the `utils/data.js` file to your dev.to username.
+2. The application will automatically fetch your latest blog posts and display them in the **BLOG** section.
+3. Ensure your blogs are publicly visible on dev.to, and the application will fetch them using the dev.to API.
+
 ---
 
 # Packages Used :package:
 
-| Used Package List  |
-| :----------------: |
-|        next        |
-|  @emailjs/browser  |
-|    lottie-react    |
-| react-fast-marquee |
-|    react-icons     |
-|   react-toastify   |
-|        sass        |
-|    tailwindcss     |
+|   Used Package List    |
+| :--------------------: |
+|    @emailjs/browser    |
+|  @next/third-parties   |
+|         axios          |
+|      lottie-react      |
+|          next          |
+|       nodemailer       |
+|         react          |
+|       react-dom        |
+|   react-fast-marquee   |
+| react-google-recaptcha |
+|      react-icons       |
+|     react-toastify     |
+|         sharp          |
+|          sass          |
+|      tailwindcss       |
 
 ---

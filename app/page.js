@@ -7,7 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-
+import Head from 'next/head';
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
@@ -27,6 +27,9 @@ export default async function Home() {
 
   return (
     <>
+     <Head>
+    <link rel="shortcut icon" href="C:\Users\Abhishek20.tripathi\developer-portfolio\app\favicon.ico" />
+    </Head> 
       <HeroSection />
       <AboutSection />
       <Experience />

@@ -16,15 +16,18 @@
     "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.0",
+    "nodemailer": "^6.9.15",
     "react": "latest",
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
     "react-toastify": "^10.0.4",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "toast": "^0.5.4"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.16",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",

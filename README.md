@@ -227,16 +227,18 @@ To display your blog posts from dev.to on the portfolio:
 
 ---
 
+# FAQ:
 
-
-
-##FAQ:
-1. For those facing the issue of
- "'next' is not recognized as an internal or external command,
-operable program or batch file."
+1. For those facing the issue of "`next` is not recognized as an internal or external command, operable program or batch file."
 
 Run the following command:
+
+```bash
+
 npm install -g next
+
+```
+
 This installs Next.js globally
 
-then do the usual "npm run dev"
+then do the usual `npm run dev`

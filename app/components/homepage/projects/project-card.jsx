@@ -43,7 +43,7 @@ function ProjectCard({ project }) {
                 <React.Fragment key={i}>
                   <span className="text-amber-300">{tag}</span>
                   {
-                    project.tools.length - 1 !== i &&
+                    project.tools?.length - 1 !== i &&
                     <span className="text-gray-400">{`', '`}</span>
                   }
                 </React.Fragment>

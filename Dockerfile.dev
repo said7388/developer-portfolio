@@ -1,0 +1,23 @@
+FROM node AS base
+WORKDIR /app
+RUN npm i -g pnpm
+COPY package*.json .
+
+RUN pnpm install
+
+COPY . .
+
+FROM node as release
+WORKDIR /app
+RUN npm i -g pnpm next
+RUN npm install -g tailwindcss postcss autoprefixer
+
+COPY --from=base /app/node_modules ./node_modules
+COPY --from=base /app/package.json ./package.json
+COPY --from=base /app/.next ./.next
+COPY --from=base /app/app ./app
+COPY --from=base /app .
+
+EXPOSE 3000
+
+CMD ["pnpm", "dev"]

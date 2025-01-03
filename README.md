@@ -99,6 +99,37 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ---
 
+### Running with Docker Compose
+
+1. **Build Docker Image and Run Container**:
+    ```bash
+    docker-compose up --build
+    ```
+
+2. **Access the Application**:
+    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+
+---
+
+### Building the Docker Image
+
+1. **Build the Docker Image using Dockerfile.dev**:
+
+    ```bash
+    docker build -t nextjs-app -f Dockerfile.dev .
+    ```
+
+2. **Running the Docker Container**:
+
+    ```bash
+    docker run -p 3000:3000 nextjs-app
+    ```
+
+3. **Access the Application**:
+    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+
+---
+
 # Usage :joystick:
 
 Please create a new `.env` file from `.env.example` file.

@@ -12,11 +12,11 @@ export const educations = [
     major: "Computer Science and Engineering",
     duration: "2021 - 2023",
     institution: "Ohlone College",
-  },
-  {
-    id: 3,
-    title: "High School Diploma",
-    duration: "2017 - 2021",
-    institution: "Circle of Independent Learning",
   }
+  // {
+  //   id: 3,
+  //   title: "High School Diploma",
+  //   duration: "2017 - 2021",
+  //   institution: "Circle of Independent Learning",
+  // }
 ]

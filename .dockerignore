@@ -1,41 +1,24 @@
-# Ignore node_modules and logs
-node_modules
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-.pnpm-debug.log
-package-lock.json.backup
-
-# Ignore local development settings
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Ignore build output
-.next
-out
-build
-
-# Ignore IDE and editor config
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-.DS_Store
-*.bak
-
-# Ignore miscellaneous
-coverage
-*.log
-*.pid
-*.seed
-*.sqlite
-*.tgz
-.cache
-*.tsbuildinfo
-
-# Ignore Docker-related files that should not be copied into the image
-Dockerfile*
-docker-compose.*
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/charts
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+LICENSE
+README.md

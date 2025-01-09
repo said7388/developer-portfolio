@@ -1,20 +1,22 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Bachelor's of Science",
+    major: "Computer Science and Engineering",
+    duration: "2023 - 2025",
+    institution: "University of California, Davis",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Associates Degree",
+    major: "Computer Science and Engineering",
+    duration: "2021 - 2023",
+    institution: "Ohlone College",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "High School Diploma",
+    duration: "2017 - 2021",
+    institution: "Circle of Independent Learning",
   }
 ]

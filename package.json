@@ -13,7 +13,7 @@
     "@emailjs/browser": "^4.3.1",
     "@next/third-parties": "15.1.1",
     "axios": "^1.6.8",
-    "lottie-react": "^2.4.0",
+    "lottie-react": "^2.4.1",
     "next": "15.1.1",
     "nodemailer": "^6.9.15",
     "react": "19.0.0",

@@ -1,257 +1,296 @@
-import adobeXd from '../app/assets/svg/skills/adobe-xd.svg';
-import adobeaudition from '../app/assets/svg/skills/adobeaudition.svg';
-import afterEffects from '../app/assets/svg/skills/after-effects.svg';
-import angular from '../app/assets/svg/skills/angular.svg';
-import aws from '../app/assets/svg/skills/aws.svg';
-import azure from '../app/assets/svg/skills/azure.svg';
-import blender from '../app/assets/svg/skills/blender.svg';
-import bootstrap from '../app/assets/svg/skills/bootstrap.svg';
-import bulma from '../app/assets/svg/skills/bulma.svg';
-import c from '../app/assets/svg/skills/c.svg';
-import canva from '../app/assets/svg/skills/canva.svg';
-import capacitorjs from '../app/assets/svg/skills/capacitorjs.svg';
-import coffeescript from '../app/assets/svg/skills/coffeescript.svg';
-import cplusplus from '../app/assets/svg/skills/cplusplus.svg';
-import csharp from '../app/assets/svg/skills/csharp.svg';
-import css from '../app/assets/svg/skills/css.svg';
-import dart from '../app/assets/svg/skills/dart.svg';
-import deno from '../app/assets/svg/skills/deno.svg';
-import django from '../app/assets/svg/skills/django.svg';
-import docker from '../app/assets/svg/skills/docker.svg';
-import fastify from '../app/assets/svg/skills/fastify.svg';
-import figma from '../app/assets/svg/skills/figma.svg';
-import firebase from '../app/assets/svg/skills/firebase.svg';
-import flutter from '../app/assets/svg/skills/flutter.svg';
-import gcp from '../app/assets/svg/skills/gcp.svg';
-import gimp from '../app/assets/svg/skills/gimp.svg';
-import git from '../app/assets/svg/skills/git.svg';
-import go from '../app/assets/svg/skills/go.svg';
-import graphql from '../app/assets/svg/skills/graphql.svg';
-import haxe from '../app/assets/svg/skills/haxe.svg';
-import html from '../app/assets/svg/skills/html.svg';
-import illustrator from '../app/assets/svg/skills/illustrator.svg';
-import ionic from '../app/assets/svg/skills/ionic.svg';
-import java from '../app/assets/svg/skills/java.svg';
-import javascript from '../app/assets/svg/skills/javascript.svg';
-import julia from '../app/assets/svg/skills/julia.svg';
-import kotlin from '../app/assets/svg/skills/kotlin.svg';
-import lightroom from '../app/assets/svg/skills/lightroom.svg';
-import markdown from '../app/assets/svg/skills/markdown.svg';
-import materialui from '../app/assets/svg/skills/materialui.svg';
-import matlab from '../app/assets/svg/skills/matlab.svg';
-import memsql from '../app/assets/svg/skills/memsql.svg';
-import microsoftoffice from '../app/assets/svg/skills/microsoftoffice.svg';
-import mongoDB from '../app/assets/svg/skills/mongoDB.svg';
-import mysql from '../app/assets/svg/skills/mysql.svg';
-import nextJS from '../app/assets/svg/skills/nextJS.svg';
-import nginx from '../app/assets/svg/skills/nginx.svg';
-import numpy from '../app/assets/svg/skills/numpy.svg';
-import nuxtJS from '../app/assets/svg/skills/nuxtJS.svg';
-import opencv from '../app/assets/svg/skills/opencv.svg';
-import photoshop from '../app/assets/svg/skills/photoshop.svg';
-import php from '../app/assets/svg/skills/php.svg';
-import picsart from '../app/assets/svg/skills/picsart.svg';
-import postgresql from '../app/assets/svg/skills/postgresql.svg';
-import premierepro from '../app/assets/svg/skills/premierepro.svg';
-import python from '../app/assets/svg/skills/python.svg';
-import pytorch from '../app/assets/svg/skills/pytorch.svg';
-import react from '../app/assets/svg/skills/react.svg';
-import ruby from '../app/assets/svg/skills/ruby.svg';
-import selenium from '../app/assets/svg/skills/selenium.svg';
-import sketch from '../app/assets/svg/skills/sketch.svg';
-import strapi from '../app/assets/svg/skills/strapi.svg';
-import svelte from '../app/assets/svg/skills/svelte.svg';
-import swift from '../app/assets/svg/skills/swift.svg';
-import tailwind from '../app/assets/svg/skills/tailwind.svg';
-import tensorflow from '../app/assets/svg/skills/tensorflow.svg';
-import typescript from '../app/assets/svg/skills/typescript.svg';
-import unity from '../app/assets/svg/skills/unity.svg';
-import vitejs from '../app/assets/svg/skills/vitejs.svg';
-import vue from '../app/assets/svg/skills/vue.svg';
-import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
-import webix from '../app/assets/svg/skills/webix.svg';
-import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
-import wordpress from '../app/assets/svg/skills/wordpress.svg';
-
-import pandas from '../app/assets/svg/skills/pandas.svg';
-import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
-import dotnet from '../app/assets/svg/skills/dotnet.svg';
-import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
-import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
-import linux from '../app/assets/svg/skills/linux.svg'
-import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
-
+import adobeXd from "../app/assets/svg/skills/adobe-xd.svg";
+import adobeaudition from "../app/assets/svg/skills/adobeaudition.svg";
+import afterEffects from "../app/assets/svg/skills/after-effects.svg";
+import angular from "../app/assets/svg/skills/angular.svg";
+import aws from "../app/assets/svg/skills/aws.svg";
+import azure from "../app/assets/svg/skills/azure.svg";
+import blender from "../app/assets/svg/skills/blender.svg";
+import bootstrap from "../app/assets/svg/skills/bootstrap.svg";
+import bulma from "../app/assets/svg/skills/bulma.svg";
+import c from "../app/assets/svg/skills/c.svg";
+import canva from "../app/assets/svg/skills/canva.svg";
+import capacitorjs from "../app/assets/svg/skills/capacitorjs.svg";
+import coffeescript from "../app/assets/svg/skills/coffeescript.svg";
+import cplusplus from "../app/assets/svg/skills/cplusplus.svg";
+import csharp from "../app/assets/svg/skills/csharp.svg";
+import css from "../app/assets/svg/skills/css.svg";
+import dart from "../app/assets/svg/skills/dart.svg";
+import deno from "../app/assets/svg/skills/deno.svg";
+import django from "../app/assets/svg/skills/django.svg";
+import docker from "../app/assets/svg/skills/docker.svg";
+import fastify from "../app/assets/svg/skills/fastify.svg";
+import figma from "../app/assets/svg/skills/figma.svg";
+import firebase from "../app/assets/svg/skills/firebase.svg";
+import flutter from "../app/assets/svg/skills/flutter.svg";
+import gcp from "../app/assets/svg/skills/gcp.svg";
+import gimp from "../app/assets/svg/skills/gimp.svg";
+import git from "../app/assets/svg/skills/git.svg";
+import go from "../app/assets/svg/skills/go.svg";
+import graphql from "../app/assets/svg/skills/graphql.svg";
+import haxe from "../app/assets/svg/skills/haxe.svg";
+import html from "../app/assets/svg/skills/html.svg";
+import illustrator from "../app/assets/svg/skills/illustrator.svg";
+import ionic from "../app/assets/svg/skills/ionic.svg";
+import java from "../app/assets/svg/skills/java.svg";
+import javascript from "../app/assets/svg/skills/javascript.svg";
+import julia from "../app/assets/svg/skills/julia.svg";
+import kotlin from "../app/assets/svg/skills/kotlin.svg";
+import lightroom from "../app/assets/svg/skills/lightroom.svg";
+import markdown from "../app/assets/svg/skills/markdown.svg";
+import materialui from "../app/assets/svg/skills/materialui.svg";
+import matlab from "../app/assets/svg/skills/matlab.svg";
+import memsql from "../app/assets/svg/skills/memsql.svg";
+import microsoftoffice from "../app/assets/svg/skills/microsoftoffice.svg";
+import mongoDB from "../app/assets/svg/skills/mongoDB.svg";
+import mysql from "../app/assets/svg/skills/mysql.svg";
+import nextJS from "../app/assets/svg/skills/nextJS.svg";
+import nginx from "../app/assets/svg/skills/nginx.svg";
+import numpy from "../app/assets/svg/skills/numpy.svg";
+import nuxtJS from "../app/assets/svg/skills/nuxtJS.svg";
+import opencv from "../app/assets/svg/skills/opencv.svg";
+import photoshop from "../app/assets/svg/skills/photoshop.svg";
+import php from "../app/assets/svg/skills/php.svg";
+import picsart from "../app/assets/svg/skills/picsart.svg";
+import postgresql from "../app/assets/svg/skills/postgresql.svg";
+import premierepro from "../app/assets/svg/skills/premierepro.svg";
+import python from "../app/assets/svg/skills/python.svg";
+import pytorch from "../app/assets/svg/skills/pytorch.svg";
+import react from "../app/assets/svg/skills/react.svg";
+import ruby from "../app/assets/svg/skills/ruby.svg";
+import selenium from "../app/assets/svg/skills/selenium.svg";
+import sketch from "../app/assets/svg/skills/sketch.svg";
+import strapi from "../app/assets/svg/skills/strapi.svg";
+import svelte from "../app/assets/svg/skills/svelte.svg";
+import swift from "../app/assets/svg/skills/swift.svg";
+import tailwind from "../app/assets/svg/skills/tailwind.svg";
+import tensorflow from "../app/assets/svg/skills/tensorflow.svg";
+import typescript from "../app/assets/svg/skills/typescript.svg";
+import unity from "../app/assets/svg/skills/unity.svg";
+import vitejs from "../app/assets/svg/skills/vitejs.svg";
+import vue from "../app/assets/svg/skills/vue.svg";
+import vuetifyjs from "../app/assets/svg/skills/vuetifyjs.svg";
+import webix from "../app/assets/svg/skills/webix.svg";
+import wolframalpha from "../app/assets/svg/skills/wolframalpha.svg";
+import wordpress from "../app/assets/svg/skills/wordpress.svg";
+import pandas from "../app/assets/svg/skills/pandas.svg";
+import scikitlearn from "../app/assets/svg/skills/scikit-learn.svg";
+import dotnet from "../app/assets/svg/skills/dotnet.svg";
+import dotnetcore from "../app/assets/svg/skills/dotnetcore.svg";
+import kubernetes from "../app/assets/svg/skills/kubernetes.svg";
+import linux from "../app/assets/svg/skills/linux.svg";
+import sqlalchemy from "../app/assets/svg/skills/sqlalchemy.svg";
+import fastapi from "../app/assets/svg/skills/fastapi.svg";
+import terraform from "../app/assets/svg/skills/terraform-svgrepo-com.svg";
+import huggingFaceTransfromers from "../app/assets/svg/skills/hugging-face-svgrepo-com.svg";
+import apollo from "../app/assets/svg/skills/apollographql-svgrepo-com.svg";
+import jenkins from "../app/assets/svg/skills/jenkins-svgrepo-com.svg";
+import githubActions from "../app/assets/svg/skills/github-svgrepo-com.svg";
+import bunJS from "../app/assets/svg/skills/Bun.svg";
+import express from "../app/assets/svg/skills/icons8-express-js.svg";
+import flask from "../app/assets/svg/skills/flask-svgrepo-com.svg";
+import playwright from "../app/assets/svg/skills/theatre-drama-svgrepo-com.svg";
+import cucumber from "../app/assets/svg/skills/cucumber-svgrepo-com.svg";
+import gherkin from "../app/assets/svg/skills/gherkin.svg";
+import node from "../app/assets/svg/skills/node-js-svgrepo-com.svg";
+import spark from "../app/assets/svg/skills/apache_spark-ar21.svg";
+import ray from "../app/assets/svg/skills/ray_logos.svg";
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
-    case 'gcp':
+    case "gcp":
       return gcp;
-    case 'html':
+    case "html":
       return html;
-    case 'photoshop':
+    case "cucumber":
+      return cucumber;
+    case "gherkin":
+      return gherkin;
+    case "playwright":
+      return playwright;
+    case "spark":
+      return spark;
+    case "ray":
+      return ray;
+    case "node js":
+      return node;
+    case "terraform":
+      return terraform;
+    case "hf transformers":
+      return huggingFaceTransfromers;
+    case "apollo":
+      return apollo;
+    case "photoshop":
       return photoshop;
-    case 'docker':
+    case "jenkins":
+      return jenkins;
+    case "github actions":
+      return githubActions;
+    case "bun js":
+      return bunJS;
+    case "docker":
       return docker;
-    case 'illustrator':
+    case "illustrator":
       return illustrator;
-    case 'adobe xd':
+    case "adobe xd":
       return adobeXd;
-    case 'after effects':
+    case "after effects":
       return afterEffects;
-    case 'css':
+    case "css":
       return css;
-    case 'angular':
+    case "express js":
+      return express;
+    case "angular":
       return angular;
-    case 'javascript':
+    case "javascript":
       return javascript;
-    case 'next js':
+    case "next js":
       return nextJS;
-    case 'nuxt js':
+    case "nuxt js":
       return nuxtJS;
-    case 'react':
+    case "react":
       return react;
-    case 'svelte':
+    case "svelte":
       return svelte;
-    case 'typescript':
+    case "typescript":
       return typescript;
-    case 'vue':
+    case "vue":
       return vue;
-    case 'bootstrap':
+    case "bootstrap":
       return bootstrap;
-    case 'bulma':
+    case "bulma":
       return bulma;
-    case 'capacitorjs':
+    case "capacitorjs":
       return capacitorjs;
-    case 'coffeescript':
+    case "coffeescript":
       return coffeescript;
-    case 'memsql':
+    case "memsql":
       return memsql;
-    case 'mongodb':
+    case "mongodb":
       return mongoDB;
-    case 'mysql':
+    case "mysql":
       return mysql;
-    case 'postgresql':
+    case "postgresql":
       return postgresql;
-    case 'tailwind':
+    case "tailwind":
       return tailwind;
-    case 'vitejs':
+    case "vitejs":
       return vitejs;
-    case 'vuetifyjs':
+    case "vuetifyjs":
       return vuetifyjs;
-    case 'c':
+    case "c":
       return c;
-    case 'c++':
+    case "c++":
       return cplusplus;
-    case 'c#':
+    case "c#":
       return csharp;
-    case 'dart':
+    case "dart":
       return dart;
-    case 'go':
+    case "go":
       return go;
-    case 'java':
+    case "java":
       return java;
-    case 'kotlin':
+    case "kotlin":
       return kotlin;
-    case 'julia':
+    case "julia":
       return julia;
-    case 'matlab':
+    case "matlab":
       return matlab;
-    case 'php':
+    case "php":
       return php;
-    case 'python':
+    case "python":
       return python;
-    case 'ruby':
+    case "ruby":
       return ruby;
-    case 'swift':
+    case "swift":
       return swift;
-    case 'adobe audition':
+    case "adobe audition":
       return adobeaudition;
-    case 'aws':
+    case "aws":
       return aws;
-    case 'deno':
+    case "deno":
       return deno;
-    case 'django':
+    case "django":
       return django;
-    case 'firebase':
+    case "flask":
+      return flask;
+    case "firebase":
       return firebase;
-    case 'gimp':
+    case "gimp":
       return gimp;
-    case 'git':
+    case "git":
       return git;
-    case 'graphql':
+    case "graphql":
       return graphql;
-    case 'lightroom':
+    case "lightroom":
       return lightroom;
-    case 'materialui':
+    case "materialui":
       return materialui;
-    case 'nginx':
+    case "nginx":
       return nginx;
-    case 'numpy':
+    case "numpy":
       return numpy;
-    case 'opencv':
+    case "opencv":
       return opencv;
-    case 'premiere pro':
+    case "premiere pro":
       return premierepro;
-    case 'pytorch':
+    case "pytorch":
       return pytorch;
-    case 'selenium':
+    case "selenium":
       return selenium;
-    case 'strapi':
+    case "strapi":
       return strapi;
-    case 'tensorflow':
+    case "tensorflow":
       return tensorflow;
-    case 'webix':
+    case "webix":
       return webix;
-    case 'wordpress':
+    case "wordpress":
       return wordpress;
-    case 'azure':
+    case "azure":
       return azure;
-    case 'blender':
+    case "blender":
       return blender;
-    case 'fastify':
+    case "fastify":
       return fastify;
-    case 'figma':
+    case "figma":
       return figma;
-    case 'flutter':
+    case "flutter":
       return flutter;
-    case 'haxe':
+    case "haxe":
       return haxe;
-    case 'ionic':
+    case "ionic":
       return ionic;
-    case 'markdown':
+    case "markdown":
       return markdown;
-    case 'microsoft office':
+    case "microsoft office":
       return microsoftoffice;
-    case 'picsart':
+    case "picsart":
       return picsart;
-    case 'sketch':
+    case "sketch":
       return sketch;
-    case 'unity':
+    case "unity":
       return unity;
-    case 'wolframalpha':
+    case "wolframalpha":
       return wolframalpha;
-    case 'canva':
+    case "canva":
       return canva;
-    case 'pandas':
+    case "pandas":
       return pandas;
-    case 'sklearn':
+    case "sklearn":
       return scikitlearn;
-    case '.net':
+    case ".net":
       return dotnet;
-    case '.net core':
-      return dotnetcore
-    case 'kubernetes':
+    case ".net core":
+      return dotnetcore;
+    case "kubernetes":
       return kubernetes;
-    case 'linux':
+    case "linux":
       return linux;
-    case 'sqlalchemy':
+    case "sqlalchemy":
       return sqlalchemy;
-    case 'fastapi':
+    case "fastapi":
       return fastapi;
     default:
       break;
   }
-}
+};

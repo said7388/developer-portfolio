@@ -14,7 +14,17 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #1a1a1a 20%,
+    #2d2d2d 40%,
+    #1a1a1a 60%,
+    #0a0a0a 80%,
+    #000000 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 #sticky-card-1 {

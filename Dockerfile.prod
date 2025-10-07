@@ -1,4 +1,4 @@
-FROM node:20 AS base
+FROM node:24 AS base
 WORKDIR /app
 RUN npm i -g pnpm
 RUN npm i -g next
@@ -9,7 +9,7 @@ RUN pnpm install
 COPY . .
 RUN pnpm build
 
-FROM node:20-alpine3.19 as release
+FROM node:24-alpine3.19 as release
 WORKDIR /app
 RUN npm i -g pnpm
 

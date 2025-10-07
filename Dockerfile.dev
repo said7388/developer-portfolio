@@ -8,7 +8,7 @@ RUN pnpm install
 
 COPY . .
 
-FROM node:24-alpine3.19 as release
+FROM node:24.9-alpine3.21 as release
 WORKDIR /app
 RUN npm i -g pnpm
 

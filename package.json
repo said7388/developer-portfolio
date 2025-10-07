@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
+  "description": "Portfolio of Joshua McNabb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,7 @@
     "react-dom": "19.0.0",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
-    "react-icons": "^4.11.0",
+    "react-icons": "^5.5.0",
     "react-toastify": "^10.0.4",
     "sharp": "^0.33.5"
   },

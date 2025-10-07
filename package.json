@@ -25,11 +25,11 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
+    "autoprefixer": "^10.4.20",
     "eslint": "latest",
     "eslint-config-next": "15.1.1",
-    "postcss": "latest",
+    "postcss": "^8.4.49",
     "sass": "^1.69.5",
-    "tailwindcss": "latest"
+    "tailwindcss": "^3.4.17"
   }
 }

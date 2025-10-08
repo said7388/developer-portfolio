@@ -2,7 +2,7 @@
 // @flow strict
 import { isValidEmail } from "@/utils/check-email";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
 
@@ -13,6 +13,10 @@ function ContactForm() {
     name: "",
     email: "",
     message: "",
+  });
+
+  useEffect(() => {
+    toast.success("testing toast");
   });
 
   const checkRequired = () => {

@@ -11,6 +11,5 @@ export const personalData = {
   linkedIn: "https://www.linkedin.com/in/jmcnabb1995/",
   upwork: "https://upwork.com/freelancers/joshuamcnabb",
   devUsername: "said7388",
-  resume:
-    "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing",
+  resume: "/Joshua_McNabb_Resume.pdf",
 };

@@ -7,8 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "kamal:deploy": "kamal deploy"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",

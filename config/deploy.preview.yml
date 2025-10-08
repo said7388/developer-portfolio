@@ -1,0 +1,44 @@
+# Name of your application. Used to uniquely configure containers.
+service: portfolio-preview
+
+# Name of the container image.
+image: joshuamcnabb/portfolio-preview
+
+# Deploy to these servers.
+servers:
+  - 5.78.158.3
+
+# Enable SSL auto certification via Let's Encrypt and allow for multiple apps on a single web server.
+# Remove this section when using multiple web servers and ensure you terminate SSL at your load balancer.
+#
+# Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
+proxy:
+  app_port: 3000
+  ssl: true
+  host: preview.joshuamcnabb.ca
+  healthcheck:
+    path: /
+    interval: 5
+
+# Credentials for your image host.
+registry:
+  username:
+    - DOCKER_USERNAME
+  password:
+    - DOCKER_PASSWORD
+
+# Configure builder setup.
+builder:
+  arch: amd64
+  context: .
+
+ssh:
+  user: root
+  keys:
+    - ~/.ssh/id_hetzner
+
+# Bridge fingerprinted assets, like JS and CSS, between versions to avoid
+# hitting 404 on in-flight requests. Combines all files from new and old
+# version inside the asset_path.
+#
+asset_path: /app/.next

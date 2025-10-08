@@ -26,6 +26,6 @@ pnpm dev
 
 ## Deployment Tool
 
-Kamal is being used to deploy the app to a private VPS: https://kamal-deploy.org. The configuration can be found in `config/.kamal/deploy.yaml` and the secrets can be found in `config/secrets`.
+Kamal is being used to deploy the app to a private VPS: https://kamal-deploy.org. **Be sure to install version 2**. The configuration can be found in `config/deploy.yaml` and the secrets can be found in `.kamal/secrets`.
 
 TODO: Add information on how deployment works

@@ -1,5 +1,3 @@
-# <% require "dotenv"; Dotenv.load(".env") %>
-
 # Name of your application. Used to uniquely configure containers.
 service: portfolio
 
@@ -9,10 +7,6 @@ image: joshuamcnabb/portfolio
 # Deploy to these servers.
 servers:
   - 5.78.158.3
-  # job:
-  #   hosts:
-  #     - 192.168.0.1
-  #   cmd: bin/jobs
 
 # Enable SSL auto certification via Let's Encrypt and allow for multiple apps on a single web server.
 # Remove this section when using multiple web servers and ensure you terminate SSL at your load balancer.
@@ -37,35 +31,11 @@ registry:
 builder:
   arch: amd64
   context: .
-  # remote: ssh://5.78.158.3
-  # cache:
-  #   type: registry
-  #   options: mode=max
-  #   image: joshuamcnabb/portfolio-build-cache
-  # Pass in additional build args needed for your Dockerfile.
-  # args:
-  #   RUBY_VERSION: <%= ENV["RBENV_VERSION"] || ENV["rvm_ruby_string"] || "#{RUBY_ENGINE}-#{RUBY_ENGINE_VERSION}" %>
 
-# Inject ENV variables into containers (secrets come from .kamal/secrets).
-#
-# env:
-#   clear:
-#     DB_HOST: 192.168.0.2
-#   secret:
-#     - RAILS_MASTER_KEY
-
-# Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
-# "bin/kamal app logs -r job" will tail logs from the first server in the job section.
-#
-# aliases:
-#   shell: app exec --interactive --reuse "bash"
-
-# Use a different ssh user than root
-#
 ssh:
   user: root
   keys:
-    - <%= ENV["SSH_KEY_PATH"] %>
+    - ~/.ssh/id_hetzner
 
 # Use a persistent storage volume.
 #

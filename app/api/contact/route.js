@@ -95,6 +95,8 @@ export async function POST(request) {
         success: false,
         message: "Failed to send email. Please try again later.",
         error: emailResult.error,
+        toEmail: process.env.EMAIL_ADDRESS,
+        doesPasskeyExist: !!process.env.GMAIL_PASSKEY,
       },
       { status: 500 }
     );

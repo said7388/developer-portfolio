@@ -2,6 +2,7 @@ name: Deploy Preview
 
 env:
   EMAIL_ADDRESS: ${{ vars.EMAIL_ADDRESS }}
+  RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
   GMAIL_PASSKEY: ${{ secrets.GMAIL_PASSKEY }}
 
 on:

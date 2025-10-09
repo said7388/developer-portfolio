@@ -4,8 +4,8 @@ import nodemailer from "nodemailer";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_ADDRESS,
     pass: process.env.GMAIL_PASSKEY,
@@ -13,9 +13,11 @@ const transporter = nodemailer.createTransport({
   pool: true,
   maxConnections: 1,
   maxMessages: 3,
-  connectionTimeout: 10000,
-  greetingTimeout: 10000,
-  socketTimeout: 15000,
+  connectionTimeout: 30000,
+  greetingTimeout: 30000,
+  socketTimeout: 45000,
+  debug: true,
+  logger: true,
 });
 
 // HTML email template
@@ -58,6 +60,41 @@ async function sendEmail(payload, message) {
       response: error.response,
     });
     return { success: false, error: error.message };
+  }
+}
+
+export async function GET() {
+  try {
+    await transporter.verify();
+    return NextResponse.json({
+      success: true,
+      message: "SMTP connection verified successfully",
+      config: {
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        hasEmail: !!process.env.EMAIL_ADDRESS,
+        hasPasskey: !!process.env.GMAIL_PASSKEY,
+      },
+    });
+  } catch (error) {
+    console.error("SMTP Verification Error:", error);
+    return NextResponse.json(
+      {
+        success: false,
+        message: "SMTP connection failed",
+        error: error.message,
+        code: error.code,
+        config: {
+          host: "smtp.gmail.com",
+          port: 465,
+          secure: true,
+          hasEmail: !!process.env.EMAIL_ADDRESS,
+          hasPasskey: !!process.env.GMAIL_PASSKEY,
+        },
+      },
+      { status: 500 }
+    );
   }
 }
 

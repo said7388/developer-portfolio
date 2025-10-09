@@ -1,19 +1,6 @@
-"use client";
-
 import Link from "next/link";
 
 function Navbar() {
-  const handleSmoothScroll = (e, targetId) => {
-    e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
@@ -29,8 +16,8 @@ function Navbar() {
         >
           <li>
             <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-              onClick={(e) => handleSmoothScroll(e, "about")}
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="#about"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 ABOUT
@@ -39,8 +26,8 @@ function Navbar() {
           </li>
           <li>
             <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-              onClick={(e) => handleSmoothScroll(e, "experience")}
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="#experience"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 EXPERIENCE
@@ -49,8 +36,8 @@ function Navbar() {
           </li>
           <li>
             <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-              onClick={(e) => handleSmoothScroll(e, "skills")}
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="#skills"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 SKILLS
@@ -59,8 +46,8 @@ function Navbar() {
           </li>
           <li>
             <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-              onClick={(e) => handleSmoothScroll(e, "projects")}
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="#projects"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 PROJECTS
@@ -69,8 +56,8 @@ function Navbar() {
           </li>
           <li>
             <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
-              onClick={(e) => handleSmoothScroll(e, "education")}
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="#education"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 EDUCATION

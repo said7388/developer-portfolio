@@ -32,6 +32,12 @@ builder:
   arch: amd64
   context: .
 
+# Runtime environment variables (available to the running container)
+env:
+  secret:
+    - EMAIL_ADDRESS
+    - RESEND_API_KEY
+
 ssh:
   user: root
   keys:

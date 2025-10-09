@@ -1,19 +1,8 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-// Create and configure Nodemailer transporter
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.GMAIL_PASSKEY,
-  },
-});
+export const dynamic = "force-dynamic";
 
-// HTML email template
 const generateEmailTemplate = (name, email, userMessage) => `
   <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; background-color: #f4f4f4;">
     <div style="max-width: 600px; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
@@ -29,60 +18,79 @@ const generateEmailTemplate = (name, email, userMessage) => `
   </div>
 `;
 
-// Helper function to send an email via Nodemailer
-async function sendEmail(payload, message) {
-  const { name, email, message: userMessage } = payload;
-
-  const mailOptions = {
-    from: "Portfolio",
-    to: process.env.EMAIL_ADDRESS,
-    subject: `New Message From ${name} (Portfolio)`,
-    text: message,
-    html: generateEmailTemplate(name, email, userMessage),
-    replyTo: email,
-  };
-
-  try {
-    await transporter.sendMail(mailOptions);
-    return true;
-  } catch (error) {
-    console.error("Error while sending email:", error.message);
-    return false;
-  }
-}
-
 export async function POST(request) {
   try {
-    const payload = await request.json();
-    const { name, email, message: userMessage } = payload;
-
-    const message = `New message from ${name}\n\nEmail: ${email}\n\nMessage:\n\n${userMessage}\n\n`;
-
-    const emailSuccess = await sendEmail(payload, message);
-
-    if (emailSuccess) {
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not set");
       return NextResponse.json(
         {
-          success: true,
-          message: "Message and email sent successfully!",
+          success: false,
+          message: "Email service is not configured.",
         },
-        { status: 200 }
+        { status: 500 }
       );
     }
 
+    if (!process.env.EMAIL_ADDRESS) {
+      console.error("EMAIL_ADDRESS is not set");
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Email service is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const payload = await request.json();
+    const { name, email, message: userMessage } = payload;
+
+    if (!name || !email || !userMessage) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Missing required fields.",
+        },
+        { status: 400 }
+      );
+    }
+
+    const { data, error } = await resend.emails.send({
+      from: "Portfolio <sender@mail.joshuamcnabb.ca>",
+      to: process.env.EMAIL_ADDRESS,
+      replyTo: email,
+      subject: `New Message From ${name} (Portfolio)`,
+      html: generateEmailTemplate(name, email, userMessage),
+    });
+
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Failed to send email. Please try again later.",
+          error: error.message,
+        },
+        { status: 500 }
+      );
+    }
+
+    console.log("Email sent successfully:", data.id);
     return NextResponse.json(
       {
-        success: false,
-        message: "Failed to send message or email.",
+        success: true,
+        message: "Message sent successfully!",
       },
-      { status: 500 }
+      { status: 200 }
     );
   } catch (error) {
-    console.error("API Error:", error.message);
+    console.error("API Error:", error);
     return NextResponse.json(
       {
         success: false,
         message: "Server error occurred.",
+        error: error.message,
       },
       { status: 500 }
     );

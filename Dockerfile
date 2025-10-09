@@ -7,6 +7,7 @@ COPY package*.json ./
 RUN pnpm install
 
 COPY . .
+
 RUN pnpm build
 
 FROM node:24.9-alpine3.21 AS release

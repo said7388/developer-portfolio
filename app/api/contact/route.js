@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const generateEmailTemplate = (name, email, userMessage) => `
   <div style="font-family: Arial, sans-serif; color: #333; padding: 20px; background-color: #f4f4f4;">
     <div style="max-width: 600px; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
@@ -19,6 +17,8 @@ const generateEmailTemplate = (name, email, userMessage) => `
 `;
 
 export async function POST(request) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   try {
     const payload = await request.json();
     const { name, email, message: userMessage } = payload;

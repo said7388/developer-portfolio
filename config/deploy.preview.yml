@@ -36,7 +36,7 @@ builder:
 env:
   secret:
     - EMAIL_ADDRESS
-    - GMAIL_PASSKEY
+    - RESEND_API_KEY
 
 ssh:
   user: root

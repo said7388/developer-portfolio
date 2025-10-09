@@ -15,13 +15,13 @@
     "axios": "^1.6.8",
     "lottie-react": "^2.4.1",
     "next": "15.1.1",
-    "nodemailer": "^6.9.15",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^5.5.0",
     "react-toastify": "^10.0.4",
+    "resend": "^6.1.2",
     "sharp": "^0.33.5"
   },
   "devDependencies": {

@@ -15,7 +15,7 @@ servers:
 proxy:
   app_port: 3000
   ssl: true
-  host: portfolio.joshuamcnabb.ca
+  host: joshuamcnabb.ca
   healthcheck:
     path: /
     interval: 5

@@ -5,7 +5,7 @@ export const skillsData = [
   "Typescript",
   "React",
   "Next JS",
-  "Node JS",
+  // "Node JS", // TODO: Add this once there's an image for nodejs
   "MySQL",
   "PostgreSQL",
   "Git",

@@ -33,6 +33,8 @@ builder:
   context: .
   args:
     NEXT_PUBLIC_APP_URL: <%= ENV['NEXT_PUBLIC_APP_URL'] %>
+    EMAIL_ADDRESS: <%= ENV['EMAIL_ADDRESS'] %>
+    GMAIL_PASSKEY: <%= ENV['GMAIL_PASSKEY'] %>
 
 ssh:
   user: root

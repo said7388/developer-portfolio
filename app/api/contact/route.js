@@ -10,12 +10,6 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_ADDRESS,
     pass: process.env.GMAIL_PASSKEY,
   },
-  pool: true,
-  maxConnections: 1,
-  maxMessages: 3,
-  connectionTimeout: 10000,
-  greetingTimeout: 10000,
-  socketTimeout: 15000,
 });
 
 // HTML email template

@@ -31,6 +31,8 @@ registry:
 builder:
   arch: amd64
   context: .
+  args:
+    NEXT_PUBLIC_APP_URL: <%= ENV['NEXT_PUBLIC_APP_URL'] %>
 
 ssh:
   user: root

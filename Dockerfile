@@ -7,6 +7,10 @@ COPY package*.json ./
 RUN pnpm install
 
 COPY . .
+
+ARG NEXT_PUBLIC_APP_URL
+ENV NEXT_PUBLIC_APP_URL=$NEXT_PUBLIC_APP_URL
+
 RUN pnpm build
 
 FROM node:24.9-alpine3.21 AS release

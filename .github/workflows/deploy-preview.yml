@@ -1,5 +1,8 @@
 name: Deploy Preview
 
+env:
+  NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]

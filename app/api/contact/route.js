@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// Create and configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
@@ -11,6 +10,12 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_ADDRESS,
     pass: process.env.GMAIL_PASSKEY,
   },
+  pool: true,
+  maxConnections: 1,
+  maxMessages: 3,
+  connectionTimeout: 10000,
+  greetingTimeout: 10000,
+  socketTimeout: 15000,
 });
 
 // HTML email template
@@ -29,7 +34,6 @@ const generateEmailTemplate = (name, email, userMessage) => `
   </div>
 `;
 
-// Helper function to send an email via Nodemailer
 async function sendEmail(payload, message) {
   const { name, email, message: userMessage } = payload;
 
@@ -43,11 +47,17 @@ async function sendEmail(payload, message) {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
-    return true;
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully:", info.messageId);
+    return { success: true, messageId: info.messageId };
   } catch (error) {
-    console.error("Error while sending email:", error.message);
-    return false;
+    console.error("Error sending email:", {
+      message: error.message,
+      code: error.code,
+      command: error.command,
+      response: error.response,
+    });
+    return { success: false, error: error.message };
   }
 }
 
@@ -56,15 +66,25 @@ export async function POST(request) {
     const payload = await request.json();
     const { name, email, message: userMessage } = payload;
 
+    if (!name || !email || !userMessage) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Missing required fields.",
+        },
+        { status: 400 }
+      );
+    }
+
     const message = `New message from ${name}\n\nEmail: ${email}\n\nMessage:\n\n${userMessage}\n\n`;
 
-    const emailSuccess = await sendEmail(payload, message);
+    const emailResult = await sendEmail(payload, message);
 
-    if (emailSuccess) {
+    if (emailResult.success) {
       return NextResponse.json(
         {
           success: true,
-          message: "Message and email sent successfully!",
+          message: "Message sent successfully!",
         },
         { status: 200 }
       );
@@ -73,12 +93,13 @@ export async function POST(request) {
     return NextResponse.json(
       {
         success: false,
-        message: "Failed to send message or email.",
+        message: "Failed to send email. Please try again later.",
+        error: emailResult.error,
       },
       { status: 500 }
     );
   } catch (error) {
-    console.error("API Error:", error.message);
+    console.error("API Error:", error);
     return NextResponse.json(
       {
         success: false,

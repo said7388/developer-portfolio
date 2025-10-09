@@ -1,7 +1,6 @@
 name: Deploy Preview
 
 env:
-  NEXT_PUBLIC_APP_URL: ${{ vars.NEXT_PUBLIC_APP_URL }}
   EMAIL_ADDRESS: ${{ vars.EMAIL_ADDRESS }}
   GMAIL_PASSKEY: ${{ secrets.GMAIL_PASSKEY }}
 

@@ -31,13 +31,9 @@ registry:
 builder:
   arch: amd64
   context: .
-  args:
-    NEXT_PUBLIC_APP_URL: <%= ENV['NEXT_PUBLIC_APP_URL'] %>
 
 # Runtime environment variables (available to the running container)
 env:
-  clear:
-    NEXT_PUBLIC_APP_URL: <%= ENV['NEXT_PUBLIC_APP_URL'] %>
   secret:
     - EMAIL_ADDRESS
     - GMAIL_PASSKEY

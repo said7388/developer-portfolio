@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio",
-  "description": "Portfolio of Hannah Schultz",
+  "description": "Portfolio of Hannah",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
@@ -30,6 +30,7 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "15.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"

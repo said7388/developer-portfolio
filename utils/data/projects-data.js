@@ -1,40 +1,29 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
+        name: 'Système de Gestion des Dossiers Médicaux Vétérinaires', 
+        description: "J'ai développé une API RESTful robuste pour remplacer la gestion papier des dossiers médicaux d'animaux. Le système centralise l'historique médical, les traitements et les vaccinations. J'ai mis en place l'authentification JWT et la journalisation pour la traçabilité. Le projet utilise Spring Security et une base de données PostgreSQL.", tools: ['Java 17', 'Spring Boot', 'Spring Data JPA', 'Spring Security', 'PostgreSQL', 'JUnit 5', 'Mockito', 'Docker', 'AWS EC2'], 
         role: 'Backend Developer',
         code: '',
         demo: '',
     },
     {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
+        id: 2, 
+        name: 'Plateforme de Gestion des Stages en Entreprise',
+        description: "J'ai automatisé le suivi des stagiaires, de l'affectation à l'évaluation, en créant les services backend pour la gestion des profils et des rapports. L'application gère différents rôles (Stagiaire, Tuteur, RH) et utilise Spring Data REST pour les endpoints de gestion. Les notifications par email sont assurées par JavaMailSender.", tools: ['Java 17', 'Spring Boot', 'Spring Data REST', 'MySQL', 'Flyway', 'JavaMailSender', 'GitLab CI'], 
+        role: 'Backend Developer',
         code: '',
         demo: '',
     },
     {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
+        id: 3, 
+        name: 'Moteur de Collecte et d Analyse de Feedbacks Clients',
+        description: "J'ai conçu un service asynchrone pour l'ingestion et la normalisation des retours clients multi-canaux. Le service utilise Spring Boot WebFlux pour une gestion non bloquante des requêtes et MongoDB pour la flexibilité des données non structurées. Redis est utilisé pour le caching des agrégats et AWS S3 pour le stockage des pièces jointes.", tools: ['Java 17', 'Spring Boot WebFlux', 'Spring Data MongoDB', 'MongoDB', 'Redis', 'Docker Compose', 'AWS S3', 'Rate Limiting'], 
+        role: 'Backend Developer',
         code: '',
         role: 'Full Stack Developer',
         demo: '',
     },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
 ];
 
 

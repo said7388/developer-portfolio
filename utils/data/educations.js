@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Mastere en management des solutions digitales et data",
+    duration: "2024 - Present",
+    institution: "3IL Limoges",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Bachelor en conception des systèmes informations",
+    duration: "2023 - 2024",
+    institution: "3IL Limoges",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Brevet de technicien supérieur en genie logiciel",
+    duration: "2021 - 2023",
+    institution: "Institut Universitaire de la Côte",
   }
 ]

@@ -10,9 +10,12 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Abu Said - Software Developer",
+  title: "Portfolio of WEFANG NZEYANG Paloma - Développeuse Backend JAVA",
   description:
-    "This is the portfolio of Abu Said. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "This is the portfolio of WEFANG NZEYANG Paloma. I am a backend developer with one year of practical experience, passionate about software architecture and the Java/Spring Boot ecosystem. I provide well-structured code by applying Clean Code principles and ensuring solid unit and integration test coverage. I am comfortable with modern tools such as Maven, containerization and relational databases: PostgreSQL, SQL.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {

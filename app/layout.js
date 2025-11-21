@@ -14,13 +14,20 @@ export const metadata = {
   description:
     "This is the portfolio of WEFANG NZEYANG Paloma. I am a backend developer with one year of practical experience, passionate about software architecture and the Java/Spring Boot ecosystem. I provide well-structured code by applying Clean Code principles and ensuring solid unit and integration test coverage. I am comfortable with modern tools such as Maven, containerization and relational databases: PostgreSQL, SQL.",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/image/pro.jpg',
+    shortcut: '/image/pro.jpg',
+    apple: '/image/pro.jpg',
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/image/pro.jpg" />
+        <link rel="shortcut icon" href="/image/pro.jpg" />
+        <link rel="apple-touch-icon" href="/image/pro.jpg" />
+      </head>
       <body className={inter.className}>
         <ToastContainer />
         <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">

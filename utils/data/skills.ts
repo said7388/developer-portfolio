@@ -1,0 +1,16 @@
+export const skillsData: string[] = [
+  "Javascript",
+  "Typescript",
+  "React",
+  "NestJS",
+  "Tailwind",
+  "MongoDB",
+  "MySQL",
+  "PostgreSQL",
+  "Git",
+  "Github",
+  "AWS",
+  "GCP",
+  "Docker",
+  "MaterialUI",
+];

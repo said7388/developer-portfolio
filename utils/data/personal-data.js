@@ -8,5 +8,5 @@ export const personalData = {
   address: 'Montréal, QC, Canada',
   github: 'https://github.com/charbelB7',
   linkedIn: 'https://www.linkedin.com/in/charbelB7/',
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1QllZi6l3bqagsvawivgcDyvcmsaDrOTX/view?usp=sharing"
 }

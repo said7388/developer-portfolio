@@ -26,47 +26,57 @@ function HeroSection() {
             Hello, <br />
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {` , I'm a `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
 
           <div className="my-12 flex items-center gap-5">
-            <Link
-              href={personalData.github}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsGithub size={30} />
-            </Link>
-            <Link
-              href={personalData.linkedIn}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsLinkedin size={30} />
-            </Link>
-            <Link
-              href={personalData.facebook}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaFacebook size={30} />
-            </Link>
-            <Link
-              href={personalData.leetcode}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <SiLeetcode size={30} />
-            </Link>
-            <Link
-              href={personalData.twitter}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={30} />
-            </Link>
+            {personalData.github && personalData.github !== '#' && (
+              <Link
+                href={personalData.github}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <BsGithub size={30} />
+              </Link>
+            )}
+            {personalData.linkedIn && personalData.linkedIn !== '#' && (
+              <Link
+                href={personalData.linkedIn}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <BsLinkedin size={30} />
+              </Link>
+            )}
+            {personalData.facebook && personalData.facebook !== '#' && (
+              <Link
+                href={personalData.facebook}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <FaFacebook size={30} />
+              </Link>
+            )}
+            {personalData.leetcode && personalData.leetcode !== '#' && (
+              <Link
+                href={personalData.leetcode}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <SiLeetcode size={30} />
+              </Link>
+            )}
+            {personalData.twitter && personalData.twitter !== '#' && (
+              <Link
+                href={personalData.twitter}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <FaTwitterSquare size={30} />
+              </Link>
+            )}
           </div>
 
           <div className="flex items-center gap-3">
@@ -101,36 +111,56 @@ function HeroSection() {
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
+                <span className="mr-2 text-white">engineer</span>
                 <span className="mr-2 text-pink-500">=</span>
                 <span className="text-gray-400">{'{'}</span>
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">Charbel Barakat</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
+                <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">C++</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">Bash</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">FastAPI</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">SQL</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
+                <span className="text-amber-300">Linux</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Git</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Machine Learning</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Deep Learning</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NLP / LLMs</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">PyTorch</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">TensorFlow</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Data Pipelines</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">MLOps</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">REST APIs</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Cloud & AWS</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Networking</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Embedded Systems</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

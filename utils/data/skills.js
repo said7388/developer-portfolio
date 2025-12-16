@@ -3,7 +3,7 @@ export const skillsData = [
   'C++',
   'Python',
   'Pytorch',
-  'Tensorflow'
+  'Tensorflow',
   'HTML',
   'CSS',
   'Javascript',

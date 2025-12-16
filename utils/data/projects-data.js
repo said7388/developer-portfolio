@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
+        name: 'Movie Recommendation System (MLOps)',
         description: "My team and I built an end-to-end movie recommendation system using a hybrid collaborative filtering Multilayer Perceptron model with cold-start handling and ranking-based evaluation using Precision@K, Recall@K, NDCG@K, and Hit Rate@K. The system was deployed as containerized microservices with Docker Compose, supporting canary rollouts (80/20 traffic split), Kafka-based stream processing, and monitoring with Prometheus and Grafana on AWS. We automated data ingestion, preprocessing, evaluation, and deployment using GitLab CI/CD to ensure reproducible and production-ready MLOps workflows.",
         tools: ['GitLab', 'Kafka', 'Pytorch','Flask' ,'Pandas','Docker','AWS S3', 'AWS IAM', 'Grafana', 'Prometheus',  'Nginx'],
         role: 'Data Pipeline and Cloud Architecture',

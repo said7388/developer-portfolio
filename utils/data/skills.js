@@ -1,24 +1,24 @@
 export const skillsData = [
+  'C',
+  'C++',
+  'Python',
+  'Pytorch',
+  'Tensorflow'
   'HTML',
   'CSS',
   'Javascript',
-  'Typescript',
-  'React',
-  'Next JS',
-  'Tailwind',
+  'Docker',
   'MongoDB',
   'MySQL',
   'PostgreSQL',
   'Git',
   'AWS',
-  'Bootstrap',
   'Docker',
-  'Go',
+  'Django',
   'Figma',
-  'Firebase',
-  'MaterialUI',
   'Nginx',
-  'Strapi'
+  'Matlab',
+  'Microsoft Office'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -108,3 +108,4 @@ export const skillsData = [
   Webex
   Wordpress
 */
+

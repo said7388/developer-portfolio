@@ -1,20 +1,37 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "AI Foundations",
+    duration: "2026",
+    institution: "YouTube & Documentation",
+    link: null,
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Ultimate Design Patterns",
+    duration: "In Progress (0%)",
+    institution: "Udemy - M. Youssef",
+    link: null,
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Flutter Clean Architecture",
+    duration: "2023 - In Progress (50%)",
+    institution: "Udemy - Tharwat Samy",
+    link: null,
+  },
+  {
+    id: 4,
+    title: "CS50 - Computer Science",
+    duration: "2023",
+    institution: "YouTube - A. Gamal",
+    link: null,
+  },
+  {
+    id: 5,
+    title: "Git & GitHub",
+    duration: "2022 - 2024",
+    institution: "YouTube - Elzero & BigData",
+    link: null,
   }
 ]

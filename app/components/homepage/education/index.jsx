@@ -2,6 +2,7 @@
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { HiOutlineExternalLink } from "react-icons/hi";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
@@ -18,15 +19,15 @@ function Education() {
       />
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-brand-primary to-transparent  w-full" />
         </div>
       </div>
 
       <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
+        <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
+            Certificates & Courses
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -41,7 +42,7 @@ function Education() {
           </div>
 
           <div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4">
               {
                 educations.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
@@ -53,21 +54,34 @@ function Education() {
                         height={200}
                         className="absolute bottom-0 opacity-80"
                       />
-                      <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
-                          {education.duration}
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
+                      <div className="flex justify-between items-start gap-2 px-3 py-3">
+                        <div className="flex items-start gap-x-3 flex-1 min-w-0">
+                          <div className="text-brand-primary transition-all duration-300 hover:scale-125 flex-shrink-0">
+                            <BsPersonWorkspace size={28} />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-xs sm:text-sm text-brand-primary mb-1">
+                              {education.duration}
+                            </p>
+                            <p className="text-sm sm:text-lg font-medium line-clamp-2">
+                              {education.title}
+                            </p>
+                            <p className="text-xs sm:text-sm text-gray-400 mt-1 line-clamp-1">
+                              {education.institution}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {education.title}
-                          </p>
-                          <p className="text-sm sm:text-base">{education.institution}</p>
-                        </div>
+                        {education.link && (
+                          <a
+                            href={education.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-primary hover:text-brand-secondary flex-shrink-0 mt-1 transition-colors"
+                            title="Open course"
+                          >
+                            <HiOutlineExternalLink size={20} />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </GlowCard>

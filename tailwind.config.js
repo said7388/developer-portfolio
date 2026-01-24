@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          primary: '#606CFC',
+          secondary: '#A855F7',
+          accent: '#EC4899',
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'brand-gradient': 'linear-gradient(135deg, #606CFC 0%, #A855F7 100%)',
+        'brand-gradient-reverse': 'linear-gradient(135deg, #A855F7 0%, #606CFC 100%)',
       },
       container: {
         center: true,
@@ -23,11 +32,8 @@ module.exports = {
           "3xl": "5rem",
         },
       },
-
-      extend: {
-        screens: {
-          "4k": "1980px",
-        },
+      screens: {
+        "4k": "1980px",
       },
     },
   },

@@ -2,6 +2,13 @@
 
 :root {
   --foreground-rgb: rgb(211, 216, 232);
+  
+  /* Brand Colors */
+  --brand-primary: #606CFC;
+  --brand-secondary: #A855F7;
+  --brand-accent: #EC4899;
+  --brand-gradient: linear-gradient(135deg, #606CFC 0%, #A855F7 100%);
+  --brand-gradient-reverse: linear-gradient(135deg, #A855F7 0%, #606CFC 100%);
 }
 
 @media (prefers-color-scheme: dark) {

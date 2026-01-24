@@ -1,0 +1,21 @@
+export const softSkillsData = [
+  'Analytical thinking',
+  'Quick learning',
+  'Skillful Searching',
+  'Attention to detail',
+  'Communications',
+  'Self teachable',
+  'Ability to share knowledge',
+  'Critical thinking',
+  'Design Principles',
+  'Debugging skills',
+  'Perfectionism',
+  'Notion & Trello',
+  'Time management',
+  'Positive attitude',
+  'Problem-solving',
+  'Leadership',
+  'Teamwork',
+  'Agile Methodologies',
+  'Mentoring'
+]

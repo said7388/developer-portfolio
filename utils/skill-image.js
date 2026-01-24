@@ -254,7 +254,29 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'rest api':
+      return graphql;
+    case 'postman':
+      return docker;
+    case 'insomnia':
+      return docker;
+    case 'fastlane':
+      return docker;
+    case 'sentry':
+      return docker;
+    case 'ui design':
+      return figma;
+    case 'ux design':
+      return figma;
+    case 'clean architecture':
+      return docker;
+    case 'bloc':
+      return flutter;
+    case 'provider':
+      return flutter;
+    case 'github':
+      return git;
     default:
-      break;
+      return null;
   }
 }

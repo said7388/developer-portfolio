@@ -1,17 +1,6 @@
 export const testimonialsData = [
   {
     id: 1,
-    name: 'Mohamed Elshafiy',
-    position: 'Founder & CEO at Semicolon',
-    relation: 'Managed me at Semicolon',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQFEZqDdxpw9sA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686070129919?e=1770854400&v=beta&t=nyL3xu1PqKgZdzeEA5nmEo-vtmQYAJEZk09lLijg-Bw',
-    contact: {
-      linkedin: 'https://www.linkedin.com/in/mohamed-elshafiy-772108100/'
-    },
-    testimonial: "Mostafa proved to be a **responsible and diligent application developer**, a quality I consider paramount above all other skills. He is **smart and adept at problem-solving**, swiftly employing logical thinking skills. In summary, Mostafa's tenure at Semicolon was marked by his **proficiency as a responsible application developer** and his acumen in tackling challenges. These attributes not only distinguished him but also enhanced the overall success of our endeavors."
-  },
-  {
-    id: 2,
     name: 'Saud Selim',
     position: 'Founder & Product Leader at NIQAT',
     relation: 'Managed me at NIQAT',
@@ -22,7 +11,7 @@ export const testimonialsData = [
     testimonial: "I had the pleasure of working with Mostafa on several projects, and we are still collaborating together. He is a **highly professional Flutter Developer** who **not only delivers excellent technical work** but also takes the time to understand the business needs and discuss the best scenarios for implementation. Our plan is to continue this collaboration long-term, because it's **truly rare to find someone** with his **level of commitment, professionalism, and positive attitude**."
   },
   {
-    id: 3,
+    id: 2,
     name: 'Sameh Amasha',
     position: 'CEO at Drasat tech & Solutions',
     relation: 'Managed me at Drasat tech',
@@ -33,18 +22,18 @@ export const testimonialsData = [
     testimonial: "I had the pleasure of working with Eng. Mostafa at my company, where he was responsible for developing mobile applications. During his time with us, he **single-handedly developed +10 apps** with **high technical proficiency and professionalism**. Mostafa is **extremely committed to deadlines, hardworking**, and brings a **positive spirit to any team**. I strongly recommend him for any mobile development project — he would be a real asset to any team."
   },
   {
-    id: 4,
-    name: 'Alaa Elattar',
-    position: 'Full-Stack PHP Laravel Developer',
-    relation: 'Worked with me at Drasat Tech',
-    image: 'https://media.licdn.com/dms/image/v2/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1660002772504?e=1769896800&v=beta&t=BX9qP2XkoT_I5km4d3MvVVgoCXAoqebkUOYAZaHn76M',
+    id: 3,
+    name: 'Mohamed Elshafiy',
+    position: 'Founder & CEO at Semicolon',
+    relation: 'Managed me at Semicolon',
+    image: 'https://media.licdn.com/dms/image/v2/D4D03AQFEZqDdxpw9sA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686070129919?e=1770854400&v=beta&t=nyL3xu1PqKgZdzeEA5nmEo-vtmQYAJEZk09lLijg-Bw',
     contact: {
-      linkedin: 'https://www.linkedin.com/in/alaa-elattar-050542294/'
+      linkedin: 'https://www.linkedin.com/in/mohamed-elshafiy-772108100/'
     },
-    testimonial: "I had the pleasure of working with Mostafa Alazhariy on several mobile app projects, and I can confidently say that collaborating with him was an **absolute delight**. From day one, Mostafa impressed me with his **deep technical expertise, innovative thinking**, and **unwavering dedication to delivering top-quality work**. I highly recommend Mostafa to any team looking for a **talented, reliable, and forward-thinking mobile app developer**."
+    testimonial: "Mostafa proved to be a **responsible and diligent application developer**, a quality I consider paramount above all other skills. He is **smart and adept at problem-solving**, swiftly employing logical thinking skills. In summary, Mostafa's tenure at Semicolon was marked by his **proficiency as a responsible application developer** and his acumen in tackling challenges. These attributes not only distinguished him but also enhanced the overall success of our endeavors."
   },
   {
-    id: 5,
+    id: 4,
     name: 'Alaa Mohamed',
     position: 'Full-Stack PHP Laravel Developer',
     relation: 'Worked with me at Semicolon & NIQAT',
@@ -53,5 +42,16 @@ export const testimonialsData = [
       linkedin: 'https://www.linkedin.com/in/alaa-mohamed-b1b116180/'
     },
     testimonial: "I had the pleasure of working with Mostafa on several projects, and I can confidently say he is **one of the most talented and reliable mobile developers** I've collaborated with. He was **always cooperative, proactive**, and brought a **high level of professionalism** to every task. His **strong problem-solving skills** and deep understanding of mobile development helped us overcome many technical challenges. He's a **great team player with a positive attitude and sharp thinking**."
+  },
+  {
+    id: 5,
+    name: 'Alaa Elattar',
+    position: 'Full-Stack PHP Laravel Developer',
+    relation: 'Worked with me at Drasat Tech',
+    image: 'https://media.licdn.com/dms/image/v2/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1660002772504?e=1769896800&v=beta&t=BX9qP2XkoT_I5km4d3MvVVgoCXAoqebkUOYAZaHn76M',
+    contact: {
+      linkedin: 'https://www.linkedin.com/in/alaa-elattar-050542294/'
+    },
+    testimonial: "I had the pleasure of working with Mostafa Alazhariy on several mobile app projects, and I can confidently say that collaborating with him was an **absolute delight**. From day one, Mostafa impressed me with his **deep technical expertise, innovative thinking**, and **unwavering dedication to delivering top-quality work**. I highly recommend Mostafa to any team looking for a **talented, reliable, and forward-thinking mobile app developer**."
   }
 ]

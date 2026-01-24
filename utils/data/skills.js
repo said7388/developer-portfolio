@@ -1,24 +1,41 @@
 export const skillsData = [
+  // Core
   'Flutter',
   'Dart',
-  'Firebase',
-  'Git',
-  'GitHub',
-  'Figma',
-  'REST API',
-  'GraphQL',
-  'Clean Architecture',
+  // State Management & Architecture
   'BloC',
   'Provider',
-  'Swift',
-  'Kotlin',
-  'Python',
+  'Clean Architecture',
+  'MVC Architecture',
+  // Back-end Integration
+  'REST API',
+  'GraphQL',
+  'Firebase',
   'Postman',
   'Insomnia',
+  'Dio',
+  'Retrofit',
+  // Code Quality
+  'SOLID Principles',
+  'Unit Testing',
+  'Design Patterns',
+  // Additional Skills
+  'Git',
+  'GitHub',
+  'GitLab',
+  'UI Design',
+  'UX Design',
+  'Google Maps',
+  'CI/CD',
   'Fastlane',
   'Sentry',
-  'UI Design',
-  'UX Design'
+  'RevenueCat',
+  'FCM',
+  'OneSignal',
+  // App Store Deployment
+  'Google Play Console',
+  'App Store',
+  'TestFlight'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

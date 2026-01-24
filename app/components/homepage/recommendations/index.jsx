@@ -13,7 +13,7 @@ function RecommendationCard({ testimonial }) {
     return parts.map((part, index) => {
       if (part.startsWith("**") && part.endsWith("**")) {
         return (
-          <span key={index} className="font-semibold text-brand-secondary">
+          <span key={index} className="font-semibold text-violet-400">
             {part.slice(2, -2)}
           </span>
         );
@@ -30,9 +30,9 @@ function RecommendationCard({ testimonial }) {
       viewport={{ once: false }}
       className="group relative"
     >
-      <div className="absolute inset-0 bg-brand-gradient rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
 
-      <div className="relative bg-[#0f1419] border border-[#1f223c] rounded-xl p-6 transition-all duration-300 group-hover:border-brand-primary group-hover:shadow-lg group-hover:shadow-brand-primary/50">
+      <div className="relative bg-[#0f1419] border border-[#1f223c] rounded-xl p-6 transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-lg group-hover:shadow-violet-500/50">
         {/* Header with Profile */}
         <div className="flex items-center gap-4 mb-4">
           <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
@@ -47,7 +47,7 @@ function RecommendationCard({ testimonial }) {
             />
           </div>
           <div className="flex-1">
-            <h3 className="text-white font-semibold text-base group-hover:text-brand-secondary transition-colors">
+            <h3 className="text-white font-semibold text-base group-hover:text-violet-400 transition-colors">
               {testimonial.name}
             </h3>
             <p className="text-sm text-gray-400">{testimonial.position}</p>
@@ -66,7 +66,7 @@ function RecommendationCard({ testimonial }) {
             href={testimonial.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-brand-gradient text-white text-sm font-medium rounded-lg hover:shadow-lg hover:shadow-brand-primary/50 transition-all duration-300 group/btn"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-medium rounded-lg hover:shadow-lg hover:shadow-violet-500/50 transition-all duration-300 group/btn"
           >
             <svg
               className="w-4 h-4"
@@ -97,11 +97,11 @@ function Recommendations() {
 
   return (
     <div id="recommendations" className="relative z-50 my-12 lg:my-24">
-      <div className="w-[100px] h-[100px] bg-brand-primary rounded-full absolute -top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
+      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute -top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-brand-primary to-transparent w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
         </div>
       </div>
 
@@ -133,7 +133,7 @@ function Recommendations() {
           href={personalData.linkedIn}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-3 bg-brand-gradient text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-brand-primary/50 transition-all duration-300 flex items-center gap-2"
+          className="px-8 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-violet-500/50 transition-all duration-300 flex items-center gap-2"
         >
           <span>For further recommendations, please visit my LinkedIn page</span>
           <svg

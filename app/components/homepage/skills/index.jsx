@@ -22,10 +22,10 @@ function Skills() {
       >
         {hasIcon ? (
           // Card with icon
-          <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-brand-primary transition-all duration-500">
+          <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
             <div className="flex -translate-y-[1px] justify-center">
               <div className="w-3/4">
-                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-brand-primary to-transparent" />
+                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-3 p-6">
@@ -45,9 +45,9 @@ function Skills() {
           </div>
         ) : (
           // Badge-style card for skills without icons
-          <div className="h-full w-full rounded-lg border border-[#1f223c] bg-gradient-to-br from-[#1a1f3a] to-[#11152c] shadow-none shadow-gray-50 group-hover:border-brand-primary group-hover:shadow-lg group-hover:shadow-brand-primary/50 transition-all duration-500 p-4 flex items-center justify-center min-h-[140px]">
+          <div className="h-full w-full rounded-lg border border-[#1f223c] bg-gradient-to-br from-[#1a1f3a] to-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 group-hover:shadow-lg group-hover:shadow-violet-500/50 transition-all duration-500 p-4 flex items-center justify-center min-h-[140px]">
             <div className="flex flex-col items-center justify-center gap-2 text-center">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -60,7 +60,7 @@ function Skills() {
                   />
                 </svg>
               </div>
-              <p className="text-white text-xs sm:text-sm font-medium group-hover:text-brand-secondary transition-colors duration-300">
+              <p className="text-white text-xs sm:text-sm font-medium group-hover:text-violet-300 transition-colors duration-300">
                 {skill}
               </p>
             </div>
@@ -72,11 +72,11 @@ function Skills() {
 
   return (
     <div id="skills" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <div className="w-[100px] h-[100px] bg-brand-primary rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-brand-primary to-transparent  w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
         </div>
       </div>
 

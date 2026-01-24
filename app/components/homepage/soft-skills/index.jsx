@@ -6,11 +6,11 @@ import { softSkillsData } from "@/utils/data/softSkills";
 function SoftSkills() {
   return (
     <div id="soft-skills" className="relative z-50 my-12 lg:my-24">
-      <div className="w-[100px] h-[100px] bg-brand-primary rounded-full absolute -top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
+      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute -top-6 left-[42%] translate-x-1/2 filter blur-3xl opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-brand-primary to-transparent w-full" />
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
         </div>
       </div>
 
@@ -46,14 +46,14 @@ function SoftSkills() {
               }
             `}</style>
 
-            <div className="absolute inset-0 bg-brand-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
 
-            <div className="relative bg-[#0f1419] border border-[#1f223c] rounded-lg p-6 transition-all duration-300 group-hover:border-brand-primary group-hover:shadow-lg group-hover:shadow-brand-primary/50">
+            <div className="relative bg-[#0f1419] border border-[#1f223c] rounded-lg p-6 transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-lg group-hover:shadow-violet-500/50">
               <div className="flex items-center justify-between">
-                <p className="text-white font-medium text-sm sm:text-base group-hover:text-brand-secondary transition-colors duration-300">
+                <p className="text-white font-medium text-sm sm:text-base group-hover:text-violet-400 transition-colors duration-300">
                   {skill}
                 </p>
-                <div className="w-8 h-8 bg-brand-gradient rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-4 h-4 text-white"
                     fill="currentColor"
@@ -68,7 +68,7 @@ function SoftSkills() {
                 </div>
               </div>
 
-              <div className="mt-4 h-1 bg-gradient-to-r from-brand-primary/50 to-brand-secondary/50 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="mt-4 h-1 bg-gradient-to-r from-violet-500/50 to-indigo-600/50 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
           </div>
         ))}

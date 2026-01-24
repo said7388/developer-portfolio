@@ -257,25 +257,55 @@ export const skillsImage = (skill) => {
     case 'rest api':
       return graphql;
     case 'postman':
-      return docker;
+      return null;
     case 'insomnia':
-      return docker;
+      return null;
     case 'fastlane':
-      return docker;
+      return null;
     case 'sentry':
-      return docker;
+      return null;
     case 'ui design':
       return figma;
     case 'ux design':
       return figma;
     case 'clean architecture':
-      return docker;
+      return null;
     case 'bloc':
       return flutter;
     case 'provider':
       return flutter;
     case 'github':
       return git;
+    case 'gitlab':
+      return git;
+    case 'mvc architecture':
+      return null;
+    case 'dio':
+      return null;
+    case 'retrofit':
+      return null;
+    case 'solid principles':
+      return null;
+    case 'unit testing':
+      return null;
+    case 'design patterns':
+      return null;
+    case 'google maps':
+      return gcp;
+    case 'ci/cd':
+      return null;
+    case 'revenuecat':
+      return null;
+    case 'fcm':
+      return firebase;
+    case 'onesignal':
+      return firebase;
+    case 'google play console':
+      return null;
+    case 'app store':
+      return swift;
+    case 'testflight':
+      return swift;
     default:
       return null;
   }

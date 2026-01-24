@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <div id='projects' className="relative z-50 my-12 lg:my-24">
       <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-brand-primary rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
+        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
         <div className="flex items-center justify-start relative">
           <span className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md">
             PROJECTS
@@ -51,7 +51,7 @@ const Projects = () => {
                 setShowMore(!showMore);
                 if (!showMore) setTimeout(scrollToEnd, 100);
               }}
-              className="px-6 lg:px-8 py-2 lg:py-3 rounded-lg bg-brand-gradient text-white font-medium hover:shadow-lg hover:shadow-brand-primary/50 transition-all duration-300 transform hover:scale-105"
+              className="px-6 lg:px-8 py-2 lg:py-3 rounded-lg bg-gradient-to-r from-pink-500 to-violet-600 text-white font-medium hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300 transform hover:scale-105"
             >
               {showMore ? 'Show Less' : 'View More Projects'}
             </button>
@@ -83,7 +83,7 @@ const Projects = () => {
               {Array.from({ length: Math.ceil((projectsData.length - 4) / 1) }).map((_, idx) => (
                 <div
                   key={idx}
-                  className="h-2 w-2 rounded-full bg-brand-primary opacity-50"
+                  className="h-2 w-2 rounded-full bg-violet-600 opacity-50"
                 />
               ))}
             </div>

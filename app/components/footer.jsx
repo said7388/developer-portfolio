@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { CgGitFork } from "react-icons/cg";
 import { IoStar } from "react-icons/io5";
+import { personalData } from '../../utils/data/personal-data';
 
 function Footer() {
   return (

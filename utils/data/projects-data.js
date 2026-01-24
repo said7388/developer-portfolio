@@ -2,7 +2,13 @@ export const projectsData = [
     {
         id: 1,
         name: 'Keeper - Finance Manager',
-        description: "Personal finance assistant for expense tracking, budget management, financial goals, debt tracking, and smart analytics with voice-first input, and multi-wallet support. Architected multi-wallet system with atomic wallet-to-wallet transfers, currency conversion. Implemented in-app subscription system using RevenueCat with purchase verification and secure storage via flutter_secure_storage. Developed device security with jailbreak/root detection and biometric authentication (Face ID/fingerprint) to protect sensitive financial data. Developed native home screen widgets for iOS (SwiftUI) and Android (Kotlin) displaying balance and quick-add shortcuts.",
+        description: "Personal finance assistant for expense tracking, budget management, financial goals, debt tracking, and smart analytics with voice-first input, and multi-wallet support.",
+        achievements: [
+            "Architected multi-wallet system with atomic wallet-to-wallet transfers, currency conversion",
+            "Implemented in-app subscription system using RevenueCat with purchase verification and secure storage via flutter_secure_storage",
+            "Developed device security with jailbreak/root detection and biometric authentication (Face ID/fingerprint) to protect sensitive financial data",
+            "Developed native home screen widgets for iOS (SwiftUI) and Android (Kotlin) displaying balance and quick-add shortcuts"
+        ],
         tools: ['Flutter', 'Dart', 'RevenueCat', 'Flutter Secure Storage', 'SwiftUI', 'Kotlin', 'Firebase'],
         role: 'Mobile Developer',
         code: '',
@@ -12,7 +18,13 @@ export const projectsData = [
     {
         id: 2,
         name: 'Aqaryoun - Real Estate Marketing',
-        description: 'Real-estate marketing app for brokers and companies enabling property publishing, multi-share links, and in-app WhatsApp marketing. Collaborated directly with the CEO to analyze business requirements and propose feature improvements. Designed server-driven dynamic field system rendering property attributes with backend developer collaboration. Built custom reusable form components including formatted price input with no external libraries. Developed light/dark theme system using context extensions for one-line color access.',
+        description: 'Real-estate marketing app for brokers and companies enabling property publishing, multi-share links, and in-app WhatsApp marketing.',
+        achievements: [
+            "Collaborated directly with the CEO to analyze business requirements and propose feature improvements",
+            "Designed server-driven dynamic field system rendering property attributes with backend developer collaboration",
+            "Built custom reusable form components including formatted price input with no external libraries",
+            "Developed light/dark theme system using context extensions for one-line color access"
+        ],
         tools: ['Flutter', 'Dart', 'REST API', 'Firebase', 'Dark Mode'],
         role: 'Flutter Developer',
         code: '',
@@ -22,7 +34,14 @@ export const projectsData = [
     {
         id: 3,
         name: 'Al-Rahma Hospital',
-        description: 'Multi-module Flutter application designed to elevate patient care and simplify hospital management. Enables users to book appointments, review medical records and test results, track vitals, and access telemedicine and emergency services. Took ownership at project kickoff by collaborating with manager on requirements and UX decisions. Managed architecture and provided post-launch support. Designed UI and built high-fidelity Figma interactive prototype. Implemented parallel frontend development with mock data and API schema definition. Acted as team lead configuring GitHub integration for backend testing and performing QA.',
+        description: 'Multi-module Flutter application designed to elevate patient care and simplify hospital management. Enables users to book appointments, review medical records and test results, track vitals, and access telemedicine and emergency services.',
+        achievements: [
+            "Took ownership at project kickoff by collaborating with manager on requirements and UX decisions",
+            "Managed architecture and provided post-launch support",
+            "Designed UI and built high-fidelity Figma interactive prototype",
+            "Implemented parallel frontend development with mock data and API schema definition",
+            "Acted as team lead configuring GitHub integration for backend testing and performing QA"
+        ],
         tools: ['Flutter', 'Dart', 'Figma', 'REST API', 'Firebase', 'Payment Integration'],
         role: 'Team Lead & Flutter Developer',
         code: '',
@@ -31,7 +50,15 @@ export const projectsData = [
     {
         id: 4,
         name: 'Taxi Proche - Uber Clone',
-        description: "Ride-hailing app for Djibouti built on CodeCanyon Uber clone. Evaluated and selected optimal codebase after thorough analysis. Resolved critical Google Maps API overconsumption issue collaborating with Google Cloud support. Reduced server load by enhancing driver location updates from MQTT to Firebase real-time connection. Enhanced ride request distribution with automated cron job solution. Developed advanced trip management features including estimated pricing, trip cancellation, and VIP trip functionality. Implemented deep code refactoring and custom server-driven localization system.",
+        description: "Ride-hailing app for Djibouti built on CodeCanyon Uber clone.",
+        achievements: [
+            "Evaluated and selected optimal codebase after thorough analysis",
+            "Resolved critical Google Maps API overconsumption issue collaborating with Google Cloud support",
+            "Reduced server load by enhancing driver location updates from MQTT to Firebase real-time connection",
+            "Enhanced ride request distribution with automated cron job solution",
+            "Developed advanced trip management features including estimated pricing, trip cancellation, and VIP trip functionality",
+            "Implemented deep code refactoring and custom server-driven localization system"
+        ],
         tools: ['Flutter', 'Dart', 'Google Maps', 'Firebase', 'MQTT', 'Git'],
         role: 'Flutter Developer',
         code: 'https://github.com/malazhariy',
@@ -42,7 +69,14 @@ export const projectsData = [
     {
         id: 5,
         name: 'Amyal Service - KSA',
-        description: "Car washing and parking services app in Saudi Arabia with reservations and subscriptions implemented from scratch. Solely responsible for developing the project with different functions based on user role (user, employee, supervisor). Implementing real-time update on status of orders in employee version using FCM. Working with Agile, constantly following up on work with Team Leader and backend developer. Implemented real-time pricing for products, discounts, and taxes with smooth payment handling. Cleanly validate in-app dates and input fields improving UX.",
+        description: "Car washing and parking services app in Saudi Arabia with reservations and subscriptions implemented from scratch.",
+        achievements: [
+            "Solely responsible for developing the project with different functions based on user role (user, employee, supervisor)",
+            "Implementing real-time update on status of orders in employee version using FCM",
+            "Working with Agile, constantly following up on work with Team Leader and backend developer",
+            "Implemented real-time pricing for products, discounts, and taxes with smooth payment handling",
+            "Cleanly validate in-app dates and input fields improving UX"
+        ],
         tools: ['Flutter', 'Dart', 'FCM', 'REST API', 'Agile', 'Trello'],
         role: 'Flutter Developer',
         code: '',
@@ -52,7 +86,13 @@ export const projectsData = [
     {
         id: 6,
         name: 'Furas Zain - Classified Ads App',
-        description: "OLX clone classified ads application. Developed application from scratch including UI design and UX enhancement. Redesigned app brand identity & logo. Implemented dynamic localization system fetching language data from server, later converted to private package. Implemented challenging multi-language AD publishing page with automatic Google Translate integration for uncompleted content.",
+        description: "OLX clone classified ads application.",
+        achievements: [
+            "Developed application from scratch including UI design and UX enhancement",
+            "Redesigned app brand identity & logo",
+            "Implemented dynamic localization system fetching language data from server, later converted to private package",
+            "Implemented challenging multi-language AD publishing page with automatic Google Translate integration for uncompleted content"
+        ],
         tools: ['Flutter', 'Dart', 'Google Translate API', 'REST API', 'Localization'],
         role: 'Flutter Developer',
         code: '',
@@ -62,7 +102,12 @@ export const projectsData = [
     {
         id: 7,
         name: 'El-Garayhi Education',
-        description: "Integrated into Mentor Academy for schools and educational centers. Enables students to participate in lessons, exercises, and timed exams with prompt answer corrections upon completion. Allows comparison of student performance with peers. Complete test solution viewable offline with automatic data upload on internet connection. Continuous client support for 6 months with efficient task management on Notion. Unit testing implemented for exam functionality to ensure code accuracy.",
+        description: "Integrated into Mentor Academy for schools and educational centers. Enables students to participate in lessons, exercises, and timed exams with prompt answer corrections upon completion. Allows comparison of student performance with peers.",
+        achievements: [
+            "Complete test solution viewable offline with automatic data upload on internet connection",
+            "Continuous client support for 6 months with efficient task management on Notion",
+            "Unit testing implemented for exam functionality to ensure code accuracy"
+        ],
         tools: ['Flutter', 'Dart', 'Unit Testing', 'REST API', 'Offline Support', 'Notion'],
         role: 'Flutter Developer',
         code: '',
@@ -72,7 +117,11 @@ export const projectsData = [
     {
         id: 8,
         name: 'Internet State Manager (Open Source)',
-        description: "Flutter package designed to manage internet connection outages seamlessly within the app. Ensures uninterrupted UX by implementing reliable data-fetching mechanism that activates once internet connection is restored. Allows developers to easily handle network changes and customize UIs based on connectivity status with easy code. Includes accurate internet connection check, automatic data fetching, builder widget with parameters, and customizable widgets.",
+        description: "Flutter package designed to manage internet connection outages seamlessly within the app. Ensures uninterrupted UX by implementing reliable data-fetching mechanism that activates once internet connection is restored.",
+        achievements: [
+            "Allows developers to easily handle network changes and customize UIs based on connectivity status with easy code",
+            "Includes accurate internet connection check, automatic data fetching, builder widget with parameters, and customizable widgets"
+        ],
         tools: ['Flutter', 'Dart', 'Package Development', 'GitHub'],
         role: 'Creator & Maintainer',
         code: 'https://github.com/malazhariy/internet_connection_checker_plus',
@@ -81,7 +130,12 @@ export const projectsData = [
     {
         id: 9,
         name: 'Encrypt It',
-        description: "Personal application that encrypts and decrypts texts by password using unique and strong encryption algorithms. Developed special encryption algorithm while learning Flutter. Devised unique encryption approach that generates different, random ciphertext each time ensuring utmost protection. Implemented robust password-based encryption and decryption system with Neumorphism UI design.",
+        description: "Personal application that encrypts and decrypts texts by password using unique and strong encryption algorithms.",
+        achievements: [
+            "Developed special encryption algorithm while learning Flutter",
+            "Devised unique encryption approach that generates different, random ciphertext each time ensuring utmost protection",
+            "Implemented robust password-based encryption and decryption system with Neumorphism UI design"
+        ],
         tools: ['Flutter', 'Dart', 'Encryption', 'Neumorphism Design'],
         role: 'Developer',
         code: 'https://github.com/malazhariy',

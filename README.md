@@ -40,7 +40,6 @@ A professional portfolio template built with **Next.js 16**, **React 19**, and *
 
 <p align="center">
   <a href="https://abusaid.netlify.app/" target="_blank">
-    <strong>🚀 View Live Demo</strong>
   </a>
 </p>
 
